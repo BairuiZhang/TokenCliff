@@ -1,0 +1,36 @@
+{
+  "id": "file_ops_118",
+  "domain": "file_ops",
+  "prompt": "Navigate the directory tree to find 'target.txt'. Return its content.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/ebzb/aoel/target.txt": "5935",
+      "/gppe/fjttni.txt": "661",
+      "/zlri/aoel/aoel/lkvpqx.txt": "651",
+      "/ebzb/aoel/evmdef.txt": "432",
+      "/aoel/iqkn/przxba.txt": "891",
+      "/ebzb/bkfp/aoel/rwooie.txt": "865",
+      "/ebzb/riuq/riuq/yasrzq.txt": "635",
+      "/aoel/gzzhfo.txt": "660",
+      "/aoel/ebzb/oeuhql.txt": "939",
+      "/ebzb/aoel/aoel/ejuexz.txt": "713",
+      "/ebzb/aoel/cvmzaz.txt": "743",
+      "/aoel/wpszgh.txt": "870",
+      "/aoel/aoel/nqozvl.txt": "38",
+      "/ebzb/ebzb/cocrcr.txt": "143",
+      "/aoel/aoel/sofrnq.txt": "585"
+    }
+  },
+  "ground_truth": "5935",
+  "difficulty": 3
+}

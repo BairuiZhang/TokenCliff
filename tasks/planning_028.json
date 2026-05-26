@@ -1,0 +1,62 @@
+{
+  "id": "planning_028",
+  "domain": "planning",
+  "prompt": "Find the earliest 1-hour slot available between 9:00-18:00 on 2026-01-15. Return the start hour.",
+  "tools": [
+    {
+      "name": "get_events",
+      "desc": "Get events"
+    },
+    {
+      "name": "check_conflict",
+      "desc": "Check conflicts"
+    },
+    {
+      "name": "find_slot",
+      "desc": "Find slots"
+    }
+  ],
+  "environment": {
+    "events": [
+      {
+        "date": "2026-01-15",
+        "start": 9,
+        "end": 10,
+        "title": "mtg_ktz"
+      },
+      {
+        "date": "2026-01-15",
+        "start": 11,
+        "end": 12,
+        "title": "mtg_fvl"
+      },
+      {
+        "date": "2026-01-15",
+        "start": 11,
+        "end": 12,
+        "title": "mtg_quc"
+      },
+      {
+        "date": "2026-01-15",
+        "start": 15,
+        "end": 16,
+        "title": "mtg_jfm"
+      },
+      {
+        "date": "2026-01-15",
+        "start": 11,
+        "end": 12,
+        "title": "mtg_pta"
+      },
+      {
+        "date": "2026-01-15",
+        "start": 14,
+        "end": 15,
+        "title": "mtg_dvk"
+      }
+    ],
+    "constraints": []
+  },
+  "ground_truth": "10",
+  "difficulty": 2
+}

@@ -1,0 +1,31 @@
+{
+  "id": "file_ops_115",
+  "domain": "file_ops",
+  "prompt": "Navigate the directory tree to find 'target.txt'. Return its content.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/ahvv/pgzj/bvjd/target.txt": "1418",
+      "/ahvv/vdbrnc.txt": "321",
+      "/bvjd/aikbuw.txt": "426",
+      "/ahvv/mhhoxv.txt": "45",
+      "/bxis/bxis/zbujet.txt": "644",
+      "/ahvv/ahvv/ahvv/vzynls.txt": "481",
+      "/hnne/ahvv/nmiasj.txt": "747",
+      "/pgzj/bvjd/ahvv/rfqjuf.txt": "142",
+      "/dzgf/vsiurj.txt": "705",
+      "/lmum/ahvv/lmum/zrdxls.txt": "663"
+    }
+  },
+  "ground_truth": "1418",
+  "difficulty": 3
+}

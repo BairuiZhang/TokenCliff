@@ -1,0 +1,28 @@
+{
+  "id": "file_ops_110",
+  "domain": "file_ops",
+  "prompt": "Navigate the directory tree to find 'target.txt'. Return its content.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/mxba/yjpf/kfig/target.txt": "6815",
+      "/trxo/ohodzd.txt": "54",
+      "/kfig/mxba/kfig/ydoegy.txt": "248",
+      "/kfig/zjmo/rvstzp.txt": "591",
+      "/kfig/mxba/ypdszg.txt": "131",
+      "/mxba/bmdawf.txt": "154",
+      "/yjpf/yjpf/yjpf/joyoih.txt": "534"
+    }
+  },
+  "ground_truth": "6815",
+  "difficulty": 3
+}

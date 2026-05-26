@@ -1,0 +1,41 @@
+{
+  "id": "tool_use_113",
+  "domain": "tool_use",
+  "prompt": "Use calculator API to add 35 and 2, then apply a 15% discount. Return the final value rounded to 2 decimals.",
+  "tools": [
+    {
+      "name": "calculator",
+      "desc": "Perform arithmetic"
+    },
+    {
+      "name": "discount",
+      "desc": "Apply discount"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "calculator": {
+        "responses": {
+          "{\"a\": 35, \"b\": 2, \"op\": \"add\"}": {
+            "result": 37
+          }
+        },
+        "default_response": {
+          "error": "invalid"
+        }
+      },
+      "discount": {
+        "responses": {
+          "{\"amount\": 37, \"percent\": 15}": {
+            "final": 31.45
+          }
+        },
+        "default_response": {
+          "error": "invalid"
+        }
+      }
+    }
+  },
+  "ground_truth": "31.45",
+  "difficulty": 3
+}

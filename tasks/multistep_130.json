@@ -1,0 +1,12 @@
+{
+  "id": "multistep_130",
+  "domain": "multistep",
+  "prompt": "Start with djcb = 15. Then: add item 'qvrh' (48); add item 'gasr' (19); add item 'wpnx' (38); multiply by item 'trsl' (40). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "4800",
+  "difficulty": 3
+}

@@ -1,0 +1,12 @@
+{
+  "id": "multistep_158",
+  "domain": "multistep",
+  "prompt": "Start with rtqv = 81. Then: subtract item 'gefh' (73); multiply by item 'ieym' (39); subtract item 'qhdp' (30); multiply by item 'hsbm' (65); subtract item 'lwja' (50). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "18280",
+  "difficulty": 4
+}

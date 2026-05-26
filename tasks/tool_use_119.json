@@ -1,0 +1,41 @@
+{
+  "id": "tool_use_119",
+  "domain": "tool_use",
+  "prompt": "Use calculator API to multiply 21 and 12, then apply a 29% discount. Return the final value rounded to 2 decimals.",
+  "tools": [
+    {
+      "name": "calculator",
+      "desc": "Perform arithmetic"
+    },
+    {
+      "name": "discount",
+      "desc": "Apply discount"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "calculator": {
+        "responses": {
+          "{\"a\": 21, \"b\": 12, \"op\": \"multiply\"}": {
+            "result": 252
+          }
+        },
+        "default_response": {
+          "error": "invalid"
+        }
+      },
+      "discount": {
+        "responses": {
+          "{\"amount\": 252, \"percent\": 29}": {
+            "final": 178.92
+          }
+        },
+        "default_response": {
+          "error": "invalid"
+        }
+      }
+    }
+  },
+  "ground_truth": "178.92",
+  "difficulty": 3
+}

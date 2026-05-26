@@ -1,0 +1,12 @@
+{
+  "id": "multistep_120",
+  "domain": "multistep",
+  "prompt": "Start with pzhp = 68. Then: subtract item 'qmbt' (96); multiply by item 'aiuw' (35); subtract item 'lyrb' (84); add item 'anme' (51); add item 'tfpa' (28). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "-985",
+  "difficulty": 4
+}

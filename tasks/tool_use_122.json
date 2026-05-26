@@ -1,0 +1,41 @@
+{
+  "id": "tool_use_122",
+  "domain": "tool_use",
+  "prompt": "Use calculator API to add 98 and 15, then apply a 10% discount. Return the final value rounded to 2 decimals.",
+  "tools": [
+    {
+      "name": "calculator",
+      "desc": "Perform arithmetic"
+    },
+    {
+      "name": "discount",
+      "desc": "Apply discount"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "calculator": {
+        "responses": {
+          "{\"a\": 98, \"b\": 15, \"op\": \"add\"}": {
+            "result": 113
+          }
+        },
+        "default_response": {
+          "error": "invalid"
+        }
+      },
+      "discount": {
+        "responses": {
+          "{\"amount\": 113, \"percent\": 10}": {
+            "final": 101.7
+          }
+        },
+        "default_response": {
+          "error": "invalid"
+        }
+      }
+    }
+  },
+  "ground_truth": "101.7",
+  "difficulty": 3
+}

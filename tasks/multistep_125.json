@@ -1,0 +1,12 @@
+{
+  "id": "multistep_125",
+  "domain": "multistep",
+  "prompt": "Start with cxqk = 74. Then: multiply by item 'zutw' (29); add item 'hrae' (22); multiply by item 'swcd' (93); subtract item 'cegw' (72). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "201552",
+  "difficulty": 3
+}

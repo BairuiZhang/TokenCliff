@@ -1,0 +1,27 @@
+{
+  "id": "tool_use_069",
+  "domain": "tool_use",
+  "prompt": "Use exchange_rate API to get USD to JPY rate. Convert 1018 USD. Return result rounded to 2 decimals.",
+  "tools": [
+    {
+      "name": "exchange_rate",
+      "desc": "Get exchange rate"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "exchange_rate": {
+        "responses": {
+          "{\"from\": \"USD\", \"to\": \"JPY\"}": {
+            "rate": 145.48
+          }
+        },
+        "default_response": {
+          "error": "pair not found"
+        }
+      }
+    }
+  },
+  "ground_truth": "148098.64",
+  "difficulty": 2
+}

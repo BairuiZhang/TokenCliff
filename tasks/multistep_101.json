@@ -1,0 +1,12 @@
+{
+  "id": "multistep_101",
+  "domain": "multistep",
+  "prompt": "Start with akxa = 14. Then: subtract item 'fkvo' (70); add item 'pqsp' (79); add item 'qbvb' (18); add item 'szuj' (74); subtract item 'ldcb' (88). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "27",
+  "difficulty": 4
+}

@@ -1,0 +1,12 @@
+{
+  "id": "multistep_146",
+  "domain": "multistep",
+  "prompt": "Start with eipr = 84. Then: subtract item 'jqih' (69); add item 'unyb' (58); subtract item 'wjhx' (72); multiply by item 'jlaa' (60); multiply by item 'mhyt' (24); add item 'llah' (55). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "1495",
+  "difficulty": 5
+}

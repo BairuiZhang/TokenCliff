@@ -1,0 +1,41 @@
+{
+  "id": "tool_use_120",
+  "domain": "tool_use",
+  "prompt": "Use calculator API to add 69 and 9, then apply a 25% discount. Return the final value rounded to 2 decimals.",
+  "tools": [
+    {
+      "name": "calculator",
+      "desc": "Perform arithmetic"
+    },
+    {
+      "name": "discount",
+      "desc": "Apply discount"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "calculator": {
+        "responses": {
+          "{\"a\": 69, \"b\": 9, \"op\": \"add\"}": {
+            "result": 78
+          }
+        },
+        "default_response": {
+          "error": "invalid"
+        }
+      },
+      "discount": {
+        "responses": {
+          "{\"amount\": 78, \"percent\": 25}": {
+            "final": 58.5
+          }
+        },
+        "default_response": {
+          "error": "invalid"
+        }
+      }
+    }
+  },
+  "ground_truth": "58.5",
+  "difficulty": 3
+}

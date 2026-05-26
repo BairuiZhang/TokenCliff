@@ -1,0 +1,119 @@
+{
+  "id": "data_transform_050",
+  "domain": "data_transform",
+  "prompt": "Find the department with the most employees. Return only the department name.",
+  "tools": [
+    {
+      "name": "query",
+      "desc": "Query table with where/select/agg/group_by"
+    }
+  ],
+  "environment": {
+    "tables": {
+      "employees": [
+        {
+          "name": "yjncqfag",
+          "dept": "engineering",
+          "salary": 73986
+        },
+        {
+          "name": "hsvvnzsl",
+          "dept": "hr",
+          "salary": 98838
+        },
+        {
+          "name": "hnabebrl",
+          "dept": "hr",
+          "salary": 175715
+        },
+        {
+          "name": "cwbdoyni",
+          "dept": "engineering",
+          "salary": 152425
+        },
+        {
+          "name": "wgejzoom",
+          "dept": "hr",
+          "salary": 112863
+        },
+        {
+          "name": "ojfftdeh",
+          "dept": "hr",
+          "salary": 92259
+        },
+        {
+          "name": "pmicyizf",
+          "dept": "engineering",
+          "salary": 120373
+        },
+        {
+          "name": "etaeeavk",
+          "dept": "hr",
+          "salary": 167364
+        },
+        {
+          "name": "mhoeuzue",
+          "dept": "engineering",
+          "salary": 178026
+        },
+        {
+          "name": "zjajbdoq",
+          "dept": "sales",
+          "salary": 49549
+        },
+        {
+          "name": "wpndvuie",
+          "dept": "engineering",
+          "salary": 179445
+        },
+        {
+          "name": "qmtpaexq",
+          "dept": "hr",
+          "salary": 81731
+        },
+        {
+          "name": "wknvyxpu",
+          "dept": "sales",
+          "salary": 182437
+        },
+        {
+          "name": "qalyxlmw",
+          "dept": "sales",
+          "salary": 69556
+        },
+        {
+          "name": "cujbdmah",
+          "dept": "engineering",
+          "salary": 186657
+        },
+        {
+          "name": "eduyrari",
+          "dept": "marketing",
+          "salary": 60337
+        },
+        {
+          "name": "joarbfzn",
+          "dept": "sales",
+          "salary": 199040
+        },
+        {
+          "name": "ipvyrgsy",
+          "dept": "hr",
+          "salary": 135608
+        },
+        {
+          "name": "osnduind",
+          "dept": "sales",
+          "salary": 92118
+        },
+        {
+          "name": "sgbqlpii",
+          "dept": "hr",
+          "salary": 42659
+        }
+      ]
+    }
+  },
+  "ground_truth": "hr",
+  "difficulty": 3
+}

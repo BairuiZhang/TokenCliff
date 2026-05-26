@@ -1,0 +1,99 @@
+{
+  "id": "tool_use_055",
+  "domain": "tool_use",
+  "prompt": "Use the inventory API to list all items. Find the cheapest item that is in stock. Return its name.",
+  "tools": [
+    {
+      "name": "inventory",
+      "desc": "List items with price and stock"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "inventory": {
+        "responses": {
+          "": {
+            "items": [
+              {
+                "name": "tnqmj",
+                "price": 55,
+                "in_stock": false
+              },
+              {
+                "name": "hpjxs",
+                "price": 167,
+                "in_stock": true
+              },
+              {
+                "name": "iotik",
+                "price": 401,
+                "in_stock": false
+              },
+              {
+                "name": "ldrxy",
+                "price": 387,
+                "in_stock": true
+              },
+              {
+                "name": "tnmzd",
+                "price": 114,
+                "in_stock": true
+              },
+              {
+                "name": "uragf",
+                "price": 161,
+                "in_stock": true
+              },
+              {
+                "name": "slldn",
+                "price": 309,
+                "in_stock": false
+              }
+            ]
+          }
+        },
+        "default_response": {
+          "items": [
+            {
+              "name": "tnqmj",
+              "price": 55,
+              "in_stock": false
+            },
+            {
+              "name": "hpjxs",
+              "price": 167,
+              "in_stock": true
+            },
+            {
+              "name": "iotik",
+              "price": 401,
+              "in_stock": false
+            },
+            {
+              "name": "ldrxy",
+              "price": 387,
+              "in_stock": true
+            },
+            {
+              "name": "tnmzd",
+              "price": 114,
+              "in_stock": true
+            },
+            {
+              "name": "uragf",
+              "price": 161,
+              "in_stock": true
+            },
+            {
+              "name": "slldn",
+              "price": 309,
+              "in_stock": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ground_truth": "tnmzd",
+  "difficulty": 2
+}

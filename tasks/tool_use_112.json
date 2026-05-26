@@ -1,0 +1,41 @@
+{
+  "id": "tool_use_112",
+  "domain": "tool_use",
+  "prompt": "Use calculator API to add 51 and 12, then apply a 28% discount. Return the final value rounded to 2 decimals.",
+  "tools": [
+    {
+      "name": "calculator",
+      "desc": "Perform arithmetic"
+    },
+    {
+      "name": "discount",
+      "desc": "Apply discount"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "calculator": {
+        "responses": {
+          "{\"a\": 51, \"b\": 12, \"op\": \"add\"}": {
+            "result": 63
+          }
+        },
+        "default_response": {
+          "error": "invalid"
+        }
+      },
+      "discount": {
+        "responses": {
+          "{\"amount\": 63, \"percent\": 28}": {
+            "final": 45.36
+          }
+        },
+        "default_response": {
+          "error": "invalid"
+        }
+      }
+    }
+  },
+  "ground_truth": "45.36",
+  "difficulty": 3
+}

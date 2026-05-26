@@ -1,0 +1,12 @@
+{
+  "id": "multistep_147",
+  "domain": "multistep",
+  "prompt": "Start with qdkv = 14. Then: subtract item 'lbap' (11); add item 'pwhr' (36); multiply by item 'krvl' (12); subtract item 'ppde' (61); add item 'vwmh' (40); add item 'ubtw' (98). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "545",
+  "difficulty": 5
+}

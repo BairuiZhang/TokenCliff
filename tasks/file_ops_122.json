@@ -1,0 +1,36 @@
+{
+  "id": "file_ops_122",
+  "domain": "file_ops",
+  "prompt": "Navigate the directory tree to find 'target.txt'. Return its content.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/efwk/sbsc/target.txt": "6167",
+      "/sbsc/vcfg/efwk/novjko.txt": "134",
+      "/sbsc/exbeig.txt": "565",
+      "/sbsc/ntkk/efwk/wozmcd.txt": "999",
+      "/jjoh/jjoh/mtjycd.txt": "348",
+      "/sbsc/sbsc/fkbhac.txt": "350",
+      "/efwk/efwk/prokzo.txt": "75",
+      "/njix/njix/efwk/hsdkbm.txt": "817",
+      "/vade/efwk/yriodx.txt": "76",
+      "/efwk/sbsc/jajs/uwppij.txt": "286",
+      "/efwk/mqnl/mqnl/khhnpj.txt": "730",
+      "/sbsc/rwda/oupxpf.txt": "689",
+      "/efwk/tblbol.txt": "938",
+      "/xfas/efwk/adaheb.txt": "638",
+      "/bffz/efwk/bffz/peghuk.txt": "343"
+    }
+  },
+  "ground_truth": "6167",
+  "difficulty": 3
+}

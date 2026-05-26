@@ -1,0 +1,41 @@
+{
+  "id": "file_ops_055",
+  "domain": "file_ops",
+  "prompt": "Search all files in /docs for the keyword 'epfsttn'. Return the filename containing it.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    },
+    {
+      "name": "find",
+      "desc": "Find files"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/docs/jnqfoi.txt": "Document 0 about buwrsyvq. No relevant matches here.",
+      "/docs/nwzuqm.txt": "Document 1 about sdiiuiko. No relevant matches here.",
+      "/docs/xkfttz.txt": "Document 2 about gnuospiq. No relevant matches here.",
+      "/docs/ugmdjp.txt": "Document 3 about qgqisswr. No relevant matches here.",
+      "/docs/tdypby.txt": "Document 4 about exlgffhs. No relevant matches here.",
+      "/docs/pmwrkv.txt": "Document 5 about hhotnmxu. No relevant matches here.",
+      "/docs/ewitxb.txt": "Document 6 about xrjtybfn. No relevant matches here.",
+      "/docs/yfqyye.txt": "Document 7 about muecqvpv. No relevant matches here.",
+      "/docs/pacesa.txt": "Document 8 about hecwrtpq. No relevant matches here.",
+      "/docs/lmhlls.txt": "Document 9 about vkwwpdfi. No relevant matches here.",
+      "/docs/felaia.txt": "Document 10 about fnrapoob. No relevant matches here.",
+      "/docs/inoxwr.txt": "Document 11 about epculyda. No relevant matches here.",
+      "/docs/iygevy.txt": "Document 12 about ypeudlyn. No relevant matches here.",
+      "/docs/crxvxh.txt": "Document 13 about doofplys. No relevant matches here.",
+      "/docs/gotynf.txt": "Document 14 about nkoeqgxh. No relevant matches here.",
+      "/docs/vplckh.txt": "Report section 15. Contains keyword epfsttn in paragraph."
+    }
+  },
+  "ground_truth": "vplckh.txt",
+  "difficulty": 2
+}

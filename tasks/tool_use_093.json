@@ -1,0 +1,27 @@
+{
+  "id": "tool_use_093",
+  "domain": "tool_use",
+  "prompt": "Check user 7118's balance using account API. Can they afford a purchase of $2313? Return 'yes' or 'no'.",
+  "tools": [
+    {
+      "name": "account",
+      "desc": "Get user account info"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "account": {
+        "responses": {
+          "{\"user_id\": 7118}": {
+            "balance": 8005
+          }
+        },
+        "default_response": {
+          "error": "user not found"
+        }
+      }
+    }
+  },
+  "ground_truth": "yes",
+  "difficulty": 2
+}

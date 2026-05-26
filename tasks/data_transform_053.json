@@ -1,0 +1,184 @@
+{
+  "id": "data_transform_053",
+  "domain": "data_transform",
+  "prompt": "Find the department with the most employees. Return only the department name.",
+  "tools": [
+    {
+      "name": "query",
+      "desc": "Query table with where/select/agg/group_by"
+    }
+  ],
+  "environment": {
+    "tables": {
+      "employees": [
+        {
+          "name": "kxnzmebp",
+          "dept": "sales",
+          "salary": 106930
+        },
+        {
+          "name": "rortiqat",
+          "dept": "sales",
+          "salary": 146499
+        },
+        {
+          "name": "gacqutho",
+          "dept": "marketing",
+          "salary": 143346
+        },
+        {
+          "name": "axsnwtxm",
+          "dept": "hr",
+          "salary": 191037
+        },
+        {
+          "name": "tbatjxmu",
+          "dept": "sales",
+          "salary": 132173
+        },
+        {
+          "name": "kwtrkltx",
+          "dept": "engineering",
+          "salary": 45297
+        },
+        {
+          "name": "opjfstmg",
+          "dept": "sales",
+          "salary": 154926
+        },
+        {
+          "name": "sevlabfh",
+          "dept": "sales",
+          "salary": 123058
+        },
+        {
+          "name": "tdlugjwy",
+          "dept": "marketing",
+          "salary": 184487
+        },
+        {
+          "name": "ntzhmqca",
+          "dept": "hr",
+          "salary": 75258
+        },
+        {
+          "name": "hvletjnv",
+          "dept": "marketing",
+          "salary": 175725
+        },
+        {
+          "name": "raecowcd",
+          "dept": "engineering",
+          "salary": 139345
+        },
+        {
+          "name": "ppckqwiv",
+          "dept": "marketing",
+          "salary": 116948
+        },
+        {
+          "name": "lzxxifaj",
+          "dept": "marketing",
+          "salary": 88756
+        },
+        {
+          "name": "kzvrwcli",
+          "dept": "hr",
+          "salary": 77002
+        },
+        {
+          "name": "qcqauqxh",
+          "dept": "marketing",
+          "salary": 62652
+        },
+        {
+          "name": "wtqeitxg",
+          "dept": "marketing",
+          "salary": 144479
+        },
+        {
+          "name": "pgadwlmm",
+          "dept": "marketing",
+          "salary": 179257
+        },
+        {
+          "name": "ksbmuagx",
+          "dept": "sales",
+          "salary": 172479
+        },
+        {
+          "name": "kpgiidyp",
+          "dept": "hr",
+          "salary": 63367
+        },
+        {
+          "name": "gwemhuuy",
+          "dept": "hr",
+          "salary": 141319
+        },
+        {
+          "name": "kieusasp",
+          "dept": "marketing",
+          "salary": 83587
+        },
+        {
+          "name": "mzvpvtfo",
+          "dept": "engineering",
+          "salary": 103882
+        },
+        {
+          "name": "dvdzcgwl",
+          "dept": "engineering",
+          "salary": 138504
+        },
+        {
+          "name": "dmttwfhk",
+          "dept": "engineering",
+          "salary": 47365
+        },
+        {
+          "name": "oheoycxk",
+          "dept": "marketing",
+          "salary": 155346
+        },
+        {
+          "name": "ynnzfuvb",
+          "dept": "hr",
+          "salary": 156373
+        },
+        {
+          "name": "azszbepj",
+          "dept": "sales",
+          "salary": 195308
+        },
+        {
+          "name": "dwxbapvr",
+          "dept": "marketing",
+          "salary": 87532
+        },
+        {
+          "name": "uybewlep",
+          "dept": "marketing",
+          "salary": 174157
+        },
+        {
+          "name": "ecuhbhsm",
+          "dept": "marketing",
+          "salary": 131437
+        },
+        {
+          "name": "hftqmfnl",
+          "dept": "sales",
+          "salary": 177885
+        },
+        {
+          "name": "tqlejkrm",
+          "dept": "hr",
+          "salary": 117969
+        }
+      ]
+    }
+  },
+  "ground_truth": "marketing",
+  "difficulty": 3
+}

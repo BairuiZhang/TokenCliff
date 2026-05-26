@@ -1,0 +1,41 @@
+{
+  "id": "file_ops_053",
+  "domain": "file_ops",
+  "prompt": "Search all files in /docs for the keyword 'libuzk'. Return the filename containing it.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    },
+    {
+      "name": "find",
+      "desc": "Find files"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/docs/vwtiqo.txt": "Document 0 about natgxwjk. No relevant matches here.",
+      "/docs/bklafm.txt": "Document 1 about bcckzhaz. No relevant matches here.",
+      "/docs/qlgyla.txt": "Document 2 about tkrsikcc. No relevant matches here.",
+      "/docs/etktyu.txt": "Document 3 about dhlefdbd. No relevant matches here.",
+      "/docs/coxqlv.txt": "Document 4 about dtrfowii. No relevant matches here.",
+      "/docs/ncmkwq.txt": "Document 5 about olfdrmhg. No relevant matches here.",
+      "/docs/soeyys.txt": "Document 6 about uefrhaiq. No relevant matches here.",
+      "/docs/rkrrup.txt": "Document 7 about tbevfuyx. No relevant matches here.",
+      "/docs/vvwjly.txt": "Document 8 about txrfmigm. No relevant matches here.",
+      "/docs/amtfch.txt": "Document 9 about nsisuqsd. No relevant matches here.",
+      "/docs/zvybnc.txt": "Report section 10. Contains keyword libuzk in paragraph.",
+      "/docs/bkatpb.txt": "Document 11 about rfwmazjt. No relevant matches here.",
+      "/docs/yamxrv.txt": "Document 12 about ztlxkfvd. No relevant matches here.",
+      "/docs/wfhgbg.txt": "Document 13 about wxxtlors. No relevant matches here.",
+      "/docs/ytacmu.txt": "Document 14 about rlzbflsu. No relevant matches here.",
+      "/docs/nhdjyh.txt": "Document 15 about ahrnjdwr. No relevant matches here."
+    }
+  },
+  "ground_truth": "zvybnc.txt",
+  "difficulty": 2
+}

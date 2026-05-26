@@ -1,0 +1,41 @@
+{
+  "id": "tool_use_019",
+  "domain": "tool_use",
+  "prompt": "Get the temperature in Berlin using weather API, then get its population using city_info API. Return temperature divided by population (in millions), rounded to 2 decimal places.",
+  "tools": [
+    {
+      "name": "weather",
+      "desc": "Get temperature"
+    },
+    {
+      "name": "city_info",
+      "desc": "Get city info"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "weather": {
+        "responses": {
+          "{\"city\": \"Berlin\"}": {
+            "temp": 18
+          }
+        },
+        "default_response": {
+          "error": "not found"
+        }
+      },
+      "city_info": {
+        "responses": {
+          "{\"city\": \"Berlin\"}": {
+            "population": 17522719
+          }
+        },
+        "default_response": {
+          "error": "unknown"
+        }
+      }
+    }
+  },
+  "ground_truth": "1.03",
+  "difficulty": 2
+}

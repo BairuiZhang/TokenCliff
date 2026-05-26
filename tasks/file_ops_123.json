@@ -1,0 +1,32 @@
+{
+  "id": "file_ops_123",
+  "domain": "file_ops",
+  "prompt": "Navigate the directory tree to find 'target.txt'. Return its content.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/usfw/ggin/ivuc/target.txt": "7112",
+      "/blze/ivuc/ggin/ksqygb.txt": "878",
+      "/usfw/usfw/snagzh.txt": "110",
+      "/gfnl/nuxusl.txt": "516",
+      "/usfw/usfw/ggin/gxandb.txt": "178",
+      "/usfw/ivuc/ggin/fteozq.txt": "971",
+      "/usfw/pfhb/usfw/strbjb.txt": "936",
+      "/aadm/oyuagp.txt": "578",
+      "/ggin/caenok.txt": "969",
+      "/ggin/ifyskl.txt": "118",
+      "/ivuc/usfw/zbhjoc.txt": "39"
+    }
+  },
+  "ground_truth": "7112",
+  "difficulty": 3
+}

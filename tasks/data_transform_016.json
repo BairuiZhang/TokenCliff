@@ -1,0 +1,247 @@
+{
+  "id": "data_transform_016",
+  "domain": "data_transform",
+  "prompt": "How many employees are in the 'legal' department? Return just the number.",
+  "tools": [
+    {
+      "name": "query",
+      "desc": "Query table with where/select/agg/group_by"
+    }
+  ],
+  "environment": {
+    "tables": {
+      "employees": [
+        {
+          "name": "mayascvo",
+          "dept": "finance",
+          "salary": 52790,
+          "city": "London"
+        },
+        {
+          "name": "lyfsfyge",
+          "dept": "sales",
+          "salary": 104274,
+          "city": "NYC"
+        },
+        {
+          "name": "mtdirkcx",
+          "dept": "marketing",
+          "salary": 89626,
+          "city": "Sydney"
+        },
+        {
+          "name": "lomsxhjz",
+          "dept": "sales",
+          "salary": 174615,
+          "city": "Paris"
+        },
+        {
+          "name": "qfeikwpl",
+          "dept": "legal",
+          "salary": 50539,
+          "city": "Tokyo"
+        },
+        {
+          "name": "wakanvrv",
+          "dept": "finance",
+          "salary": 161817,
+          "city": "London"
+        },
+        {
+          "name": "sldiiphx",
+          "dept": "ops",
+          "salary": 187014,
+          "city": "Paris"
+        },
+        {
+          "name": "enqkqvrq",
+          "dept": "ops",
+          "salary": 94684,
+          "city": "Berlin"
+        },
+        {
+          "name": "uymamocl",
+          "dept": "engineering",
+          "salary": 173215,
+          "city": "Sydney"
+        },
+        {
+          "name": "ctaapoxg",
+          "dept": "engineering",
+          "salary": 181799,
+          "city": "NYC"
+        },
+        {
+          "name": "poliqcah",
+          "dept": "finance",
+          "salary": 142785,
+          "city": "Berlin"
+        },
+        {
+          "name": "vmyeiuor",
+          "dept": "sales",
+          "salary": 133369,
+          "city": "London"
+        },
+        {
+          "name": "svlsdebs",
+          "dept": "finance",
+          "salary": 63371,
+          "city": "Tokyo"
+        },
+        {
+          "name": "gkmmweuk",
+          "dept": "hr",
+          "salary": 156925,
+          "city": "Sydney"
+        },
+        {
+          "name": "bvlxcekl",
+          "dept": "engineering",
+          "salary": 101735,
+          "city": "Berlin"
+        },
+        {
+          "name": "lvfpsapu",
+          "dept": "marketing",
+          "salary": 71445,
+          "city": "Paris"
+        },
+        {
+          "name": "kegsigbs",
+          "dept": "finance",
+          "salary": 67912,
+          "city": "London"
+        },
+        {
+          "name": "rmkshpac",
+          "dept": "finance",
+          "salary": 182504,
+          "city": "Paris"
+        },
+        {
+          "name": "ohddjdcl",
+          "dept": "hr",
+          "salary": 105969,
+          "city": "Tokyo"
+        },
+        {
+          "name": "dwzxkyca",
+          "dept": "legal",
+          "salary": 52676,
+          "city": "Sydney"
+        },
+        {
+          "name": "galrrokp",
+          "dept": "sales",
+          "salary": 81894,
+          "city": "Sydney"
+        },
+        {
+          "name": "omaanivb",
+          "dept": "legal",
+          "salary": 93323,
+          "city": "Paris"
+        },
+        {
+          "name": "agpmlbfl",
+          "dept": "sales",
+          "salary": 54518,
+          "city": "Tokyo"
+        },
+        {
+          "name": "izlhplme",
+          "dept": "ops",
+          "salary": 156508,
+          "city": "NYC"
+        },
+        {
+          "name": "vddrtxir",
+          "dept": "finance",
+          "salary": 110685,
+          "city": "London"
+        },
+        {
+          "name": "qvgrsdvb",
+          "dept": "finance",
+          "salary": 175610,
+          "city": "NYC"
+        },
+        {
+          "name": "dqbfpida",
+          "dept": "sales",
+          "salary": 127050,
+          "city": "NYC"
+        },
+        {
+          "name": "qbrttazt",
+          "dept": "engineering",
+          "salary": 110405,
+          "city": "Tokyo"
+        },
+        {
+          "name": "khzgbnwb",
+          "dept": "finance",
+          "salary": 87988,
+          "city": "Sydney"
+        },
+        {
+          "name": "sbwoueny",
+          "dept": "hr",
+          "salary": 170261,
+          "city": "Sydney"
+        },
+        {
+          "name": "wjjqlpuh",
+          "dept": "marketing",
+          "salary": 180958,
+          "city": "Berlin"
+        },
+        {
+          "name": "tmzxybhu",
+          "dept": "hr",
+          "salary": 184260,
+          "city": "London"
+        },
+        {
+          "name": "hvkbvnmo",
+          "dept": "sales",
+          "salary": 99617,
+          "city": "Berlin"
+        },
+        {
+          "name": "xyhyikrc",
+          "dept": "engineering",
+          "salary": 91966,
+          "city": "Paris"
+        },
+        {
+          "name": "svtexzep",
+          "dept": "ops",
+          "salary": 49873,
+          "city": "London"
+        },
+        {
+          "name": "xatdtlkm",
+          "dept": "finance",
+          "salary": 59210,
+          "city": "Tokyo"
+        },
+        {
+          "name": "cupaftec",
+          "dept": "sales",
+          "salary": 125991,
+          "city": "Sydney"
+        },
+        {
+          "name": "ydwcchqb",
+          "dept": "legal",
+          "salary": 51356,
+          "city": "Paris"
+        }
+      ]
+    }
+  },
+  "ground_truth": "4",
+  "difficulty": 1
+}

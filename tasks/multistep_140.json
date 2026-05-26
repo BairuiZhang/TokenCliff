@@ -1,0 +1,12 @@
+{
+  "id": "multistep_140",
+  "domain": "multistep",
+  "prompt": "Start with vwxm = 77. Then: subtract item 'hmpn' (51); add item 'pkvx' (36); multiply by item 'wbnh' (46); subtract item 'xwwb' (33); multiply by item 'ozqv' (68); add item 'welt' (86). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "191778",
+  "difficulty": 5
+}

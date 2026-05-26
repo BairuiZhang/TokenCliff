@@ -1,0 +1,41 @@
+{
+  "id": "tool_use_109",
+  "domain": "tool_use",
+  "prompt": "Use calculator API to multiply 45 and 6, then apply a 27% discount. Return the final value rounded to 2 decimals.",
+  "tools": [
+    {
+      "name": "calculator",
+      "desc": "Perform arithmetic"
+    },
+    {
+      "name": "discount",
+      "desc": "Apply discount"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "calculator": {
+        "responses": {
+          "{\"a\": 45, \"b\": 6, \"op\": \"multiply\"}": {
+            "result": 270
+          }
+        },
+        "default_response": {
+          "error": "invalid"
+        }
+      },
+      "discount": {
+        "responses": {
+          "{\"amount\": 270, \"percent\": 27}": {
+            "final": 197.1
+          }
+        },
+        "default_response": {
+          "error": "invalid"
+        }
+      }
+    }
+  },
+  "ground_truth": "197.1",
+  "difficulty": 3
+}

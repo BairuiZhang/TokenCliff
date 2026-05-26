@@ -1,0 +1,39 @@
+{
+  "id": "file_ops_048",
+  "domain": "file_ops",
+  "prompt": "Search all files in /docs for the keyword 'luzfb'. Return the filename containing it.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    },
+    {
+      "name": "find",
+      "desc": "Find files"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/docs/nzgpsn.txt": "Document 0 about guwgtwdz. No relevant matches here.",
+      "/docs/svynov.txt": "Document 1 about cuzfrumu. No relevant matches here.",
+      "/docs/nsbdqb.txt": "Document 2 about ptzocmko. No relevant matches here.",
+      "/docs/jujvbv.txt": "Document 3 about yqnxfdgn. No relevant matches here.",
+      "/docs/pzeaqo.txt": "Document 4 about diylsfcr. No relevant matches here.",
+      "/docs/remnjr.txt": "Document 5 about cwkuinmj. No relevant matches here.",
+      "/docs/loycci.txt": "Document 6 about wztzggqz. No relevant matches here.",
+      "/docs/eeysdl.txt": "Report section 7. Contains keyword luzfb in paragraph.",
+      "/docs/jpljrc.txt": "Document 8 about ojvvwfno. No relevant matches here.",
+      "/docs/fgyqvg.txt": "Document 9 about kvmquruy. No relevant matches here.",
+      "/docs/shuifb.txt": "Document 10 about njhudepc. No relevant matches here.",
+      "/docs/mvehon.txt": "Document 11 about nifykyta. No relevant matches here.",
+      "/docs/pstpci.txt": "Document 12 about jrtmpyzd. No relevant matches here.",
+      "/docs/hndtfy.txt": "Document 13 about yvbozxvh. No relevant matches here."
+    }
+  },
+  "ground_truth": "eeysdl.txt",
+  "difficulty": 2
+}

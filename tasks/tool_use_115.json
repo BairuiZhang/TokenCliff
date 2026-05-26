@@ -1,0 +1,41 @@
+{
+  "id": "tool_use_115",
+  "domain": "tool_use",
+  "prompt": "Use calculator API to add 37 and 11, then apply a 8% discount. Return the final value rounded to 2 decimals.",
+  "tools": [
+    {
+      "name": "calculator",
+      "desc": "Perform arithmetic"
+    },
+    {
+      "name": "discount",
+      "desc": "Apply discount"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "calculator": {
+        "responses": {
+          "{\"a\": 37, \"b\": 11, \"op\": \"add\"}": {
+            "result": 48
+          }
+        },
+        "default_response": {
+          "error": "invalid"
+        }
+      },
+      "discount": {
+        "responses": {
+          "{\"amount\": 48, \"percent\": 8}": {
+            "final": 44.16
+          }
+        },
+        "default_response": {
+          "error": "invalid"
+        }
+      }
+    }
+  },
+  "ground_truth": "44.16",
+  "difficulty": 3
+}

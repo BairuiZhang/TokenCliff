@@ -1,0 +1,12 @@
+{
+  "id": "multistep_117",
+  "domain": "multistep",
+  "prompt": "Start with fonz = 68. Then: multiply by item 'pkmb' (22); add item 'hizv' (82); multiply by item 'xxir' (60); multiply by item 'znqq' (31). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "2935080",
+  "difficulty": 3
+}

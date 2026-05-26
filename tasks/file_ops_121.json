@@ -1,0 +1,36 @@
+{
+  "id": "file_ops_121",
+  "domain": "file_ops",
+  "prompt": "Navigate the directory tree to find 'target.txt'. Return its content.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/huwk/epsj/vfef/snjo/target.txt": "8515",
+      "/snjo/snjo/bajqcn.txt": "529",
+      "/yjch/snjo/kslkeb.txt": "202",
+      "/huwk/epsj/snjo/bpkcad.txt": "610",
+      "/huwk/jnay/jvbwqj.txt": "158",
+      "/epsj/yiaqkb.txt": "903",
+      "/huwk/emsxew.txt": "414",
+      "/huwk/amjm/vfef/laohiz.txt": "808",
+      "/zatj/xpxcbh.txt": "258",
+      "/vfef/snjo/vfef/cnepmn.txt": "676",
+      "/snjo/snjo/snjo/kaetuj.txt": "610",
+      "/huwk/jcrjkc.txt": "349",
+      "/snjo/emxbqq.txt": "794",
+      "/vfef/tuqb/huwk/ldcvra.txt": "787",
+      "/huwk/iscste.txt": "200"
+    }
+  },
+  "ground_truth": "8515",
+  "difficulty": 3
+}

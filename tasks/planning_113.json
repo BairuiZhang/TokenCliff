@@ -1,0 +1,12 @@
+{
+  "id": "planning_113",
+  "domain": "planning",
+  "prompt": "Deadline=12 hours. Jobs: [{\"name\": \"job_0\", \"duration\": 4, \"priority\": 10}, {\"name\": \"job_1\", \"duration\": 2, \"priority\": 6}, {\"name\": \"job_2\", \"duration\": 2, \"priority\": 9}, {\"name\": \"job_3\", \"duration\": 2, \"priority\": 9}]. Schedule by highest priority first. Return total priority of completed jobs.",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "34",
+  "difficulty": 3
+}

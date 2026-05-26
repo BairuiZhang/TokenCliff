@@ -1,0 +1,129 @@
+{
+  "id": "tool_use_040",
+  "domain": "tool_use",
+  "prompt": "Use the inventory API to list all items. Find the cheapest item that is in stock. Return its name.",
+  "tools": [
+    {
+      "name": "inventory",
+      "desc": "List items with price and stock"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "inventory": {
+        "responses": {
+          "": {
+            "items": [
+              {
+                "name": "fcqmy",
+                "price": 253,
+                "in_stock": true
+              },
+              {
+                "name": "hzhcx",
+                "price": 289,
+                "in_stock": true
+              },
+              {
+                "name": "selfl",
+                "price": 362,
+                "in_stock": true
+              },
+              {
+                "name": "iomkq",
+                "price": 343,
+                "in_stock": false
+              },
+              {
+                "name": "ayyan",
+                "price": 303,
+                "in_stock": false
+              },
+              {
+                "name": "mkurw",
+                "price": 472,
+                "in_stock": false
+              },
+              {
+                "name": "qfnei",
+                "price": 216,
+                "in_stock": true
+              },
+              {
+                "name": "dglwi",
+                "price": 476,
+                "in_stock": false
+              },
+              {
+                "name": "zmhkk",
+                "price": 345,
+                "in_stock": true
+              },
+              {
+                "name": "knosf",
+                "price": 245,
+                "in_stock": true
+              }
+            ]
+          }
+        },
+        "default_response": {
+          "items": [
+            {
+              "name": "fcqmy",
+              "price": 253,
+              "in_stock": true
+            },
+            {
+              "name": "hzhcx",
+              "price": 289,
+              "in_stock": true
+            },
+            {
+              "name": "selfl",
+              "price": 362,
+              "in_stock": true
+            },
+            {
+              "name": "iomkq",
+              "price": 343,
+              "in_stock": false
+            },
+            {
+              "name": "ayyan",
+              "price": 303,
+              "in_stock": false
+            },
+            {
+              "name": "mkurw",
+              "price": 472,
+              "in_stock": false
+            },
+            {
+              "name": "qfnei",
+              "price": 216,
+              "in_stock": true
+            },
+            {
+              "name": "dglwi",
+              "price": 476,
+              "in_stock": false
+            },
+            {
+              "name": "zmhkk",
+              "price": 345,
+              "in_stock": true
+            },
+            {
+              "name": "knosf",
+              "price": 245,
+              "in_stock": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ground_truth": "qfnei",
+  "difficulty": 2
+}

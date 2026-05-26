@@ -1,0 +1,12 @@
+{
+  "id": "multistep_113",
+  "domain": "multistep",
+  "prompt": "Start with zbff = 94. Then: subtract item 'pfhd' (59); multiply by item 'pinf' (68); multiply by item 'brdo' (26); subtract item 'kmbf' (36); multiply by item 'mgds' (70). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "4329080",
+  "difficulty": 4
+}

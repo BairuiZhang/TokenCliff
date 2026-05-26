@@ -1,0 +1,34 @@
+{
+  "id": "file_ops_049",
+  "domain": "file_ops",
+  "prompt": "Search all files in /docs for the keyword 'aqndn'. Return the filename containing it.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    },
+    {
+      "name": "find",
+      "desc": "Find files"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/docs/awlnlq.txt": "Document 0 about tceflpiy. No relevant matches here.",
+      "/docs/mlhpef.txt": "Document 1 about ipxlgged. No relevant matches here.",
+      "/docs/drngja.txt": "Document 2 about uuqsrfvj. No relevant matches here.",
+      "/docs/sipyga.txt": "Report section 3. Contains keyword aqndn in paragraph.",
+      "/docs/wfxoov.txt": "Document 4 about xhwqgtsq. No relevant matches here.",
+      "/docs/gzjcwu.txt": "Document 5 about vdmilhao. No relevant matches here.",
+      "/docs/zmrpgw.txt": "Document 6 about iojphqrk. No relevant matches here.",
+      "/docs/sklfkf.txt": "Document 7 about xzdwpnld. No relevant matches here.",
+      "/docs/ixgnmr.txt": "Document 8 about pkailpay. No relevant matches here."
+    }
+  },
+  "ground_truth": "sipyga.txt",
+  "difficulty": 2
+}

@@ -1,0 +1,33 @@
+{
+  "id": "file_ops_051",
+  "domain": "file_ops",
+  "prompt": "Search all files in /docs for the keyword 'rlljk'. Return the filename containing it.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    },
+    {
+      "name": "find",
+      "desc": "Find files"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/docs/lgfrpm.txt": "Document 0 about crmwnmbb. No relevant matches here.",
+      "/docs/xyfvsc.txt": "Report section 1. Contains keyword rlljk in paragraph.",
+      "/docs/zgyaom.txt": "Document 2 about hqlnqnrt. No relevant matches here.",
+      "/docs/owxvsk.txt": "Document 3 about qvhsvqcg. No relevant matches here.",
+      "/docs/gzuxbc.txt": "Document 4 about bjwzwcqw. No relevant matches here.",
+      "/docs/mvilfj.txt": "Document 5 about npvuppqt. No relevant matches here.",
+      "/docs/yrgsbc.txt": "Document 6 about xxxnftkr. No relevant matches here.",
+      "/docs/hilcnw.txt": "Document 7 about kadnaxfh. No relevant matches here."
+    }
+  },
+  "ground_truth": "xyfvsc.txt",
+  "difficulty": 2
+}

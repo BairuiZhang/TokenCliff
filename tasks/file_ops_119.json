@@ -1,0 +1,29 @@
+{
+  "id": "file_ops_119",
+  "domain": "file_ops",
+  "prompt": "Navigate the directory tree to find 'target.txt'. Return its content.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/jzjl/qngx/jtxf/tlku/target.txt": "1547",
+      "/jzjl/jtxf/jzjl/dllvrf.txt": "963",
+      "/tlku/bzefrz.txt": "664",
+      "/qngx/pbkmcv.txt": "990",
+      "/tlku/evzn/jtxf/eslrwu.txt": "768",
+      "/tlku/jtxf/qsdhup.txt": "667",
+      "/tlku/jzjl/wboaoo.txt": "96",
+      "/jtxf/tlku/tlku/ahfdug.txt": "412"
+    }
+  },
+  "ground_truth": "1547",
+  "difficulty": 3
+}

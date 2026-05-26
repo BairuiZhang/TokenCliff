@@ -1,0 +1,27 @@
+{
+  "id": "tool_use_084",
+  "domain": "tool_use",
+  "prompt": "Use exchange_rate API to get USD to GBP rate. Convert 3419 USD. Return result rounded to 2 decimals.",
+  "tools": [
+    {
+      "name": "exchange_rate",
+      "desc": "Get exchange rate"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "exchange_rate": {
+        "responses": {
+          "{\"from\": \"USD\", \"to\": \"GBP\"}": {
+            "rate": 0.7633
+          }
+        },
+        "default_response": {
+          "error": "pair not found"
+        }
+      }
+    }
+  },
+  "ground_truth": "2609.72",
+  "difficulty": 2
+}

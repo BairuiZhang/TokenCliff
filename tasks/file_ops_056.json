@@ -1,0 +1,37 @@
+{
+  "id": "file_ops_056",
+  "domain": "file_ops",
+  "prompt": "Search all files in /docs for the keyword 'qmea'. Return the filename containing it.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    },
+    {
+      "name": "find",
+      "desc": "Find files"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/docs/gjcdfj.txt": "Document 0 about kpobxuaf. No relevant matches here.",
+      "/docs/uuklna.txt": "Document 1 about cfdpddzc. No relevant matches here.",
+      "/docs/ptlyes.txt": "Document 2 about nnukbtlx. No relevant matches here.",
+      "/docs/aipgfn.txt": "Document 3 about iwzhbdvo. No relevant matches here.",
+      "/docs/oxaxzo.txt": "Document 4 about podxvnha. No relevant matches here.",
+      "/docs/xkaffq.txt": "Document 5 about wydnclyy. No relevant matches here.",
+      "/docs/wgirzs.txt": "Document 6 about ijkwpley. No relevant matches here.",
+      "/docs/driswr.txt": "Document 7 about oatsxjni. No relevant matches here.",
+      "/docs/yzdtll.txt": "Document 8 about qidqgwpg. No relevant matches here.",
+      "/docs/cgdqsq.txt": "Report section 9. Contains keyword qmea in paragraph.",
+      "/docs/cgvpwa.txt": "Document 10 about pvpytfgg. No relevant matches here.",
+      "/docs/qqoluo.txt": "Document 11 about rfhqqrjt. No relevant matches here."
+    }
+  },
+  "ground_truth": "cgdqsq.txt",
+  "difficulty": 2
+}

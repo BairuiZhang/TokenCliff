@@ -1,0 +1,41 @@
+{
+  "id": "tool_use_023",
+  "domain": "tool_use",
+  "prompt": "Get the temperature in NYC using weather API, then get its population using city_info API. Return temperature divided by population (in millions), rounded to 2 decimal places.",
+  "tools": [
+    {
+      "name": "weather",
+      "desc": "Get temperature"
+    },
+    {
+      "name": "city_info",
+      "desc": "Get city info"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "weather": {
+        "responses": {
+          "{\"city\": \"NYC\"}": {
+            "temp": 40
+          }
+        },
+        "default_response": {
+          "error": "not found"
+        }
+      },
+      "city_info": {
+        "responses": {
+          "{\"city\": \"NYC\"}": {
+            "population": 11023160
+          }
+        },
+        "default_response": {
+          "error": "unknown"
+        }
+      }
+    }
+  },
+  "ground_truth": "3.63",
+  "difficulty": 2
+}

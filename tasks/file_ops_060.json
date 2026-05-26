@@ -1,0 +1,35 @@
+{
+  "id": "file_ops_060",
+  "domain": "file_ops",
+  "prompt": "Search all files in /docs for the keyword 'mytzwnn'. Return the filename containing it.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    },
+    {
+      "name": "find",
+      "desc": "Find files"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/docs/ynyvkm.txt": "Document 0 about fqnceagy. No relevant matches here.",
+      "/docs/orhgrx.txt": "Document 1 about thbzghmw. No relevant matches here.",
+      "/docs/jimcau.txt": "Document 2 about mpejwous. No relevant matches here.",
+      "/docs/fhdiht.txt": "Document 3 about hzutwucq. No relevant matches here.",
+      "/docs/pgiuzj.txt": "Document 4 about xspwwenz. No relevant matches here.",
+      "/docs/syhnvz.txt": "Report section 5. Contains keyword mytzwnn in paragraph.",
+      "/docs/hutwez.txt": "Document 6 about onjhfugg. No relevant matches here.",
+      "/docs/ovjupi.txt": "Document 7 about qxhjwvce. No relevant matches here.",
+      "/docs/sqjtrw.txt": "Document 8 about oifenher. No relevant matches here.",
+      "/docs/hgbkhi.txt": "Document 9 about ldpjmwim. No relevant matches here."
+    }
+  },
+  "ground_truth": "syhnvz.txt",
+  "difficulty": 2
+}

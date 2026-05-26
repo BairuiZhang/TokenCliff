@@ -1,0 +1,45 @@
+{
+  "id": "file_ops_039",
+  "domain": "file_ops",
+  "prompt": "Search all files in /docs for the keyword 'okbtk'. Return the filename containing it.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    },
+    {
+      "name": "find",
+      "desc": "Find files"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/docs/zxlfto.txt": "Document 0 about ouhlooqq. No relevant matches here.",
+      "/docs/eqyxyg.txt": "Document 1 about bpuwgodu. No relevant matches here.",
+      "/docs/lsajua.txt": "Document 2 about dcklvwgw. No relevant matches here.",
+      "/docs/hwahra.txt": "Document 3 about zlbuzfpt. No relevant matches here.",
+      "/docs/bejwtw.txt": "Report section 4. Contains keyword okbtk in paragraph.",
+      "/docs/abrmga.txt": "Document 5 about gjoojdim. No relevant matches here.",
+      "/docs/escqnj.txt": "Document 6 about saigsgmh. No relevant matches here.",
+      "/docs/frqsdw.txt": "Document 7 about jheojpkt. No relevant matches here.",
+      "/docs/qriojg.txt": "Document 8 about ptbhwdbn. No relevant matches here.",
+      "/docs/fzhqjf.txt": "Document 9 about zwopjlev. No relevant matches here.",
+      "/docs/otxbim.txt": "Document 10 about lwwbqspi. No relevant matches here.",
+      "/docs/yfflps.txt": "Document 11 about mlxiqgox. No relevant matches here.",
+      "/docs/ltrkjy.txt": "Document 12 about ytnlqnvo. No relevant matches here.",
+      "/docs/lpmguq.txt": "Document 13 about hniztalf. No relevant matches here.",
+      "/docs/mymtnh.txt": "Document 14 about wnkyhsfh. No relevant matches here.",
+      "/docs/dtgfek.txt": "Document 15 about anikphgu. No relevant matches here.",
+      "/docs/eyuyrx.txt": "Document 16 about xeezzcxw. No relevant matches here.",
+      "/docs/vdifpd.txt": "Document 17 about olpfmmqd. No relevant matches here.",
+      "/docs/waimxz.txt": "Document 18 about bwjosdkl. No relevant matches here.",
+      "/docs/uarnja.txt": "Document 19 about ibfgxwqu. No relevant matches here."
+    }
+  },
+  "ground_truth": "bejwtw.txt",
+  "difficulty": 2
+}

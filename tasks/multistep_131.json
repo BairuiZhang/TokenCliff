@@ -1,0 +1,12 @@
+{
+  "id": "multistep_131",
+  "domain": "multistep",
+  "prompt": "Start with gmlh = 26. Then: subtract item 'uoce' (30); subtract item 'ffmu' (26); subtract item 'bvkp' (72); multiply by item 'hyup' (54). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "-5508",
+  "difficulty": 3
+}

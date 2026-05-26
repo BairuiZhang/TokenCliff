@@ -1,0 +1,12 @@
+{
+  "id": "multistep_129",
+  "domain": "multistep",
+  "prompt": "Start with slro = 13. Then: add item 'fpaa' (59); add item 'sxns' (66); multiply by item 'btpd' (36); add item 'qley' (84); subtract item 'emur' (77); subtract item 'koqa' (95). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "4880",
+  "difficulty": 5
+}

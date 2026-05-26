@@ -1,0 +1,41 @@
+{
+  "id": "tool_use_125",
+  "domain": "tool_use",
+  "prompt": "Use calculator API to add 29 and 14, then apply a 18% discount. Return the final value rounded to 2 decimals.",
+  "tools": [
+    {
+      "name": "calculator",
+      "desc": "Perform arithmetic"
+    },
+    {
+      "name": "discount",
+      "desc": "Apply discount"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "calculator": {
+        "responses": {
+          "{\"a\": 29, \"b\": 14, \"op\": \"add\"}": {
+            "result": 43
+          }
+        },
+        "default_response": {
+          "error": "invalid"
+        }
+      },
+      "discount": {
+        "responses": {
+          "{\"amount\": 43, \"percent\": 18}": {
+            "final": 35.26
+          }
+        },
+        "default_response": {
+          "error": "invalid"
+        }
+      }
+    }
+  },
+  "ground_truth": "35.26",
+  "difficulty": 3
+}

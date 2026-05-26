@@ -1,0 +1,12 @@
+{
+  "id": "multistep_151",
+  "domain": "multistep",
+  "prompt": "Start with xyin = 29. Then: subtract item 'xtof' (30); add item 'tnxp' (62); multiply by item 'zuft' (98); add item 'dtnf' (90); subtract item 'cqrj' (94); add item 'tcni' (39). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "6013",
+  "difficulty": 5
+}

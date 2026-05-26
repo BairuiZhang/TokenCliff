@@ -1,0 +1,41 @@
+{
+  "id": "tool_use_026",
+  "domain": "tool_use",
+  "prompt": "Get the temperature in Paris using weather API, then get its population using city_info API. Return temperature divided by population (in millions), rounded to 2 decimal places.",
+  "tools": [
+    {
+      "name": "weather",
+      "desc": "Get temperature"
+    },
+    {
+      "name": "city_info",
+      "desc": "Get city info"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "weather": {
+        "responses": {
+          "{\"city\": \"Paris\"}": {
+            "temp": -9
+          }
+        },
+        "default_response": {
+          "error": "not found"
+        }
+      },
+      "city_info": {
+        "responses": {
+          "{\"city\": \"Paris\"}": {
+            "population": 7844138
+          }
+        },
+        "default_response": {
+          "error": "unknown"
+        }
+      }
+    }
+  },
+  "ground_truth": "-1.15",
+  "difficulty": 2
+}

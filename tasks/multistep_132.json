@@ -1,0 +1,12 @@
+{
+  "id": "multistep_132",
+  "domain": "multistep",
+  "prompt": "Start with cqvt = 95. Then: subtract item 'kwwp' (74); subtract item 'gpmf' (78); multiply by item 'khze' (41); add item 'woxg' (75). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "-2262",
+  "difficulty": 3
+}

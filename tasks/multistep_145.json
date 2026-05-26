@@ -1,0 +1,12 @@
+{
+  "id": "multistep_145",
+  "domain": "multistep",
+  "prompt": "Start with lcuu = 87. Then: add item 'velg' (90); subtract item 'cowp' (70); add item 'ftva' (69); subtract item 'mlbu' (71); multiply by item 'qfpq' (16); subtract item 'hdml' (35). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "1645",
+  "difficulty": 5
+}

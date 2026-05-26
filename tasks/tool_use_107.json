@@ -1,0 +1,41 @@
+{
+  "id": "tool_use_107",
+  "domain": "tool_use",
+  "prompt": "Use calculator API to multiply 80 and 16, then apply a 12% discount. Return the final value rounded to 2 decimals.",
+  "tools": [
+    {
+      "name": "calculator",
+      "desc": "Perform arithmetic"
+    },
+    {
+      "name": "discount",
+      "desc": "Apply discount"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "calculator": {
+        "responses": {
+          "{\"a\": 80, \"b\": 16, \"op\": \"multiply\"}": {
+            "result": 1280
+          }
+        },
+        "default_response": {
+          "error": "invalid"
+        }
+      },
+      "discount": {
+        "responses": {
+          "{\"amount\": 1280, \"percent\": 12}": {
+            "final": 1126.4
+          }
+        },
+        "default_response": {
+          "error": "invalid"
+        }
+      }
+    }
+  },
+  "ground_truth": "1126.4",
+  "difficulty": 3
+}

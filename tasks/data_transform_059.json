@@ -1,0 +1,144 @@
+{
+  "id": "data_transform_059",
+  "domain": "data_transform",
+  "prompt": "Find the department with the most employees. Return only the department name.",
+  "tools": [
+    {
+      "name": "query",
+      "desc": "Query table with where/select/agg/group_by"
+    }
+  ],
+  "environment": {
+    "tables": {
+      "employees": [
+        {
+          "name": "glrfdffj",
+          "dept": "engineering",
+          "salary": 69328
+        },
+        {
+          "name": "loxjbcdm",
+          "dept": "marketing",
+          "salary": 144679
+        },
+        {
+          "name": "umqzpezs",
+          "dept": "engineering",
+          "salary": 51046
+        },
+        {
+          "name": "fxovqhvp",
+          "dept": "hr",
+          "salary": 172603
+        },
+        {
+          "name": "tuzcmtkq",
+          "dept": "marketing",
+          "salary": 130998
+        },
+        {
+          "name": "urpaulne",
+          "dept": "engineering",
+          "salary": 56915
+        },
+        {
+          "name": "zuuvxuok",
+          "dept": "marketing",
+          "salary": 146301
+        },
+        {
+          "name": "roxlgwjs",
+          "dept": "marketing",
+          "salary": 189943
+        },
+        {
+          "name": "rnqtbibw",
+          "dept": "marketing",
+          "salary": 140128
+        },
+        {
+          "name": "ewddflba",
+          "dept": "marketing",
+          "salary": 104212
+        },
+        {
+          "name": "osbotvpl",
+          "dept": "hr",
+          "salary": 51694
+        },
+        {
+          "name": "fknhlhhv",
+          "dept": "sales",
+          "salary": 74159
+        },
+        {
+          "name": "bnhrvblq",
+          "dept": "sales",
+          "salary": 125796
+        },
+        {
+          "name": "zrqqbvls",
+          "dept": "hr",
+          "salary": 133071
+        },
+        {
+          "name": "vgcywrzm",
+          "dept": "hr",
+          "salary": 89519
+        },
+        {
+          "name": "bhurmjch",
+          "dept": "marketing",
+          "salary": 188593
+        },
+        {
+          "name": "ggwhggzu",
+          "dept": "engineering",
+          "salary": 66582
+        },
+        {
+          "name": "blxzmsya",
+          "dept": "sales",
+          "salary": 104389
+        },
+        {
+          "name": "alguftff",
+          "dept": "marketing",
+          "salary": 85699
+        },
+        {
+          "name": "rnuwlxdv",
+          "dept": "hr",
+          "salary": 67308
+        },
+        {
+          "name": "bjnaxzqs",
+          "dept": "sales",
+          "salary": 68257
+        },
+        {
+          "name": "uqmxzkof",
+          "dept": "marketing",
+          "salary": 152290
+        },
+        {
+          "name": "wbtrkivh",
+          "dept": "engineering",
+          "salary": 163005
+        },
+        {
+          "name": "gzyikgnx",
+          "dept": "hr",
+          "salary": 96489
+        },
+        {
+          "name": "dycntpje",
+          "dept": "sales",
+          "salary": 99735
+        }
+      ]
+    }
+  },
+  "ground_truth": "marketing",
+  "difficulty": 3
+}

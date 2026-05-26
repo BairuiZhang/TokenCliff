@@ -1,0 +1,12 @@
+{
+  "id": "multistep_134",
+  "domain": "multistep",
+  "prompt": "Start with snan = 29. Then: add item 'qdas' (65); add item 'bxlq' (99); subtract item 'drka' (21); subtract item 'otnq' (22); subtract item 'apww' (36); subtract item 'bcwi' (37). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "77",
+  "difficulty": 5
+}

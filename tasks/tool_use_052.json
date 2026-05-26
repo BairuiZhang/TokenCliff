@@ -1,0 +1,149 @@
+{
+  "id": "tool_use_052",
+  "domain": "tool_use",
+  "prompt": "Use the inventory API to list all items. Find the cheapest item that is in stock. Return its name.",
+  "tools": [
+    {
+      "name": "inventory",
+      "desc": "List items with price and stock"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "inventory": {
+        "responses": {
+          "": {
+            "items": [
+              {
+                "name": "udvks",
+                "price": 390,
+                "in_stock": true
+              },
+              {
+                "name": "bgbqk",
+                "price": 267,
+                "in_stock": true
+              },
+              {
+                "name": "fmxra",
+                "price": 412,
+                "in_stock": false
+              },
+              {
+                "name": "pwefn",
+                "price": 416,
+                "in_stock": true
+              },
+              {
+                "name": "wpytd",
+                "price": 315,
+                "in_stock": false
+              },
+              {
+                "name": "axjco",
+                "price": 263,
+                "in_stock": false
+              },
+              {
+                "name": "jjiag",
+                "price": 453,
+                "in_stock": true
+              },
+              {
+                "name": "jvcar",
+                "price": 425,
+                "in_stock": false
+              },
+              {
+                "name": "boxvj",
+                "price": 343,
+                "in_stock": true
+              },
+              {
+                "name": "ceuhc",
+                "price": 86,
+                "in_stock": false
+              },
+              {
+                "name": "qautg",
+                "price": 168,
+                "in_stock": true
+              },
+              {
+                "name": "kqobe",
+                "price": 70,
+                "in_stock": true
+              }
+            ]
+          }
+        },
+        "default_response": {
+          "items": [
+            {
+              "name": "udvks",
+              "price": 390,
+              "in_stock": true
+            },
+            {
+              "name": "bgbqk",
+              "price": 267,
+              "in_stock": true
+            },
+            {
+              "name": "fmxra",
+              "price": 412,
+              "in_stock": false
+            },
+            {
+              "name": "pwefn",
+              "price": 416,
+              "in_stock": true
+            },
+            {
+              "name": "wpytd",
+              "price": 315,
+              "in_stock": false
+            },
+            {
+              "name": "axjco",
+              "price": 263,
+              "in_stock": false
+            },
+            {
+              "name": "jjiag",
+              "price": 453,
+              "in_stock": true
+            },
+            {
+              "name": "jvcar",
+              "price": 425,
+              "in_stock": false
+            },
+            {
+              "name": "boxvj",
+              "price": 343,
+              "in_stock": true
+            },
+            {
+              "name": "ceuhc",
+              "price": 86,
+              "in_stock": false
+            },
+            {
+              "name": "qautg",
+              "price": 168,
+              "in_stock": true
+            },
+            {
+              "name": "kqobe",
+              "price": 70,
+              "in_stock": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ground_truth": "kqobe",
+  "difficulty": 2
+}

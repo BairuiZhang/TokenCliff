@@ -1,0 +1,12 @@
+{
+  "id": "multistep_104",
+  "domain": "multistep",
+  "prompt": "Start with vtkn = 19. Then: add item 'payi' (26); add item 'sdzb' (48); add item 'savo' (93); subtract item 'qpwv' (54); multiply by item 'rebk' (78); multiply by item 'axzw' (93). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "957528",
+  "difficulty": 5
+}

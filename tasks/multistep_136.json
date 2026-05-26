@@ -1,0 +1,12 @@
+{
+  "id": "multistep_136",
+  "domain": "multistep",
+  "prompt": "Start with bqtw = 86. Then: subtract item 'lsts' (52); multiply by item 'knjq' (56); add item 'ahxm' (14); add item 'blnd' (28); subtract item 'jbww' (77). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "1869",
+  "difficulty": 4
+}

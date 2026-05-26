@@ -1,0 +1,45 @@
+{
+  "id": "file_ops_057",
+  "domain": "file_ops",
+  "prompt": "Search all files in /docs for the keyword 'iyqy'. Return the filename containing it.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    },
+    {
+      "name": "find",
+      "desc": "Find files"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/docs/xqkovu.txt": "Document 0 about mulachca. No relevant matches here.",
+      "/docs/xmikjz.txt": "Document 1 about jjtqscnh. No relevant matches here.",
+      "/docs/dqsiwj.txt": "Document 2 about lcxowluw. No relevant matches here.",
+      "/docs/wknvoz.txt": "Document 3 about nuotvznr. No relevant matches here.",
+      "/docs/sldwwd.txt": "Document 4 about srsyzgkz. No relevant matches here.",
+      "/docs/oqsukf.txt": "Document 5 about vadwyuyj. No relevant matches here.",
+      "/docs/fsmtml.txt": "Document 6 about rahlvlsz. No relevant matches here.",
+      "/docs/gxelsy.txt": "Report section 7. Contains keyword iyqy in paragraph.",
+      "/docs/qxjfwd.txt": "Document 8 about xclovpfd. No relevant matches here.",
+      "/docs/bogtja.txt": "Document 9 about roywryom. No relevant matches here.",
+      "/docs/dpshke.txt": "Document 10 about dupnkduj. No relevant matches here.",
+      "/docs/ykbvqy.txt": "Document 11 about yamrlxmm. No relevant matches here.",
+      "/docs/qepfql.txt": "Document 12 about gsoaqeqy. No relevant matches here.",
+      "/docs/bwqmra.txt": "Document 13 about qfwxdreh. No relevant matches here.",
+      "/docs/nwjeem.txt": "Document 14 about zvhenlnn. No relevant matches here.",
+      "/docs/hcfacl.txt": "Document 15 about iovweawj. No relevant matches here.",
+      "/docs/rufqht.txt": "Document 16 about toorducl. No relevant matches here.",
+      "/docs/cbjuqc.txt": "Document 17 about ipbyegaw. No relevant matches here.",
+      "/docs/xgzbgi.txt": "Document 18 about cozwilqs. No relevant matches here.",
+      "/docs/akpplr.txt": "Document 19 about djnzghvb. No relevant matches here."
+    }
+  },
+  "ground_truth": "gxelsy.txt",
+  "difficulty": 2
+}

@@ -1,0 +1,209 @@
+{
+  "id": "data_transform_040",
+  "domain": "data_transform",
+  "prompt": "Find the department with the highest average salary. Return only the department name.",
+  "tools": [
+    {
+      "name": "query",
+      "desc": "Query table with where/select/agg/group_by"
+    }
+  ],
+  "environment": {
+    "tables": {
+      "employees": [
+        {
+          "name": "yotzverq",
+          "dept": "hr",
+          "salary": 107376
+        },
+        {
+          "name": "fkhijfyt",
+          "dept": "engineering",
+          "salary": 196466
+        },
+        {
+          "name": "kuueempz",
+          "dept": "hr",
+          "salary": 174918
+        },
+        {
+          "name": "rdddklnh",
+          "dept": "engineering",
+          "salary": 44497
+        },
+        {
+          "name": "vwhkjtnx",
+          "dept": "marketing",
+          "salary": 64631
+        },
+        {
+          "name": "lanbydyo",
+          "dept": "sales",
+          "salary": 170636
+        },
+        {
+          "name": "kegirqoe",
+          "dept": "sales",
+          "salary": 52024
+        },
+        {
+          "name": "ipriavzt",
+          "dept": "hr",
+          "salary": 55421
+        },
+        {
+          "name": "gacfuzpx",
+          "dept": "engineering",
+          "salary": 153171
+        },
+        {
+          "name": "uulhoenv",
+          "dept": "marketing",
+          "salary": 75626
+        },
+        {
+          "name": "qopcudfe",
+          "dept": "sales",
+          "salary": 159339
+        },
+        {
+          "name": "ltdhrfcr",
+          "dept": "hr",
+          "salary": 178013
+        },
+        {
+          "name": "jcmgcqxd",
+          "dept": "hr",
+          "salary": 87606
+        },
+        {
+          "name": "frsmghrr",
+          "dept": "sales",
+          "salary": 127271
+        },
+        {
+          "name": "msyehcge",
+          "dept": "marketing",
+          "salary": 140804
+        },
+        {
+          "name": "cdzeerwz",
+          "dept": "sales",
+          "salary": 49979
+        },
+        {
+          "name": "ztcbupma",
+          "dept": "sales",
+          "salary": 151638
+        },
+        {
+          "name": "zluyucdj",
+          "dept": "sales",
+          "salary": 173440
+        },
+        {
+          "name": "ktcotfqv",
+          "dept": "hr",
+          "salary": 154714
+        },
+        {
+          "name": "xkwjwhwg",
+          "dept": "hr",
+          "salary": 100288
+        },
+        {
+          "name": "tlcrqwkv",
+          "dept": "sales",
+          "salary": 147371
+        },
+        {
+          "name": "ozqbkiog",
+          "dept": "hr",
+          "salary": 128558
+        },
+        {
+          "name": "boffdwnh",
+          "dept": "sales",
+          "salary": 130046
+        },
+        {
+          "name": "jexxyusf",
+          "dept": "engineering",
+          "salary": 63236
+        },
+        {
+          "name": "jwhffnrb",
+          "dept": "engineering",
+          "salary": 71889
+        },
+        {
+          "name": "aeomymjp",
+          "dept": "marketing",
+          "salary": 119169
+        },
+        {
+          "name": "xokfpeaf",
+          "dept": "sales",
+          "salary": 186418
+        },
+        {
+          "name": "kgiqkqel",
+          "dept": "hr",
+          "salary": 84166
+        },
+        {
+          "name": "rugmjpnl",
+          "dept": "engineering",
+          "salary": 121364
+        },
+        {
+          "name": "zssvwvjc",
+          "dept": "marketing",
+          "salary": 156812
+        },
+        {
+          "name": "ijwiboik",
+          "dept": "sales",
+          "salary": 106818
+        },
+        {
+          "name": "hfzdywkc",
+          "dept": "sales",
+          "salary": 89267
+        },
+        {
+          "name": "qhjxqfxu",
+          "dept": "engineering",
+          "salary": 183710
+        },
+        {
+          "name": "thqsjtzf",
+          "dept": "marketing",
+          "salary": 114366
+        },
+        {
+          "name": "gmcfshuj",
+          "dept": "hr",
+          "salary": 51711
+        },
+        {
+          "name": "kowinnwj",
+          "dept": "hr",
+          "salary": 107280
+        },
+        {
+          "name": "snxgpvei",
+          "dept": "hr",
+          "salary": 152650
+        },
+        {
+          "name": "psdzgxnl",
+          "dept": "marketing",
+          "salary": 162578
+        }
+      ]
+    }
+  },
+  "ground_truth": "sales",
+  "difficulty": 3
+}

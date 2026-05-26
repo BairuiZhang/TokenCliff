@@ -1,0 +1,139 @@
+{
+  "id": "tool_use_045",
+  "domain": "tool_use",
+  "prompt": "Use the inventory API to list all items. Find the cheapest item regardless of stock. Return its name.",
+  "tools": [
+    {
+      "name": "inventory",
+      "desc": "List items with price and stock"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "inventory": {
+        "responses": {
+          "": {
+            "items": [
+              {
+                "name": "fsgku",
+                "price": 224,
+                "in_stock": true
+              },
+              {
+                "name": "ttzis",
+                "price": 180,
+                "in_stock": false
+              },
+              {
+                "name": "wkddh",
+                "price": 433,
+                "in_stock": false
+              },
+              {
+                "name": "quque",
+                "price": 381,
+                "in_stock": true
+              },
+              {
+                "name": "ltflt",
+                "price": 241,
+                "in_stock": false
+              },
+              {
+                "name": "fhtip",
+                "price": 300,
+                "in_stock": false
+              },
+              {
+                "name": "rkhzh",
+                "price": 478,
+                "in_stock": false
+              },
+              {
+                "name": "ihjce",
+                "price": 65,
+                "in_stock": false
+              },
+              {
+                "name": "jwdsl",
+                "price": 93,
+                "in_stock": false
+              },
+              {
+                "name": "quuhy",
+                "price": 159,
+                "in_stock": false
+              },
+              {
+                "name": "xmfat",
+                "price": 379,
+                "in_stock": true
+              }
+            ]
+          }
+        },
+        "default_response": {
+          "items": [
+            {
+              "name": "fsgku",
+              "price": 224,
+              "in_stock": true
+            },
+            {
+              "name": "ttzis",
+              "price": 180,
+              "in_stock": false
+            },
+            {
+              "name": "wkddh",
+              "price": 433,
+              "in_stock": false
+            },
+            {
+              "name": "quque",
+              "price": 381,
+              "in_stock": true
+            },
+            {
+              "name": "ltflt",
+              "price": 241,
+              "in_stock": false
+            },
+            {
+              "name": "fhtip",
+              "price": 300,
+              "in_stock": false
+            },
+            {
+              "name": "rkhzh",
+              "price": 478,
+              "in_stock": false
+            },
+            {
+              "name": "ihjce",
+              "price": 65,
+              "in_stock": false
+            },
+            {
+              "name": "jwdsl",
+              "price": 93,
+              "in_stock": false
+            },
+            {
+              "name": "quuhy",
+              "price": 159,
+              "in_stock": false
+            },
+            {
+              "name": "xmfat",
+              "price": 379,
+              "in_stock": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ground_truth": "ihjce",
+  "difficulty": 2
+}

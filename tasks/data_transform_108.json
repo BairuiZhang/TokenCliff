@@ -1,0 +1,119 @@
+{
+  "id": "data_transform_108",
+  "domain": "data_transform",
+  "prompt": "Find the top 5 items by score. Return the sum of their scores.",
+  "tools": [
+    {
+      "name": "query",
+      "desc": "Query table"
+    }
+  ],
+  "environment": {
+    "tables": {
+      "items": [
+        {
+          "name": "okmyqf",
+          "score": 77,
+          "category": "Y"
+        },
+        {
+          "name": "xldiuh",
+          "score": 6,
+          "category": "X"
+        },
+        {
+          "name": "nyqofj",
+          "score": 64,
+          "category": "Y"
+        },
+        {
+          "name": "misfwd",
+          "score": 84,
+          "category": "X"
+        },
+        {
+          "name": "wwdjcw",
+          "score": 50,
+          "category": "Z"
+        },
+        {
+          "name": "rofvqk",
+          "score": 13,
+          "category": "Z"
+        },
+        {
+          "name": "lpqiqx",
+          "score": 26,
+          "category": "Y"
+        },
+        {
+          "name": "mphvga",
+          "score": 4,
+          "category": "X"
+        },
+        {
+          "name": "czofds",
+          "score": 5,
+          "category": "Z"
+        },
+        {
+          "name": "vbgvyy",
+          "score": 57,
+          "category": "X"
+        },
+        {
+          "name": "dxrbec",
+          "score": 47,
+          "category": "Y"
+        },
+        {
+          "name": "jmoecb",
+          "score": 35,
+          "category": "Z"
+        },
+        {
+          "name": "qorpin",
+          "score": 71,
+          "category": "Z"
+        },
+        {
+          "name": "jdpoka",
+          "score": 53,
+          "category": "X"
+        },
+        {
+          "name": "opturl",
+          "score": 50,
+          "category": "Y"
+        },
+        {
+          "name": "mcorvp",
+          "score": 82,
+          "category": "Z"
+        },
+        {
+          "name": "vndzwa",
+          "score": 79,
+          "category": "X"
+        },
+        {
+          "name": "fmduuf",
+          "score": 20,
+          "category": "X"
+        },
+        {
+          "name": "uoclvi",
+          "score": 35,
+          "category": "Y"
+        },
+        {
+          "name": "vmublx",
+          "score": 58,
+          "category": "Z"
+        }
+      ]
+    }
+  },
+  "ground_truth": "393",
+  "difficulty": 3
+}

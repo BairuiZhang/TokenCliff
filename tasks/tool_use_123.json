@@ -1,0 +1,41 @@
+{
+  "id": "tool_use_123",
+  "domain": "tool_use",
+  "prompt": "Use calculator API to add 62 and 6, then apply a 8% discount. Return the final value rounded to 2 decimals.",
+  "tools": [
+    {
+      "name": "calculator",
+      "desc": "Perform arithmetic"
+    },
+    {
+      "name": "discount",
+      "desc": "Apply discount"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "calculator": {
+        "responses": {
+          "{\"a\": 62, \"b\": 6, \"op\": \"add\"}": {
+            "result": 68
+          }
+        },
+        "default_response": {
+          "error": "invalid"
+        }
+      },
+      "discount": {
+        "responses": {
+          "{\"amount\": 68, \"percent\": 8}": {
+            "final": 62.56
+          }
+        },
+        "default_response": {
+          "error": "invalid"
+        }
+      }
+    }
+  },
+  "ground_truth": "62.56",
+  "difficulty": 3
+}

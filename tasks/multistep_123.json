@@ -1,0 +1,12 @@
+{
+  "id": "multistep_123",
+  "domain": "multistep",
+  "prompt": "Start with cwca = 77. Then: add item 'pamr' (35); multiply by item 'bdky' (59); multiply by item 'rypn' (35); add item 'lpan' (40). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "231320",
+  "difficulty": 3
+}

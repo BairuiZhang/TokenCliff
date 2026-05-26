@@ -1,0 +1,12 @@
+{
+  "id": "multistep_157",
+  "domain": "multistep",
+  "prompt": "Start with iqrk = 75. Then: subtract item 'uvob' (78); multiply by item 'irqg' (100); multiply by item 'gzrx' (92); multiply by item 'olgd' (100). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "-2760000",
+  "difficulty": 3
+}

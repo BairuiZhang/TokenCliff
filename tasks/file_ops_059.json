@@ -1,0 +1,35 @@
+{
+  "id": "file_ops_059",
+  "domain": "file_ops",
+  "prompt": "Search all files in /docs for the keyword 'vsjgea'. Return the filename containing it.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    },
+    {
+      "name": "find",
+      "desc": "Find files"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/docs/pnonxb.txt": "Document 0 about pfamdzrw. No relevant matches here.",
+      "/docs/yrqzme.txt": "Document 1 about jufoeegw. No relevant matches here.",
+      "/docs/zmvmfs.txt": "Document 2 about mpmofctv. No relevant matches here.",
+      "/docs/qpttrv.txt": "Document 3 about lzjdwhfk. No relevant matches here.",
+      "/docs/kvpuzk.txt": "Document 4 about bbxhcson. No relevant matches here.",
+      "/docs/kxtsll.txt": "Document 5 about csiqeiqu. No relevant matches here.",
+      "/docs/tzilnf.txt": "Document 6 about gasepaxg. No relevant matches here.",
+      "/docs/smemau.txt": "Document 7 about urkmrods. No relevant matches here.",
+      "/docs/ytxbas.txt": "Document 8 about edyvhpja. No relevant matches here.",
+      "/docs/tpinkx.txt": "Report section 9. Contains keyword vsjgea in paragraph."
+    }
+  },
+  "ground_truth": "tpinkx.txt",
+  "difficulty": 2
+}

@@ -1,0 +1,12 @@
+{
+  "id": "multistep_142",
+  "domain": "multistep",
+  "prompt": "Start with okoc = 49. Then: subtract item 'pfin' (57); multiply by item 'vbhn' (68); multiply by item 'ergy' (89); subtract item 'zidn' (20). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "-48436",
+  "difficulty": 3
+}

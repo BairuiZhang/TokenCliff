@@ -1,0 +1,35 @@
+{
+  "id": "multistep_077",
+  "domain": "multistep",
+  "prompt": "Read all files in /reports. Find the values for: metric_mrb, metric_nwg, metric_dwb, metric_pjw, metric_rgb. Return their average (rounded to integer).",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/reports/nvhhm.txt": "This quarterly report covers the period ending Q2 2026. Performance indicators show mixed results across divisions. The metric_mrb measurement recorded a value of 578 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/hneci.txt": "This quarterly report covers the period ending Q3 2026. Performance indicators show mixed results across divisions. The metric_nwg measurement recorded a value of 330 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/jdnck.txt": "This quarterly report covers the period ending Q3 2026. Performance indicators show mixed results across divisions. The metric_dwb measurement recorded a value of 478 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/axgwz.txt": "This quarterly report covers the period ending Q4 2026. Performance indicators show mixed results across divisions. The metric_pjw measurement recorded a value of 651 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/zysvk.txt": "This quarterly report covers the period ending Q3 2026. Performance indicators show mixed results across divisions. The metric_rgb measurement recorded a value of 939 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/drpai.txt": "This quarterly report covers the period ending Q1 2026. Performance indicators show mixed results across divisions. The metric_tuk measurement recorded a value of 618 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/unlnr.txt": "This quarterly report covers the period ending Q2 2026. Performance indicators show mixed results across divisions. The metric_vtm measurement recorded a value of 947 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/gwakk.txt": "This quarterly report covers the period ending Q3 2026. Performance indicators show mixed results across divisions. The metric_pnm measurement recorded a value of 317 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/anvxn.txt": "This quarterly report covers the period ending Q4 2026. Performance indicators show mixed results across divisions. The metric_jsf measurement recorded a value of 984 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/yanzn.txt": "This quarterly report covers the period ending Q4 2026. Performance indicators show mixed results across divisions. The metric_fxr measurement recorded a value of 388 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/asiie.txt": "This quarterly report covers the period ending Q3 2026. Performance indicators show mixed results across divisions. The metric_ypq measurement recorded a value of 558 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/qvtse.txt": "This quarterly report covers the period ending Q2 2026. Performance indicators show mixed results across divisions. The metric_alp measurement recorded a value of 112 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/ifeej.txt": "This quarterly report covers the period ending Q2 2026. Performance indicators show mixed results across divisions. The metric_iyy measurement recorded a value of 78 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/ocrpz.txt": "This quarterly report covers the period ending Q4 2026. Performance indicators show mixed results across divisions. The metric_rvk measurement recorded a value of 592 this period. Further analysis is needed to determine long-term trends."
+    }
+  },
+  "ground_truth": "595",
+  "difficulty": 4
+}

@@ -1,0 +1,119 @@
+{
+  "id": "data_transform_112",
+  "domain": "data_transform",
+  "prompt": "Find the top 3 items by score. Return the sum of their scores.",
+  "tools": [
+    {
+      "name": "query",
+      "desc": "Query table"
+    }
+  ],
+  "environment": {
+    "tables": {
+      "items": [
+        {
+          "name": "sbkpkg",
+          "score": 51,
+          "category": "Y"
+        },
+        {
+          "name": "fxwgxn",
+          "score": 2,
+          "category": "X"
+        },
+        {
+          "name": "rsdefw",
+          "score": 45,
+          "category": "X"
+        },
+        {
+          "name": "dpvsrj",
+          "score": 81,
+          "category": "X"
+        },
+        {
+          "name": "jnobkx",
+          "score": 10,
+          "category": "X"
+        },
+        {
+          "name": "ernpun",
+          "score": 2,
+          "category": "Z"
+        },
+        {
+          "name": "efzmfk",
+          "score": 80,
+          "category": "Z"
+        },
+        {
+          "name": "odpzdp",
+          "score": 85,
+          "category": "Z"
+        },
+        {
+          "name": "yfbzcl",
+          "score": 11,
+          "category": "Y"
+        },
+        {
+          "name": "ddtxrd",
+          "score": 33,
+          "category": "Y"
+        },
+        {
+          "name": "iolcrx",
+          "score": 96,
+          "category": "Y"
+        },
+        {
+          "name": "oehotu",
+          "score": 7,
+          "category": "Y"
+        },
+        {
+          "name": "ywztwh",
+          "score": 71,
+          "category": "Y"
+        },
+        {
+          "name": "rfkkoc",
+          "score": 27,
+          "category": "X"
+        },
+        {
+          "name": "fsdzfa",
+          "score": 78,
+          "category": "X"
+        },
+        {
+          "name": "pmhiyy",
+          "score": 26,
+          "category": "X"
+        },
+        {
+          "name": "izpjep",
+          "score": 80,
+          "category": "X"
+        },
+        {
+          "name": "fnykaj",
+          "score": 42,
+          "category": "X"
+        },
+        {
+          "name": "jjquii",
+          "score": 5,
+          "category": "X"
+        },
+        {
+          "name": "eiujky",
+          "score": 41,
+          "category": "X"
+        }
+      ]
+    }
+  },
+  "ground_truth": "262",
+  "difficulty": 3
+}

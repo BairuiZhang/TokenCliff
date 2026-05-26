@@ -1,0 +1,43 @@
+{
+  "id": "file_ops_044",
+  "domain": "file_ops",
+  "prompt": "Search all files in /docs for the keyword 'vwuivol'. Return the filename containing it.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    },
+    {
+      "name": "find",
+      "desc": "Find files"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/docs/tygrci.txt": "Document 0 about tgmdxilh. No relevant matches here.",
+      "/docs/sbvhpd.txt": "Document 1 about pomiqjjs. No relevant matches here.",
+      "/docs/ryonev.txt": "Document 2 about rcwfxykn. No relevant matches here.",
+      "/docs/xyhbap.txt": "Document 3 about kekcjyhh. No relevant matches here.",
+      "/docs/ppnfff.txt": "Document 4 about apxuwtaf. No relevant matches here.",
+      "/docs/uessys.txt": "Document 5 about mprxsach. No relevant matches here.",
+      "/docs/ldmctn.txt": "Document 6 about jmqcoaqx. No relevant matches here.",
+      "/docs/awioiq.txt": "Document 7 about hojindko. No relevant matches here.",
+      "/docs/skmkmq.txt": "Document 8 about tfmefflt. No relevant matches here.",
+      "/docs/hmkdpg.txt": "Document 9 about dgxuxygr. No relevant matches here.",
+      "/docs/jbqjdo.txt": "Document 10 about dqkcqxtl. No relevant matches here.",
+      "/docs/wvuuer.txt": "Document 11 about uwgsuvam. No relevant matches here.",
+      "/docs/nrnqki.txt": "Document 12 about mgkxfifk. No relevant matches here.",
+      "/docs/jjscbi.txt": "Document 13 about glcktwti. No relevant matches here.",
+      "/docs/oyqlbx.txt": "Document 14 about bjhdhzss. No relevant matches here.",
+      "/docs/hlsfwk.txt": "Document 15 about dznmvomd. No relevant matches here.",
+      "/docs/zgffim.txt": "Document 16 about lquzgwqr. No relevant matches here.",
+      "/docs/nwmusv.txt": "Report section 17. Contains keyword vwuivol in paragraph."
+    }
+  },
+  "ground_truth": "nwmusv.txt",
+  "difficulty": 2
+}

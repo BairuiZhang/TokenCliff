@@ -1,0 +1,231 @@
+{
+  "id": "data_transform_074",
+  "domain": "data_transform",
+  "prompt": "Using 'products' and 'orders' tables, find which category has the highest total revenue (price × quantity). Return the category letter.",
+  "tools": [
+    {
+      "name": "query",
+      "desc": "Query table"
+    }
+  ],
+  "environment": {
+    "tables": {
+      "products": [
+        {
+          "id": 0,
+          "name": "product_0",
+          "category": "A",
+          "price": 205
+        },
+        {
+          "id": 1,
+          "name": "product_1",
+          "category": "A",
+          "price": 110
+        },
+        {
+          "id": 2,
+          "name": "product_2",
+          "category": "A",
+          "price": 25
+        },
+        {
+          "id": 3,
+          "name": "product_3",
+          "category": "B",
+          "price": 23
+        },
+        {
+          "id": 4,
+          "name": "product_4",
+          "category": "B",
+          "price": 137
+        },
+        {
+          "id": 5,
+          "name": "product_5",
+          "category": "B",
+          "price": 30
+        },
+        {
+          "id": 6,
+          "name": "product_6",
+          "category": "A",
+          "price": 44
+        },
+        {
+          "id": 7,
+          "name": "product_7",
+          "category": "C",
+          "price": 154
+        },
+        {
+          "id": 8,
+          "name": "product_8",
+          "category": "A",
+          "price": 29
+        },
+        {
+          "id": 9,
+          "name": "product_9",
+          "category": "C",
+          "price": 280
+        },
+        {
+          "id": 10,
+          "name": "product_10",
+          "category": "C",
+          "price": 63
+        },
+        {
+          "id": 11,
+          "name": "product_11",
+          "category": "C",
+          "price": 71
+        },
+        {
+          "id": 12,
+          "name": "product_12",
+          "category": "C",
+          "price": 208
+        },
+        {
+          "id": 13,
+          "name": "product_13",
+          "category": "C",
+          "price": 172
+        },
+        {
+          "id": 14,
+          "name": "product_14",
+          "category": "C",
+          "price": 287
+        }
+      ],
+      "orders": [
+        {
+          "product_id": 5,
+          "quantity": 8
+        },
+        {
+          "product_id": 1,
+          "quantity": 6
+        },
+        {
+          "product_id": 14,
+          "quantity": 7
+        },
+        {
+          "product_id": 14,
+          "quantity": 9
+        },
+        {
+          "product_id": 1,
+          "quantity": 6
+        },
+        {
+          "product_id": 5,
+          "quantity": 1
+        },
+        {
+          "product_id": 2,
+          "quantity": 6
+        },
+        {
+          "product_id": 8,
+          "quantity": 5
+        },
+        {
+          "product_id": 2,
+          "quantity": 4
+        },
+        {
+          "product_id": 9,
+          "quantity": 9
+        },
+        {
+          "product_id": 1,
+          "quantity": 7
+        },
+        {
+          "product_id": 8,
+          "quantity": 9
+        },
+        {
+          "product_id": 10,
+          "quantity": 3
+        },
+        {
+          "product_id": 5,
+          "quantity": 6
+        },
+        {
+          "product_id": 13,
+          "quantity": 2
+        },
+        {
+          "product_id": 2,
+          "quantity": 4
+        },
+        {
+          "product_id": 1,
+          "quantity": 3
+        },
+        {
+          "product_id": 8,
+          "quantity": 10
+        },
+        {
+          "product_id": 2,
+          "quantity": 10
+        },
+        {
+          "product_id": 8,
+          "quantity": 9
+        },
+        {
+          "product_id": 7,
+          "quantity": 7
+        },
+        {
+          "product_id": 12,
+          "quantity": 9
+        },
+        {
+          "product_id": 4,
+          "quantity": 4
+        },
+        {
+          "product_id": 0,
+          "quantity": 5
+        },
+        {
+          "product_id": 14,
+          "quantity": 4
+        },
+        {
+          "product_id": 3,
+          "quantity": 6
+        },
+        {
+          "product_id": 6,
+          "quantity": 9
+        },
+        {
+          "product_id": 1,
+          "quantity": 7
+        },
+        {
+          "product_id": 2,
+          "quantity": 7
+        },
+        {
+          "product_id": 13,
+          "quantity": 4
+        }
+      ]
+    }
+  },
+  "ground_truth": "C",
+  "difficulty": 4
+}

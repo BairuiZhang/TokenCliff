@@ -1,0 +1,41 @@
+{
+  "id": "tool_use_114",
+  "domain": "tool_use",
+  "prompt": "Use calculator API to multiply 89 and 12, then apply a 23% discount. Return the final value rounded to 2 decimals.",
+  "tools": [
+    {
+      "name": "calculator",
+      "desc": "Perform arithmetic"
+    },
+    {
+      "name": "discount",
+      "desc": "Apply discount"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "calculator": {
+        "responses": {
+          "{\"a\": 89, \"b\": 12, \"op\": \"multiply\"}": {
+            "result": 1068
+          }
+        },
+        "default_response": {
+          "error": "invalid"
+        }
+      },
+      "discount": {
+        "responses": {
+          "{\"amount\": 1068, \"percent\": 23}": {
+            "final": 822.36
+          }
+        },
+        "default_response": {
+          "error": "invalid"
+        }
+      }
+    }
+  },
+  "ground_truth": "822.36",
+  "difficulty": 3
+}

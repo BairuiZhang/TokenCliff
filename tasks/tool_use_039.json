@@ -1,0 +1,99 @@
+{
+  "id": "tool_use_039",
+  "domain": "tool_use",
+  "prompt": "Use the inventory API to list all items. Find the cheapest item regardless of stock. Return its name.",
+  "tools": [
+    {
+      "name": "inventory",
+      "desc": "List items with price and stock"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "inventory": {
+        "responses": {
+          "": {
+            "items": [
+              {
+                "name": "yxhhn",
+                "price": 301,
+                "in_stock": true
+              },
+              {
+                "name": "hqbzm",
+                "price": 90,
+                "in_stock": false
+              },
+              {
+                "name": "bozqd",
+                "price": 387,
+                "in_stock": false
+              },
+              {
+                "name": "ejrcc",
+                "price": 173,
+                "in_stock": false
+              },
+              {
+                "name": "yevnu",
+                "price": 168,
+                "in_stock": true
+              },
+              {
+                "name": "ignyr",
+                "price": 37,
+                "in_stock": true
+              },
+              {
+                "name": "qapej",
+                "price": 428,
+                "in_stock": true
+              }
+            ]
+          }
+        },
+        "default_response": {
+          "items": [
+            {
+              "name": "yxhhn",
+              "price": 301,
+              "in_stock": true
+            },
+            {
+              "name": "hqbzm",
+              "price": 90,
+              "in_stock": false
+            },
+            {
+              "name": "bozqd",
+              "price": 387,
+              "in_stock": false
+            },
+            {
+              "name": "ejrcc",
+              "price": 173,
+              "in_stock": false
+            },
+            {
+              "name": "yevnu",
+              "price": 168,
+              "in_stock": true
+            },
+            {
+              "name": "ignyr",
+              "price": 37,
+              "in_stock": true
+            },
+            {
+              "name": "qapej",
+              "price": 428,
+              "in_stock": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ground_truth": "ignyr",
+  "difficulty": 2
+}

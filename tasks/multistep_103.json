@@ -1,0 +1,12 @@
+{
+  "id": "multistep_103",
+  "domain": "multistep",
+  "prompt": "Start with gyxi = 29. Then: multiply by item 'ehiz' (94); multiply by item 'qefe' (73); multiply by item 'qggm' (54); subtract item 'veax' (44); multiply by item 'snla' (32); add item 'ovss' (66). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "343867202",
+  "difficulty": 5
+}

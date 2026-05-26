@@ -1,0 +1,12 @@
+{
+  "id": "multistep_112",
+  "domain": "multistep",
+  "prompt": "Start with bqnm = 95. Then: multiply by item 'hhqf' (79); multiply by item 'kimn' (27); subtract item 'txgk' (36); add item 'gsxc' (49). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "202648",
+  "difficulty": 3
+}

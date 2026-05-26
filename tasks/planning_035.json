@@ -1,0 +1,12 @@
+{
+  "id": "planning_035",
+  "domain": "planning",
+  "prompt": "Knapsack capacity=21. Items: [{\"name\": \"item_0\", \"weight\": 12, \"value\": 54}, {\"name\": \"item_1\", \"weight\": 14, \"value\": 75}, {\"name\": \"item_2\", \"weight\": 11, \"value\": 63}, {\"name\": \"item_3\", \"weight\": 13, \"value\": 34}, {\"name\": \"item_4\", \"weight\": 12, \"value\": 54}]. Maximize value using greedy (best value/weight ratio first). Return total value.",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "63",
+  "difficulty": 4
+}

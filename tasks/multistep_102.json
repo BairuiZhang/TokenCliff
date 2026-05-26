@@ -1,0 +1,12 @@
+{
+  "id": "multistep_102",
+  "domain": "multistep",
+  "prompt": "Start with wgjt = 50. Then: subtract item 'gxgw' (10); subtract item 'qouz' (29); subtract item 'qglc' (97); subtract item 'cavl' (12). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "-98",
+  "difficulty": 3
+}

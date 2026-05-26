@@ -1,0 +1,45 @@
+{
+  "id": "file_ops_042",
+  "domain": "file_ops",
+  "prompt": "Search all files in /docs for the keyword 'uexra'. Return the filename containing it.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    },
+    {
+      "name": "find",
+      "desc": "Find files"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/docs/vrxekn.txt": "Document 0 about laryjvks. No relevant matches here.",
+      "/docs/vnqgpp.txt": "Document 1 about wbpwapmn. No relevant matches here.",
+      "/docs/kstywn.txt": "Document 2 about mrtufptb. No relevant matches here.",
+      "/docs/vsyjub.txt": "Document 3 about outsfbyn. No relevant matches here.",
+      "/docs/fvzunx.txt": "Document 4 about kqcqymhm. No relevant matches here.",
+      "/docs/izlasu.txt": "Document 5 about ymnxvqey. No relevant matches here.",
+      "/docs/zkwhkx.txt": "Report section 6. Contains keyword uexra in paragraph.",
+      "/docs/gwuxvr.txt": "Document 7 about fxbdrrdx. No relevant matches here.",
+      "/docs/jotoay.txt": "Document 8 about fmziwugq. No relevant matches here.",
+      "/docs/zottye.txt": "Document 9 about juyvqntm. No relevant matches here.",
+      "/docs/wzrkdc.txt": "Document 10 about lbrpzohc. No relevant matches here.",
+      "/docs/bgaagv.txt": "Document 11 about yatxehoc. No relevant matches here.",
+      "/docs/zrjnnn.txt": "Document 12 about rutwroms. No relevant matches here.",
+      "/docs/tyowqf.txt": "Document 13 about ctaqhewj. No relevant matches here.",
+      "/docs/mbymzq.txt": "Document 14 about lqlerimx. No relevant matches here.",
+      "/docs/fomuzr.txt": "Document 15 about pjatmlew. No relevant matches here.",
+      "/docs/qwrmcu.txt": "Document 16 about bmzbtyeg. No relevant matches here.",
+      "/docs/ndbdso.txt": "Document 17 about ksvteran. No relevant matches here.",
+      "/docs/lzmxjz.txt": "Document 18 about utpnnxvt. No relevant matches here.",
+      "/docs/oituhp.txt": "Document 19 about tzdvoxlp. No relevant matches here."
+    }
+  },
+  "ground_truth": "zkwhkx.txt",
+  "difficulty": 2
+}

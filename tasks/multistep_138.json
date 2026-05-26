@@ -1,0 +1,12 @@
+{
+  "id": "multistep_138",
+  "domain": "multistep",
+  "prompt": "Start with iwxj = 66. Then: add item 'zqtg' (64); add item 'twpw' (97); subtract item 'zsaw' (80); multiply by item 'zrnx' (87). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "12789",
+  "difficulty": 3
+}

@@ -1,0 +1,149 @@
+{
+  "id": "tool_use_047",
+  "domain": "tool_use",
+  "prompt": "Use the inventory API to list all items. Find the most expensive item that is in stock. Return its name.",
+  "tools": [
+    {
+      "name": "inventory",
+      "desc": "List items with price and stock"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "inventory": {
+        "responses": {
+          "": {
+            "items": [
+              {
+                "name": "iwbrp",
+                "price": 379,
+                "in_stock": false
+              },
+              {
+                "name": "ddntf",
+                "price": 218,
+                "in_stock": false
+              },
+              {
+                "name": "sxjei",
+                "price": 260,
+                "in_stock": false
+              },
+              {
+                "name": "ozmou",
+                "price": 27,
+                "in_stock": true
+              },
+              {
+                "name": "amstq",
+                "price": 493,
+                "in_stock": false
+              },
+              {
+                "name": "evubj",
+                "price": 194,
+                "in_stock": true
+              },
+              {
+                "name": "vhqur",
+                "price": 122,
+                "in_stock": false
+              },
+              {
+                "name": "azkis",
+                "price": 199,
+                "in_stock": false
+              },
+              {
+                "name": "iwusj",
+                "price": 359,
+                "in_stock": true
+              },
+              {
+                "name": "ujwmb",
+                "price": 225,
+                "in_stock": false
+              },
+              {
+                "name": "agkjn",
+                "price": 208,
+                "in_stock": false
+              },
+              {
+                "name": "bpiwi",
+                "price": 445,
+                "in_stock": true
+              }
+            ]
+          }
+        },
+        "default_response": {
+          "items": [
+            {
+              "name": "iwbrp",
+              "price": 379,
+              "in_stock": false
+            },
+            {
+              "name": "ddntf",
+              "price": 218,
+              "in_stock": false
+            },
+            {
+              "name": "sxjei",
+              "price": 260,
+              "in_stock": false
+            },
+            {
+              "name": "ozmou",
+              "price": 27,
+              "in_stock": true
+            },
+            {
+              "name": "amstq",
+              "price": 493,
+              "in_stock": false
+            },
+            {
+              "name": "evubj",
+              "price": 194,
+              "in_stock": true
+            },
+            {
+              "name": "vhqur",
+              "price": 122,
+              "in_stock": false
+            },
+            {
+              "name": "azkis",
+              "price": 199,
+              "in_stock": false
+            },
+            {
+              "name": "iwusj",
+              "price": 359,
+              "in_stock": true
+            },
+            {
+              "name": "ujwmb",
+              "price": 225,
+              "in_stock": false
+            },
+            {
+              "name": "agkjn",
+              "price": 208,
+              "in_stock": false
+            },
+            {
+              "name": "bpiwi",
+              "price": 445,
+              "in_stock": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ground_truth": "bpiwi",
+  "difficulty": 2
+}

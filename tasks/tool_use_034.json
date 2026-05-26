@@ -1,0 +1,109 @@
+{
+  "id": "tool_use_034",
+  "domain": "tool_use",
+  "prompt": "Use the inventory API to list all items. Find the cheapest item that is in stock. Return its name.",
+  "tools": [
+    {
+      "name": "inventory",
+      "desc": "List items with price and stock"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "inventory": {
+        "responses": {
+          "": {
+            "items": [
+              {
+                "name": "aeklg",
+                "price": 87,
+                "in_stock": false
+              },
+              {
+                "name": "payzz",
+                "price": 159,
+                "in_stock": true
+              },
+              {
+                "name": "iwuji",
+                "price": 55,
+                "in_stock": true
+              },
+              {
+                "name": "dswcm",
+                "price": 452,
+                "in_stock": false
+              },
+              {
+                "name": "xufuw",
+                "price": 240,
+                "in_stock": true
+              },
+              {
+                "name": "dxrht",
+                "price": 400,
+                "in_stock": true
+              },
+              {
+                "name": "wovny",
+                "price": 61,
+                "in_stock": false
+              },
+              {
+                "name": "cxygu",
+                "price": 218,
+                "in_stock": true
+              }
+            ]
+          }
+        },
+        "default_response": {
+          "items": [
+            {
+              "name": "aeklg",
+              "price": 87,
+              "in_stock": false
+            },
+            {
+              "name": "payzz",
+              "price": 159,
+              "in_stock": true
+            },
+            {
+              "name": "iwuji",
+              "price": 55,
+              "in_stock": true
+            },
+            {
+              "name": "dswcm",
+              "price": 452,
+              "in_stock": false
+            },
+            {
+              "name": "xufuw",
+              "price": 240,
+              "in_stock": true
+            },
+            {
+              "name": "dxrht",
+              "price": 400,
+              "in_stock": true
+            },
+            {
+              "name": "wovny",
+              "price": 61,
+              "in_stock": false
+            },
+            {
+              "name": "cxygu",
+              "price": 218,
+              "in_stock": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ground_truth": "iwuji",
+  "difficulty": 2
+}

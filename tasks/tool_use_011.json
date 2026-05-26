@@ -1,0 +1,41 @@
+{
+  "id": "tool_use_011",
+  "domain": "tool_use",
+  "prompt": "Get the temperature in London using weather API, then get its population using city_info API. Return temperature divided by population (in millions), rounded to 2 decimal places.",
+  "tools": [
+    {
+      "name": "weather",
+      "desc": "Get temperature"
+    },
+    {
+      "name": "city_info",
+      "desc": "Get city info"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "weather": {
+        "responses": {
+          "{\"city\": \"London\"}": {
+            "temp": 5
+          }
+        },
+        "default_response": {
+          "error": "not found"
+        }
+      },
+      "city_info": {
+        "responses": {
+          "{\"city\": \"London\"}": {
+            "population": 7750055
+          }
+        },
+        "default_response": {
+          "error": "unknown"
+        }
+      }
+    }
+  },
+  "ground_truth": "0.65",
+  "difficulty": 2
+}

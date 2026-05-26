@@ -1,0 +1,12 @@
+{
+  "id": "multistep_153",
+  "domain": "multistep",
+  "prompt": "Start with sujb = 98. Then: subtract item 'bnlc' (75); multiply by item 'wwvi' (89); add item 'yhuo' (52); add item 'lnwk' (28). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "2127",
+  "difficulty": 3
+}

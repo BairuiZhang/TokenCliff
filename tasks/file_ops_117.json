@@ -1,0 +1,36 @@
+{
+  "id": "file_ops_117",
+  "domain": "file_ops",
+  "prompt": "Navigate the directory tree to find 'target.txt'. Return its content.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/qfmf/wvyv/target.txt": "7626",
+      "/wpkh/wvyv/hrpehb.txt": "492",
+      "/wvyv/qxfrjd.txt": "134",
+      "/mqfn/mqfn/wvyv/ewlocm.txt": "62",
+      "/qfmf/wzpxjq.txt": "873",
+      "/ljom/ljom/erxohv.txt": "989",
+      "/wvyv/vwqt/wvyv/gqwjgk.txt": "228",
+      "/qgoz/wvyv/qfmf/dxocbb.txt": "341",
+      "/wvyv/aery/mxmeca.txt": "107",
+      "/ylpy/dupgnj.txt": "281",
+      "/qfmf/ztstys.txt": "389",
+      "/qfmf/wvyv/mjqetl.txt": "382",
+      "/nprr/pinnsx.txt": "158",
+      "/wvyv/tpoesx.txt": "759",
+      "/qfmf/bdnwkf.txt": "866"
+    }
+  },
+  "ground_truth": "7626",
+  "difficulty": 3
+}

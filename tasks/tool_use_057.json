@@ -1,0 +1,109 @@
+{
+  "id": "tool_use_057",
+  "domain": "tool_use",
+  "prompt": "Use the inventory API to list all items. Find the cheapest item regardless of stock. Return its name.",
+  "tools": [
+    {
+      "name": "inventory",
+      "desc": "List items with price and stock"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "inventory": {
+        "responses": {
+          "": {
+            "items": [
+              {
+                "name": "vjrkj",
+                "price": 39,
+                "in_stock": false
+              },
+              {
+                "name": "qcflz",
+                "price": 379,
+                "in_stock": true
+              },
+              {
+                "name": "rbvev",
+                "price": 173,
+                "in_stock": true
+              },
+              {
+                "name": "falqa",
+                "price": 43,
+                "in_stock": true
+              },
+              {
+                "name": "vaqvc",
+                "price": 403,
+                "in_stock": true
+              },
+              {
+                "name": "aruhi",
+                "price": 401,
+                "in_stock": false
+              },
+              {
+                "name": "kpqrx",
+                "price": 245,
+                "in_stock": true
+              },
+              {
+                "name": "ybacp",
+                "price": 486,
+                "in_stock": false
+              }
+            ]
+          }
+        },
+        "default_response": {
+          "items": [
+            {
+              "name": "vjrkj",
+              "price": 39,
+              "in_stock": false
+            },
+            {
+              "name": "qcflz",
+              "price": 379,
+              "in_stock": true
+            },
+            {
+              "name": "rbvev",
+              "price": 173,
+              "in_stock": true
+            },
+            {
+              "name": "falqa",
+              "price": 43,
+              "in_stock": true
+            },
+            {
+              "name": "vaqvc",
+              "price": 403,
+              "in_stock": true
+            },
+            {
+              "name": "aruhi",
+              "price": 401,
+              "in_stock": false
+            },
+            {
+              "name": "kpqrx",
+              "price": 245,
+              "in_stock": true
+            },
+            {
+              "name": "ybacp",
+              "price": 486,
+              "in_stock": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ground_truth": "vjrkj",
+  "difficulty": 2
+}

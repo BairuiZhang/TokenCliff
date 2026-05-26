@@ -1,0 +1,12 @@
+{
+  "id": "multistep_127",
+  "domain": "multistep",
+  "prompt": "Start with qkkg = 23. Then: multiply by item 'doue' (40); multiply by item 'vqta' (10); subtract item 'zrej' (57); multiply by item 'iarf' (73); subtract item 'uphp' (62); add item 'vqov' (85). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "667462",
+  "difficulty": 5
+}

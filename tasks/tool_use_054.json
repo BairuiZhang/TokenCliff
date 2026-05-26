@@ -1,0 +1,99 @@
+{
+  "id": "tool_use_054",
+  "domain": "tool_use",
+  "prompt": "Use the inventory API to list all items. Find the cheapest item regardless of stock. Return its name.",
+  "tools": [
+    {
+      "name": "inventory",
+      "desc": "List items with price and stock"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "inventory": {
+        "responses": {
+          "": {
+            "items": [
+              {
+                "name": "nhmmq",
+                "price": 403,
+                "in_stock": true
+              },
+              {
+                "name": "ozafr",
+                "price": 381,
+                "in_stock": true
+              },
+              {
+                "name": "qmpjs",
+                "price": 100,
+                "in_stock": true
+              },
+              {
+                "name": "hqaye",
+                "price": 383,
+                "in_stock": false
+              },
+              {
+                "name": "oukwq",
+                "price": 64,
+                "in_stock": false
+              },
+              {
+                "name": "xlaoi",
+                "price": 68,
+                "in_stock": false
+              },
+              {
+                "name": "blmaf",
+                "price": 292,
+                "in_stock": false
+              }
+            ]
+          }
+        },
+        "default_response": {
+          "items": [
+            {
+              "name": "nhmmq",
+              "price": 403,
+              "in_stock": true
+            },
+            {
+              "name": "ozafr",
+              "price": 381,
+              "in_stock": true
+            },
+            {
+              "name": "qmpjs",
+              "price": 100,
+              "in_stock": true
+            },
+            {
+              "name": "hqaye",
+              "price": 383,
+              "in_stock": false
+            },
+            {
+              "name": "oukwq",
+              "price": 64,
+              "in_stock": false
+            },
+            {
+              "name": "xlaoi",
+              "price": 68,
+              "in_stock": false
+            },
+            {
+              "name": "blmaf",
+              "price": 292,
+              "in_stock": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ground_truth": "oukwq",
+  "difficulty": 2
+}

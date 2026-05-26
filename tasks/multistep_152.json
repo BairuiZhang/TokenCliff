@@ -1,0 +1,12 @@
+{
+  "id": "multistep_152",
+  "domain": "multistep",
+  "prompt": "Start with qiuh = 44. Then: add item 'mhcn' (12); multiply by item 'vblc' (30); subtract item 'zuhx' (46); multiply by item 'lcof' (82); add item 'xjke' (79); subtract item 'grrj' (35). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "134032",
+  "difficulty": 5
+}

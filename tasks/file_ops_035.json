@@ -1,0 +1,40 @@
+{
+  "id": "file_ops_035",
+  "domain": "file_ops",
+  "prompt": "Search all files in /docs for the keyword 'ufjr'. Return the filename containing it.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    },
+    {
+      "name": "find",
+      "desc": "Find files"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/docs/pxenxu.txt": "Document 0 about rxlqbqoi. No relevant matches here.",
+      "/docs/wccdxn.txt": "Document 1 about hpiothnl. No relevant matches here.",
+      "/docs/ippnmy.txt": "Document 2 about nluoyvnw. No relevant matches here.",
+      "/docs/quhimy.txt": "Document 3 about otknqmlr. No relevant matches here.",
+      "/docs/fujclu.txt": "Document 4 about dwwkxtgn. No relevant matches here.",
+      "/docs/cfwilv.txt": "Document 5 about kkuhraef. No relevant matches here.",
+      "/docs/pbwxce.txt": "Document 6 about wkimoksm. No relevant matches here.",
+      "/docs/vrbzai.txt": "Document 7 about mfwefamy. No relevant matches here.",
+      "/docs/sltjsr.txt": "Report section 8. Contains keyword ufjr in paragraph.",
+      "/docs/ifeeah.txt": "Document 9 about xtsblysl. No relevant matches here.",
+      "/docs/pbjlup.txt": "Document 10 about aikyzryv. No relevant matches here.",
+      "/docs/lqqojr.txt": "Document 11 about ulxkzfiv. No relevant matches here.",
+      "/docs/zptgjb.txt": "Document 12 about qxwpavet. No relevant matches here.",
+      "/docs/mbwixo.txt": "Document 13 about ffuvbpfk. No relevant matches here.",
+      "/docs/mlryzs.txt": "Document 14 about qjrwkuhg. No relevant matches here."
+    }
+  },
+  "ground_truth": "sltjsr.txt",
+  "difficulty": 2
+}

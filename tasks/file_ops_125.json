@@ -1,0 +1,31 @@
+{
+  "id": "file_ops_125",
+  "domain": "file_ops",
+  "prompt": "Navigate the directory tree to find 'target.txt'. Return its content.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/qjfn/vpkn/abhn/target.txt": "8309",
+      "/vpkn/iiilmf.txt": "956",
+      "/wmbs/wmbs/xsbfpy.txt": "290",
+      "/qjfn/abhn/vpkn/khcoug.txt": "892",
+      "/snsg/qjfn/snsg/sueliw.txt": "975",
+      "/qjfn/vpkn/brvchn.txt": "302",
+      "/abhn/qjfn/ctjrus.txt": "613",
+      "/abhn/cbwjus.txt": "403",
+      "/qjfn/vpkn/vpkn/ufwxpe.txt": "174",
+      "/vpkn/umcoac.txt": "268"
+    }
+  },
+  "ground_truth": "8309",
+  "difficulty": 3
+}

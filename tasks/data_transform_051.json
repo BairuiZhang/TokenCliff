@@ -1,0 +1,144 @@
+{
+  "id": "data_transform_051",
+  "domain": "data_transform",
+  "prompt": "Find the department with the highest total salary expenditure. Return only the department name.",
+  "tools": [
+    {
+      "name": "query",
+      "desc": "Query table with where/select/agg/group_by"
+    }
+  ],
+  "environment": {
+    "tables": {
+      "employees": [
+        {
+          "name": "sndrqtoq",
+          "dept": "engineering",
+          "salary": 79298
+        },
+        {
+          "name": "qtxmnome",
+          "dept": "marketing",
+          "salary": 176942
+        },
+        {
+          "name": "vvjhtpgk",
+          "dept": "marketing",
+          "salary": 92521
+        },
+        {
+          "name": "qotrnnbo",
+          "dept": "sales",
+          "salary": 88557
+        },
+        {
+          "name": "mmlwnwnw",
+          "dept": "hr",
+          "salary": 182174
+        },
+        {
+          "name": "upvlhoml",
+          "dept": "hr",
+          "salary": 145646
+        },
+        {
+          "name": "vejhhevr",
+          "dept": "hr",
+          "salary": 113121
+        },
+        {
+          "name": "fwrbigaf",
+          "dept": "engineering",
+          "salary": 192192
+        },
+        {
+          "name": "mnhcbsux",
+          "dept": "sales",
+          "salary": 113953
+        },
+        {
+          "name": "rgusucom",
+          "dept": "marketing",
+          "salary": 178276
+        },
+        {
+          "name": "xgpdbbll",
+          "dept": "sales",
+          "salary": 196499
+        },
+        {
+          "name": "szczpzke",
+          "dept": "marketing",
+          "salary": 154486
+        },
+        {
+          "name": "dgbvzwsp",
+          "dept": "engineering",
+          "salary": 141172
+        },
+        {
+          "name": "ucirgauk",
+          "dept": "sales",
+          "salary": 167944
+        },
+        {
+          "name": "jnxjwhjs",
+          "dept": "sales",
+          "salary": 74720
+        },
+        {
+          "name": "fbapafwe",
+          "dept": "hr",
+          "salary": 184080
+        },
+        {
+          "name": "kiejngcb",
+          "dept": "engineering",
+          "salary": 75959
+        },
+        {
+          "name": "xfepcfbc",
+          "dept": "marketing",
+          "salary": 46110
+        },
+        {
+          "name": "muclxwcg",
+          "dept": "marketing",
+          "salary": 133820
+        },
+        {
+          "name": "ejetacve",
+          "dept": "marketing",
+          "salary": 79463
+        },
+        {
+          "name": "yzonnlln",
+          "dept": "marketing",
+          "salary": 77416
+        },
+        {
+          "name": "snrszojv",
+          "dept": "hr",
+          "salary": 160834
+        },
+        {
+          "name": "qrmqcjan",
+          "dept": "engineering",
+          "salary": 105821
+        },
+        {
+          "name": "nsjmjooh",
+          "dept": "engineering",
+          "salary": 88247
+        },
+        {
+          "name": "byxhhlpn",
+          "dept": "hr",
+          "salary": 102024
+        }
+      ]
+    }
+  },
+  "ground_truth": "marketing",
+  "difficulty": 3
+}

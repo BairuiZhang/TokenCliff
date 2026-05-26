@@ -1,0 +1,12 @@
+{
+  "id": "multistep_111",
+  "domain": "multistep",
+  "prompt": "Start with uhzn = 55. Then: subtract item 'rdvh' (63); subtract item 'hksa' (22); multiply by item 'kesd' (64); add item 'jrpm' (84). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "-1836",
+  "difficulty": 3
+}

@@ -1,0 +1,12 @@
+{
+  "id": "multistep_144",
+  "domain": "multistep",
+  "prompt": "Start with kwzb = 23. Then: multiply by item 'wpha' (80); subtract item 'dcyu' (42); multiply by item 'rhvm' (68); add item 'wlmb' (19). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "122283",
+  "difficulty": 3
+}

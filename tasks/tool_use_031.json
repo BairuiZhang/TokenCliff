@@ -1,0 +1,119 @@
+{
+  "id": "tool_use_031",
+  "domain": "tool_use",
+  "prompt": "Use the inventory API to list all items. Find the cheapest item that is in stock. Return its name.",
+  "tools": [
+    {
+      "name": "inventory",
+      "desc": "List items with price and stock"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "inventory": {
+        "responses": {
+          "": {
+            "items": [
+              {
+                "name": "zrsqq",
+                "price": 11,
+                "in_stock": false
+              },
+              {
+                "name": "vnezz",
+                "price": 63,
+                "in_stock": false
+              },
+              {
+                "name": "vwatf",
+                "price": 20,
+                "in_stock": false
+              },
+              {
+                "name": "pgned",
+                "price": 56,
+                "in_stock": false
+              },
+              {
+                "name": "aqybj",
+                "price": 430,
+                "in_stock": false
+              },
+              {
+                "name": "wgjum",
+                "price": 343,
+                "in_stock": false
+              },
+              {
+                "name": "wobmn",
+                "price": 310,
+                "in_stock": false
+              },
+              {
+                "name": "vkmxd",
+                "price": 315,
+                "in_stock": true
+              },
+              {
+                "name": "sirap",
+                "price": 26,
+                "in_stock": true
+              }
+            ]
+          }
+        },
+        "default_response": {
+          "items": [
+            {
+              "name": "zrsqq",
+              "price": 11,
+              "in_stock": false
+            },
+            {
+              "name": "vnezz",
+              "price": 63,
+              "in_stock": false
+            },
+            {
+              "name": "vwatf",
+              "price": 20,
+              "in_stock": false
+            },
+            {
+              "name": "pgned",
+              "price": 56,
+              "in_stock": false
+            },
+            {
+              "name": "aqybj",
+              "price": 430,
+              "in_stock": false
+            },
+            {
+              "name": "wgjum",
+              "price": 343,
+              "in_stock": false
+            },
+            {
+              "name": "wobmn",
+              "price": 310,
+              "in_stock": false
+            },
+            {
+              "name": "vkmxd",
+              "price": 315,
+              "in_stock": true
+            },
+            {
+              "name": "sirap",
+              "price": 26,
+              "in_stock": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ground_truth": "sirap",
+  "difficulty": 2
+}

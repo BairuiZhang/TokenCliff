@@ -1,0 +1,119 @@
+{
+  "id": "data_transform_113",
+  "domain": "data_transform",
+  "prompt": "Find the top 3 items by score. Return the sum of their scores.",
+  "tools": [
+    {
+      "name": "query",
+      "desc": "Query table"
+    }
+  ],
+  "environment": {
+    "tables": {
+      "items": [
+        {
+          "name": "lydkuk",
+          "score": 4,
+          "category": "X"
+        },
+        {
+          "name": "aptbto",
+          "score": 70,
+          "category": "X"
+        },
+        {
+          "name": "lepomi",
+          "score": 43,
+          "category": "Y"
+        },
+        {
+          "name": "kalets",
+          "score": 35,
+          "category": "Y"
+        },
+        {
+          "name": "rpokad",
+          "score": 38,
+          "category": "Z"
+        },
+        {
+          "name": "utripj",
+          "score": 62,
+          "category": "X"
+        },
+        {
+          "name": "xzbjni",
+          "score": 82,
+          "category": "Y"
+        },
+        {
+          "name": "arsodb",
+          "score": 59,
+          "category": "Z"
+        },
+        {
+          "name": "owzapg",
+          "score": 74,
+          "category": "X"
+        },
+        {
+          "name": "zrxyqj",
+          "score": 70,
+          "category": "X"
+        },
+        {
+          "name": "yxarez",
+          "score": 11,
+          "category": "X"
+        },
+        {
+          "name": "fctwpd",
+          "score": 94,
+          "category": "Y"
+        },
+        {
+          "name": "eeifhf",
+          "score": 49,
+          "category": "X"
+        },
+        {
+          "name": "lzwzdi",
+          "score": 40,
+          "category": "Y"
+        },
+        {
+          "name": "jduytc",
+          "score": 76,
+          "category": "X"
+        },
+        {
+          "name": "dxfxcb",
+          "score": 69,
+          "category": "Y"
+        },
+        {
+          "name": "vtprkd",
+          "score": 76,
+          "category": "Z"
+        },
+        {
+          "name": "rtecsm",
+          "score": 23,
+          "category": "X"
+        },
+        {
+          "name": "swjjyj",
+          "score": 90,
+          "category": "Y"
+        },
+        {
+          "name": "mpwskk",
+          "score": 60,
+          "category": "X"
+        }
+      ]
+    }
+  },
+  "ground_truth": "266",
+  "difficulty": 3
+}

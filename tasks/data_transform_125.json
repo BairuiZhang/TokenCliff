@@ -1,0 +1,119 @@
+{
+  "id": "data_transform_125",
+  "domain": "data_transform",
+  "prompt": "Find the top 5 items by score. Return the sum of their scores.",
+  "tools": [
+    {
+      "name": "query",
+      "desc": "Query table"
+    }
+  ],
+  "environment": {
+    "tables": {
+      "items": [
+        {
+          "name": "kzregn",
+          "score": 28,
+          "category": "X"
+        },
+        {
+          "name": "ocndbg",
+          "score": 6,
+          "category": "X"
+        },
+        {
+          "name": "kgrazh",
+          "score": 91,
+          "category": "Y"
+        },
+        {
+          "name": "titjgm",
+          "score": 53,
+          "category": "Y"
+        },
+        {
+          "name": "vfjbvm",
+          "score": 66,
+          "category": "Y"
+        },
+        {
+          "name": "dkcthw",
+          "score": 12,
+          "category": "X"
+        },
+        {
+          "name": "gpfytp",
+          "score": 32,
+          "category": "Z"
+        },
+        {
+          "name": "qqrres",
+          "score": 38,
+          "category": "Z"
+        },
+        {
+          "name": "gvfojl",
+          "score": 14,
+          "category": "X"
+        },
+        {
+          "name": "lfvyxm",
+          "score": 62,
+          "category": "X"
+        },
+        {
+          "name": "knpsvk",
+          "score": 62,
+          "category": "Y"
+        },
+        {
+          "name": "blhrwh",
+          "score": 79,
+          "category": "Y"
+        },
+        {
+          "name": "vhkmfv",
+          "score": 49,
+          "category": "X"
+        },
+        {
+          "name": "phpbbw",
+          "score": 61,
+          "category": "X"
+        },
+        {
+          "name": "ofxlve",
+          "score": 56,
+          "category": "X"
+        },
+        {
+          "name": "fbjcur",
+          "score": 85,
+          "category": "Z"
+        },
+        {
+          "name": "cnatzm",
+          "score": 7,
+          "category": "X"
+        },
+        {
+          "name": "wdceao",
+          "score": 68,
+          "category": "X"
+        },
+        {
+          "name": "ldijha",
+          "score": 96,
+          "category": "Y"
+        },
+        {
+          "name": "enelrq",
+          "score": 6,
+          "category": "X"
+        }
+      ]
+    }
+  },
+  "ground_truth": "419",
+  "difficulty": 3
+}

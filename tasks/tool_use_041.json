@@ -1,0 +1,119 @@
+{
+  "id": "tool_use_041",
+  "domain": "tool_use",
+  "prompt": "Use the inventory API to list all items. Find the most expensive item that is in stock. Return its name.",
+  "tools": [
+    {
+      "name": "inventory",
+      "desc": "List items with price and stock"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "inventory": {
+        "responses": {
+          "": {
+            "items": [
+              {
+                "name": "ahfys",
+                "price": 365,
+                "in_stock": true
+              },
+              {
+                "name": "bvbpw",
+                "price": 151,
+                "in_stock": true
+              },
+              {
+                "name": "zejts",
+                "price": 305,
+                "in_stock": false
+              },
+              {
+                "name": "hcgtq",
+                "price": 89,
+                "in_stock": false
+              },
+              {
+                "name": "otujq",
+                "price": 80,
+                "in_stock": false
+              },
+              {
+                "name": "qgyfl",
+                "price": 480,
+                "in_stock": false
+              },
+              {
+                "name": "vqqix",
+                "price": 162,
+                "in_stock": true
+              },
+              {
+                "name": "gqtls",
+                "price": 487,
+                "in_stock": true
+              },
+              {
+                "name": "axerl",
+                "price": 102,
+                "in_stock": false
+              }
+            ]
+          }
+        },
+        "default_response": {
+          "items": [
+            {
+              "name": "ahfys",
+              "price": 365,
+              "in_stock": true
+            },
+            {
+              "name": "bvbpw",
+              "price": 151,
+              "in_stock": true
+            },
+            {
+              "name": "zejts",
+              "price": 305,
+              "in_stock": false
+            },
+            {
+              "name": "hcgtq",
+              "price": 89,
+              "in_stock": false
+            },
+            {
+              "name": "otujq",
+              "price": 80,
+              "in_stock": false
+            },
+            {
+              "name": "qgyfl",
+              "price": 480,
+              "in_stock": false
+            },
+            {
+              "name": "vqqix",
+              "price": 162,
+              "in_stock": true
+            },
+            {
+              "name": "gqtls",
+              "price": 487,
+              "in_stock": true
+            },
+            {
+              "name": "axerl",
+              "price": 102,
+              "in_stock": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ground_truth": "gqtls",
+  "difficulty": 2
+}

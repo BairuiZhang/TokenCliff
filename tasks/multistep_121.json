@@ -1,0 +1,12 @@
+{
+  "id": "multistep_121",
+  "domain": "multistep",
+  "prompt": "Start with tmla = 96. Then: add item 'kyqp' (71); add item 'whrr' (75); subtract item 'rkai' (43); subtract item 'jonl' (100). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "99",
+  "difficulty": 3
+}

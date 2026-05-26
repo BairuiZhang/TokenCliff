@@ -1,0 +1,12 @@
+{
+  "id": "multistep_107",
+  "domain": "multistep",
+  "prompt": "Start with uubf = 15. Then: multiply by item 'cbhj' (26); multiply by item 'obvo' (99); multiply by item 'ghsu' (19); multiply by item 'njxe' (51); add item 'coju' (12); add item 'dqyk' (87). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "37413189",
+  "difficulty": 5
+}

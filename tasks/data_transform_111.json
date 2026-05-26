@@ -1,0 +1,119 @@
+{
+  "id": "data_transform_111",
+  "domain": "data_transform",
+  "prompt": "Find the top 5 items by score. Return the sum of their scores.",
+  "tools": [
+    {
+      "name": "query",
+      "desc": "Query table"
+    }
+  ],
+  "environment": {
+    "tables": {
+      "items": [
+        {
+          "name": "dsutex",
+          "score": 63,
+          "category": "Z"
+        },
+        {
+          "name": "znxdji",
+          "score": 16,
+          "category": "Y"
+        },
+        {
+          "name": "fygnky",
+          "score": 57,
+          "category": "Y"
+        },
+        {
+          "name": "yidcjq",
+          "score": 63,
+          "category": "Y"
+        },
+        {
+          "name": "iaznbb",
+          "score": 81,
+          "category": "Y"
+        },
+        {
+          "name": "psswnd",
+          "score": 7,
+          "category": "X"
+        },
+        {
+          "name": "iavnou",
+          "score": 2,
+          "category": "Y"
+        },
+        {
+          "name": "dgltyk",
+          "score": 86,
+          "category": "X"
+        },
+        {
+          "name": "bbvuzd",
+          "score": 72,
+          "category": "Z"
+        },
+        {
+          "name": "nomnvf",
+          "score": 97,
+          "category": "Z"
+        },
+        {
+          "name": "xwgtaj",
+          "score": 72,
+          "category": "X"
+        },
+        {
+          "name": "kqzblf",
+          "score": 20,
+          "category": "Z"
+        },
+        {
+          "name": "qnzwau",
+          "score": 75,
+          "category": "X"
+        },
+        {
+          "name": "hnoyzk",
+          "score": 67,
+          "category": "Z"
+        },
+        {
+          "name": "cdaprh",
+          "score": 39,
+          "category": "Z"
+        },
+        {
+          "name": "ripjir",
+          "score": 22,
+          "category": "Y"
+        },
+        {
+          "name": "ejssjn",
+          "score": 68,
+          "category": "Z"
+        },
+        {
+          "name": "vhndtm",
+          "score": 71,
+          "category": "Y"
+        },
+        {
+          "name": "doqrwg",
+          "score": 64,
+          "category": "Z"
+        },
+        {
+          "name": "eeirgn",
+          "score": 55,
+          "category": "X"
+        }
+      ]
+    }
+  },
+  "ground_truth": "411",
+  "difficulty": 3
+}

@@ -1,0 +1,37 @@
+{
+  "id": "file_ops_107",
+  "domain": "file_ops",
+  "prompt": "Navigate the directory tree to find 'target.txt'. Return its content.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/lmmw/vtyp/ugil/target.txt": "3250",
+      "/lmmw/ugil/yqjdou.txt": "900",
+      "/vtyp/jwpmow.txt": "945",
+      "/ugil/uuruja.txt": "548",
+      "/lmmw/lmmw/lmmw/gfflrk.txt": "149",
+      "/kxey/xnwyqt.txt": "720",
+      "/ugil/lmmw/kkpanj.txt": "540",
+      "/lmmw/dqon/vtyp/ghupip.txt": "809",
+      "/vtyp/qzmk/lmmw/hynmbp.txt": "971",
+      "/vtyp/hzob/vtyp/cryolp.txt": "434",
+      "/mzsf/ppjons.txt": "804",
+      "/xdxu/ugil/vghdmn.txt": "855",
+      "/fiaa/fiaa/sbxnzl.txt": "199",
+      "/lmmw/gqidls.txt": "552",
+      "/erij/vtyp/ugil/bfodoa.txt": "496",
+      "/lmmw/oech/oech/qfpcjl.txt": "825"
+    }
+  },
+  "ground_truth": "3250",
+  "difficulty": 3
+}

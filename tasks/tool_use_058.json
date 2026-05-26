@@ -1,0 +1,109 @@
+{
+  "id": "tool_use_058",
+  "domain": "tool_use",
+  "prompt": "Use the inventory API to list all items. Find the cheapest item that is in stock. Return its name.",
+  "tools": [
+    {
+      "name": "inventory",
+      "desc": "List items with price and stock"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "inventory": {
+        "responses": {
+          "": {
+            "items": [
+              {
+                "name": "rzpuf",
+                "price": 105,
+                "in_stock": true
+              },
+              {
+                "name": "mqnal",
+                "price": 412,
+                "in_stock": true
+              },
+              {
+                "name": "jbqjh",
+                "price": 305,
+                "in_stock": true
+              },
+              {
+                "name": "pjjfr",
+                "price": 96,
+                "in_stock": true
+              },
+              {
+                "name": "lhquw",
+                "price": 388,
+                "in_stock": false
+              },
+              {
+                "name": "ipkfh",
+                "price": 438,
+                "in_stock": true
+              },
+              {
+                "name": "lmndd",
+                "price": 429,
+                "in_stock": false
+              },
+              {
+                "name": "npswy",
+                "price": 349,
+                "in_stock": false
+              }
+            ]
+          }
+        },
+        "default_response": {
+          "items": [
+            {
+              "name": "rzpuf",
+              "price": 105,
+              "in_stock": true
+            },
+            {
+              "name": "mqnal",
+              "price": 412,
+              "in_stock": true
+            },
+            {
+              "name": "jbqjh",
+              "price": 305,
+              "in_stock": true
+            },
+            {
+              "name": "pjjfr",
+              "price": 96,
+              "in_stock": true
+            },
+            {
+              "name": "lhquw",
+              "price": 388,
+              "in_stock": false
+            },
+            {
+              "name": "ipkfh",
+              "price": 438,
+              "in_stock": true
+            },
+            {
+              "name": "lmndd",
+              "price": 429,
+              "in_stock": false
+            },
+            {
+              "name": "npswy",
+              "price": 349,
+              "in_stock": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ground_truth": "pjjfr",
+  "difficulty": 2
+}

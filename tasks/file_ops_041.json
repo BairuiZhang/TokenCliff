@@ -1,0 +1,35 @@
+{
+  "id": "file_ops_041",
+  "domain": "file_ops",
+  "prompt": "Search all files in /docs for the keyword 'xlqlw'. Return the filename containing it.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    },
+    {
+      "name": "find",
+      "desc": "Find files"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/docs/ethpkm.txt": "Document 0 about qmufaqfr. No relevant matches here.",
+      "/docs/xgejuz.txt": "Document 1 about dcazdvdi. No relevant matches here.",
+      "/docs/ypjpva.txt": "Document 2 about acczgpyu. No relevant matches here.",
+      "/docs/kxizef.txt": "Report section 3. Contains keyword xlqlw in paragraph.",
+      "/docs/qiyyfk.txt": "Document 4 about viaiyalv. No relevant matches here.",
+      "/docs/zhgodo.txt": "Document 5 about yrbfhwyh. No relevant matches here.",
+      "/docs/vavmst.txt": "Document 6 about wlablfal. No relevant matches here.",
+      "/docs/lnnpda.txt": "Document 7 about gnrfcsdl. No relevant matches here.",
+      "/docs/hmxooo.txt": "Document 8 about cczrecyf. No relevant matches here.",
+      "/docs/jfknce.txt": "Document 9 about ormuzgho. No relevant matches here."
+    }
+  },
+  "ground_truth": "kxizef.txt",
+  "difficulty": 2
+}

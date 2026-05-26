@@ -1,0 +1,34 @@
+{
+  "id": "multistep_086",
+  "domain": "multistep",
+  "prompt": "Read all files in /reports. Find the values for: metric_lvz, metric_vai, metric_ngi, metric_jgx. Return their average (rounded to integer).",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/reports/wuvxp.txt": "This quarterly report covers the period ending Q4 2026. Performance indicators show mixed results across divisions. The metric_lvz measurement recorded a value of 695 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/lkfou.txt": "This quarterly report covers the period ending Q4 2026. Performance indicators show mixed results across divisions. The metric_vai measurement recorded a value of 733 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/parvq.txt": "This quarterly report covers the period ending Q1 2026. Performance indicators show mixed results across divisions. The metric_ngi measurement recorded a value of 282 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/aurzo.txt": "This quarterly report covers the period ending Q1 2026. Performance indicators show mixed results across divisions. The metric_jgx measurement recorded a value of 849 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/ucspw.txt": "This quarterly report covers the period ending Q4 2026. Performance indicators show mixed results across divisions. The metric_dan measurement recorded a value of 945 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/zcqwm.txt": "This quarterly report covers the period ending Q1 2026. Performance indicators show mixed results across divisions. The metric_rve measurement recorded a value of 472 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/lfiqd.txt": "This quarterly report covers the period ending Q4 2026. Performance indicators show mixed results across divisions. The metric_czr measurement recorded a value of 568 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/xpupz.txt": "This quarterly report covers the period ending Q1 2026. Performance indicators show mixed results across divisions. The metric_izv measurement recorded a value of 874 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/gbjck.txt": "This quarterly report covers the period ending Q1 2026. Performance indicators show mixed results across divisions. The metric_lnp measurement recorded a value of 695 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/pwkhd.txt": "This quarterly report covers the period ending Q2 2026. Performance indicators show mixed results across divisions. The metric_dzm measurement recorded a value of 24 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/olqer.txt": "This quarterly report covers the period ending Q2 2026. Performance indicators show mixed results across divisions. The metric_gfu measurement recorded a value of 964 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/evmbr.txt": "This quarterly report covers the period ending Q4 2026. Performance indicators show mixed results across divisions. The metric_dcx measurement recorded a value of 423 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/jzsoy.txt": "This quarterly report covers the period ending Q3 2026. Performance indicators show mixed results across divisions. The metric_glc measurement recorded a value of 539 this period. Further analysis is needed to determine long-term trends."
+    }
+  },
+  "ground_truth": "640",
+  "difficulty": 4
+}

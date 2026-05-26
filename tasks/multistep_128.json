@@ -1,0 +1,12 @@
+{
+  "id": "multistep_128",
+  "domain": "multistep",
+  "prompt": "Start with pqoz = 26. Then: multiply by item 'auvb' (51); subtract item 'nwre' (79); subtract item 'ygeh' (71); add item 'vubu' (16); subtract item 'owyt' (60). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "1132",
+  "difficulty": 4
+}

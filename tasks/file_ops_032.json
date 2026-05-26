@@ -1,0 +1,40 @@
+{
+  "id": "file_ops_032",
+  "domain": "file_ops",
+  "prompt": "Search all files in /docs for the keyword 'jbqy'. Return the filename containing it.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    },
+    {
+      "name": "find",
+      "desc": "Find files"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/docs/otqqgd.txt": "Report section 0. Contains keyword jbqy in paragraph.",
+      "/docs/qcylrj.txt": "Document 1 about jymgsmgq. No relevant matches here.",
+      "/docs/duvefy.txt": "Document 2 about huriraiv. No relevant matches here.",
+      "/docs/zsjyqx.txt": "Document 3 about vnjmthtu. No relevant matches here.",
+      "/docs/jtcxyl.txt": "Document 4 about jvijeecf. No relevant matches here.",
+      "/docs/rbyffb.txt": "Document 5 about uxicctjp. No relevant matches here.",
+      "/docs/awrauk.txt": "Document 6 about ewtqddgx. No relevant matches here.",
+      "/docs/bbgwml.txt": "Document 7 about ldcoavix. No relevant matches here.",
+      "/docs/wjqylt.txt": "Document 8 about csbnapcw. No relevant matches here.",
+      "/docs/tiwwyc.txt": "Document 9 about jkccloen. No relevant matches here.",
+      "/docs/ghntbt.txt": "Document 10 about pacjrgox. No relevant matches here.",
+      "/docs/qtegbe.txt": "Document 11 about lrjhwhap. No relevant matches here.",
+      "/docs/bmhoou.txt": "Document 12 about hoytcpcs. No relevant matches here.",
+      "/docs/yvqqyx.txt": "Document 13 about uytdnbhn. No relevant matches here.",
+      "/docs/jozpsr.txt": "Document 14 about jatexyad. No relevant matches here."
+    }
+  },
+  "ground_truth": "otqqgd.txt",
+  "difficulty": 2
+}

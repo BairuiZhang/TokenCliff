@@ -1,0 +1,181 @@
+{
+  "id": "data_transform_020",
+  "domain": "data_transform",
+  "prompt": "How many employees are in the 'marketing' department? Return just the number.",
+  "tools": [
+    {
+      "name": "query",
+      "desc": "Query table with where/select/agg/group_by"
+    }
+  ],
+  "environment": {
+    "tables": {
+      "employees": [
+        {
+          "name": "oyspunbw",
+          "dept": "ops",
+          "salary": 100662,
+          "city": "NYC"
+        },
+        {
+          "name": "budxjnaw",
+          "dept": "ops",
+          "salary": 66590,
+          "city": "NYC"
+        },
+        {
+          "name": "wwpugoag",
+          "dept": "marketing",
+          "salary": 83154,
+          "city": "Paris"
+        },
+        {
+          "name": "ejsnndtu",
+          "dept": "ops",
+          "salary": 127935,
+          "city": "Tokyo"
+        },
+        {
+          "name": "zibjasgz",
+          "dept": "sales",
+          "salary": 115191,
+          "city": "Berlin"
+        },
+        {
+          "name": "hcusdnqo",
+          "dept": "sales",
+          "salary": 121878,
+          "city": "NYC"
+        },
+        {
+          "name": "mhmxodol",
+          "dept": "engineering",
+          "salary": 167123,
+          "city": "London"
+        },
+        {
+          "name": "lyckbyye",
+          "dept": "legal",
+          "salary": 96346,
+          "city": "Sydney"
+        },
+        {
+          "name": "ohjlceji",
+          "dept": "sales",
+          "salary": 158288,
+          "city": "Sydney"
+        },
+        {
+          "name": "nlaqogik",
+          "dept": "ops",
+          "salary": 138260,
+          "city": "Tokyo"
+        },
+        {
+          "name": "kyofohhr",
+          "dept": "engineering",
+          "salary": 48236,
+          "city": "Paris"
+        },
+        {
+          "name": "maqumijz",
+          "dept": "ops",
+          "salary": 98114,
+          "city": "Sydney"
+        },
+        {
+          "name": "dfwtdmjn",
+          "dept": "hr",
+          "salary": 97833,
+          "city": "Tokyo"
+        },
+        {
+          "name": "zkfamwfs",
+          "dept": "sales",
+          "salary": 176377,
+          "city": "NYC"
+        },
+        {
+          "name": "mzboxixo",
+          "dept": "finance",
+          "salary": 64409,
+          "city": "Sydney"
+        },
+        {
+          "name": "qmqxaybw",
+          "dept": "legal",
+          "salary": 182453,
+          "city": "Tokyo"
+        },
+        {
+          "name": "apjdbflb",
+          "dept": "legal",
+          "salary": 175391,
+          "city": "London"
+        },
+        {
+          "name": "klsfjfiz",
+          "dept": "legal",
+          "salary": 53279,
+          "city": "NYC"
+        },
+        {
+          "name": "oimwvqzb",
+          "dept": "sales",
+          "salary": 60324,
+          "city": "Sydney"
+        },
+        {
+          "name": "vzvkhaxf",
+          "dept": "legal",
+          "salary": 110380,
+          "city": "Paris"
+        },
+        {
+          "name": "drsqpozi",
+          "dept": "engineering",
+          "salary": 146795,
+          "city": "London"
+        },
+        {
+          "name": "ygbxdabh",
+          "dept": "hr",
+          "salary": 170324,
+          "city": "Paris"
+        },
+        {
+          "name": "gypggthe",
+          "dept": "ops",
+          "salary": 68369,
+          "city": "Tokyo"
+        },
+        {
+          "name": "cpphhkqv",
+          "dept": "ops",
+          "salary": 103076,
+          "city": "Tokyo"
+        },
+        {
+          "name": "gyfwnerk",
+          "dept": "engineering",
+          "salary": 76401,
+          "city": "Sydney"
+        },
+        {
+          "name": "cgduomzi",
+          "dept": "engineering",
+          "salary": 160459,
+          "city": "Sydney"
+        },
+        {
+          "name": "khqobicw",
+          "dept": "ops",
+          "salary": 90963,
+          "city": "Sydney"
+        }
+      ]
+    }
+  },
+  "ground_truth": "1",
+  "difficulty": 1
+}

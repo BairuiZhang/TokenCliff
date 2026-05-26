@@ -1,0 +1,12 @@
+{
+  "id": "multistep_143",
+  "domain": "multistep",
+  "prompt": "Start with hrki = 81. Then: subtract item 'uarm' (56); add item 'utey' (17); add item 'uogc' (87); add item 'cffo' (92); multiply by item 'swjj' (90). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "19890",
+  "difficulty": 4
+}

@@ -1,0 +1,37 @@
+{
+  "id": "file_ops_034",
+  "domain": "file_ops",
+  "prompt": "Search all files in /docs for the keyword 'sofh'. Return the filename containing it.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    },
+    {
+      "name": "find",
+      "desc": "Find files"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/docs/uwsceh.txt": "Document 0 about ukekpjaq. No relevant matches here.",
+      "/docs/ohlbvl.txt": "Document 1 about oqcimced. No relevant matches here.",
+      "/docs/hmaoqr.txt": "Document 2 about ltbumkqx. No relevant matches here.",
+      "/docs/uxdmwj.txt": "Document 3 about kcqaucrh. No relevant matches here.",
+      "/docs/dfpjva.txt": "Document 4 about tqzqqdza. No relevant matches here.",
+      "/docs/ttnljy.txt": "Document 5 about ofbcruxo. No relevant matches here.",
+      "/docs/oyvlgx.txt": "Document 6 about kyhavgxv. No relevant matches here.",
+      "/docs/xanmua.txt": "Document 7 about dnwhqews. No relevant matches here.",
+      "/docs/hhqwlp.txt": "Document 8 about yinegijj. No relevant matches here.",
+      "/docs/awajit.txt": "Document 9 about ysqlslyf. No relevant matches here.",
+      "/docs/gatfwo.txt": "Document 10 about ohnjeorm. No relevant matches here.",
+      "/docs/xpafgs.txt": "Report section 11. Contains keyword sofh in paragraph."
+    }
+  },
+  "ground_truth": "xpafgs.txt",
+  "difficulty": 2
+}

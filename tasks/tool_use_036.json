@@ -1,0 +1,149 @@
+{
+  "id": "tool_use_036",
+  "domain": "tool_use",
+  "prompt": "Use the inventory API to list all items. Find the cheapest item regardless of stock. Return its name.",
+  "tools": [
+    {
+      "name": "inventory",
+      "desc": "List items with price and stock"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "inventory": {
+        "responses": {
+          "": {
+            "items": [
+              {
+                "name": "cmzzj",
+                "price": 58,
+                "in_stock": false
+              },
+              {
+                "name": "cddoy",
+                "price": 342,
+                "in_stock": false
+              },
+              {
+                "name": "rgfck",
+                "price": 392,
+                "in_stock": true
+              },
+              {
+                "name": "dpbnk",
+                "price": 317,
+                "in_stock": true
+              },
+              {
+                "name": "gvhpl",
+                "price": 492,
+                "in_stock": false
+              },
+              {
+                "name": "hzdxt",
+                "price": 222,
+                "in_stock": true
+              },
+              {
+                "name": "ibbkp",
+                "price": 107,
+                "in_stock": true
+              },
+              {
+                "name": "uurwa",
+                "price": 12,
+                "in_stock": false
+              },
+              {
+                "name": "weygv",
+                "price": 269,
+                "in_stock": true
+              },
+              {
+                "name": "sekxa",
+                "price": 476,
+                "in_stock": true
+              },
+              {
+                "name": "lwmhc",
+                "price": 341,
+                "in_stock": false
+              },
+              {
+                "name": "jdtto",
+                "price": 276,
+                "in_stock": false
+              }
+            ]
+          }
+        },
+        "default_response": {
+          "items": [
+            {
+              "name": "cmzzj",
+              "price": 58,
+              "in_stock": false
+            },
+            {
+              "name": "cddoy",
+              "price": 342,
+              "in_stock": false
+            },
+            {
+              "name": "rgfck",
+              "price": 392,
+              "in_stock": true
+            },
+            {
+              "name": "dpbnk",
+              "price": 317,
+              "in_stock": true
+            },
+            {
+              "name": "gvhpl",
+              "price": 492,
+              "in_stock": false
+            },
+            {
+              "name": "hzdxt",
+              "price": 222,
+              "in_stock": true
+            },
+            {
+              "name": "ibbkp",
+              "price": 107,
+              "in_stock": true
+            },
+            {
+              "name": "uurwa",
+              "price": 12,
+              "in_stock": false
+            },
+            {
+              "name": "weygv",
+              "price": 269,
+              "in_stock": true
+            },
+            {
+              "name": "sekxa",
+              "price": 476,
+              "in_stock": true
+            },
+            {
+              "name": "lwmhc",
+              "price": 341,
+              "in_stock": false
+            },
+            {
+              "name": "jdtto",
+              "price": 276,
+              "in_stock": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ground_truth": "uurwa",
+  "difficulty": 2
+}

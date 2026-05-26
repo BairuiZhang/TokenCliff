@@ -1,0 +1,12 @@
+{
+  "id": "multistep_150",
+  "domain": "multistep",
+  "prompt": "Start with tlwl = 43. Then: add item 'sbue' (87); multiply by item 'lufu' (73); subtract item 'ufmt' (64); subtract item 'tmfz' (35). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "9391",
+  "difficulty": 3
+}

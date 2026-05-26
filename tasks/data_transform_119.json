@@ -1,0 +1,119 @@
+{
+  "id": "data_transform_119",
+  "domain": "data_transform",
+  "prompt": "Find the top 3 items by score. Return the sum of their scores.",
+  "tools": [
+    {
+      "name": "query",
+      "desc": "Query table"
+    }
+  ],
+  "environment": {
+    "tables": {
+      "items": [
+        {
+          "name": "cuumac",
+          "score": 96,
+          "category": "X"
+        },
+        {
+          "name": "fmxhrw",
+          "score": 100,
+          "category": "X"
+        },
+        {
+          "name": "xdiipk",
+          "score": 76,
+          "category": "Y"
+        },
+        {
+          "name": "homrel",
+          "score": 18,
+          "category": "Z"
+        },
+        {
+          "name": "kkfktf",
+          "score": 73,
+          "category": "Z"
+        },
+        {
+          "name": "spwarc",
+          "score": 61,
+          "category": "X"
+        },
+        {
+          "name": "fmqpcs",
+          "score": 65,
+          "category": "X"
+        },
+        {
+          "name": "vqryzl",
+          "score": 82,
+          "category": "Y"
+        },
+        {
+          "name": "uncpnw",
+          "score": 83,
+          "category": "Z"
+        },
+        {
+          "name": "tmzaxf",
+          "score": 75,
+          "category": "Y"
+        },
+        {
+          "name": "rvmhmh",
+          "score": 77,
+          "category": "Z"
+        },
+        {
+          "name": "qugxok",
+          "score": 6,
+          "category": "Y"
+        },
+        {
+          "name": "rcwotx",
+          "score": 85,
+          "category": "X"
+        },
+        {
+          "name": "ykmuku",
+          "score": 72,
+          "category": "Z"
+        },
+        {
+          "name": "khwwdi",
+          "score": 49,
+          "category": "Y"
+        },
+        {
+          "name": "kfdljb",
+          "score": 36,
+          "category": "X"
+        },
+        {
+          "name": "vvseyz",
+          "score": 18,
+          "category": "X"
+        },
+        {
+          "name": "fryyhy",
+          "score": 24,
+          "category": "Y"
+        },
+        {
+          "name": "rqswyv",
+          "score": 82,
+          "category": "Z"
+        },
+        {
+          "name": "unwaku",
+          "score": 60,
+          "category": "Z"
+        }
+      ]
+    }
+  },
+  "ground_truth": "281",
+  "difficulty": 3
+}

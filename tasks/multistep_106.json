@@ -1,0 +1,12 @@
+{
+  "id": "multistep_106",
+  "domain": "multistep",
+  "prompt": "Start with wuwk = 70. Then: multiply by item 'ljgk' (29); add item 'cuky' (52); subtract item 'iena' (93); add item 'opgm' (77). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "2066",
+  "difficulty": 3
+}

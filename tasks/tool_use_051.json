@@ -1,0 +1,89 @@
+{
+  "id": "tool_use_051",
+  "domain": "tool_use",
+  "prompt": "Use the inventory API to list all items. Find the cheapest item regardless of stock. Return its name.",
+  "tools": [
+    {
+      "name": "inventory",
+      "desc": "List items with price and stock"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "inventory": {
+        "responses": {
+          "": {
+            "items": [
+              {
+                "name": "czezt",
+                "price": 277,
+                "in_stock": true
+              },
+              {
+                "name": "qfkqc",
+                "price": 381,
+                "in_stock": false
+              },
+              {
+                "name": "dgcal",
+                "price": 424,
+                "in_stock": true
+              },
+              {
+                "name": "vzthd",
+                "price": 57,
+                "in_stock": true
+              },
+              {
+                "name": "axqfu",
+                "price": 223,
+                "in_stock": true
+              },
+              {
+                "name": "jsvzd",
+                "price": 160,
+                "in_stock": false
+              }
+            ]
+          }
+        },
+        "default_response": {
+          "items": [
+            {
+              "name": "czezt",
+              "price": 277,
+              "in_stock": true
+            },
+            {
+              "name": "qfkqc",
+              "price": 381,
+              "in_stock": false
+            },
+            {
+              "name": "dgcal",
+              "price": 424,
+              "in_stock": true
+            },
+            {
+              "name": "vzthd",
+              "price": 57,
+              "in_stock": true
+            },
+            {
+              "name": "axqfu",
+              "price": 223,
+              "in_stock": true
+            },
+            {
+              "name": "jsvzd",
+              "price": 160,
+              "in_stock": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ground_truth": "vzthd",
+  "difficulty": 2
+}

@@ -1,0 +1,12 @@
+{
+  "id": "multistep_148",
+  "domain": "multistep",
+  "prompt": "Start with dfns = 77. Then: subtract item 'lsem' (52); subtract item 'lolc' (62); add item 'nago' (64); multiply by item 'xcmw' (50); multiply by item 'igji' (62). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "83700",
+  "difficulty": 4
+}

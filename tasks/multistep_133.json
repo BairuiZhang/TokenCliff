@@ -1,0 +1,12 @@
+{
+  "id": "multistep_133",
+  "domain": "multistep",
+  "prompt": "Start with dwlf = 13. Then: add item 'vxnu' (81); multiply by item 'ialt' (20); subtract item 'ovtp' (27); subtract item 'gjhx' (20); subtract item 'wzhz' (74). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "1759",
+  "difficulty": 4
+}

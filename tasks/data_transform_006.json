@@ -1,0 +1,187 @@
+{
+  "id": "data_transform_006",
+  "domain": "data_transform",
+  "prompt": "How many employees are in the 'engineering' department? Return just the number.",
+  "tools": [
+    {
+      "name": "query",
+      "desc": "Query table with where/select/agg/group_by"
+    }
+  ],
+  "environment": {
+    "tables": {
+      "employees": [
+        {
+          "name": "efmhcbss",
+          "dept": "ops",
+          "salary": 83902,
+          "city": "Paris"
+        },
+        {
+          "name": "bcdfvfxu",
+          "dept": "marketing",
+          "salary": 187499,
+          "city": "Tokyo"
+        },
+        {
+          "name": "wqjuzzcs",
+          "dept": "sales",
+          "salary": 50387,
+          "city": "Paris"
+        },
+        {
+          "name": "kpyhcexd",
+          "dept": "sales",
+          "salary": 143693,
+          "city": "NYC"
+        },
+        {
+          "name": "hjnemmfj",
+          "dept": "sales",
+          "salary": 86978,
+          "city": "Tokyo"
+        },
+        {
+          "name": "uctyzzwh",
+          "dept": "hr",
+          "salary": 141886,
+          "city": "NYC"
+        },
+        {
+          "name": "qhfbnsnn",
+          "dept": "engineering",
+          "salary": 100511,
+          "city": "Berlin"
+        },
+        {
+          "name": "tjjvsdij",
+          "dept": "engineering",
+          "salary": 119041,
+          "city": "Tokyo"
+        },
+        {
+          "name": "dkjsvdcq",
+          "dept": "hr",
+          "salary": 94020,
+          "city": "London"
+        },
+        {
+          "name": "snbfcisc",
+          "dept": "marketing",
+          "salary": 51503,
+          "city": "Sydney"
+        },
+        {
+          "name": "dphklnuo",
+          "dept": "ops",
+          "salary": 152574,
+          "city": "London"
+        },
+        {
+          "name": "zghwjvje",
+          "dept": "ops",
+          "salary": 82450,
+          "city": "Berlin"
+        },
+        {
+          "name": "yxjfzmmq",
+          "dept": "marketing",
+          "salary": 64431,
+          "city": "Tokyo"
+        },
+        {
+          "name": "yotvblou",
+          "dept": "marketing",
+          "salary": 123035,
+          "city": "Sydney"
+        },
+        {
+          "name": "zfptfolz",
+          "dept": "hr",
+          "salary": 84938,
+          "city": "Paris"
+        },
+        {
+          "name": "blsomnsa",
+          "dept": "ops",
+          "salary": 72826,
+          "city": "London"
+        },
+        {
+          "name": "vefioqhf",
+          "dept": "ops",
+          "salary": 74986,
+          "city": "Paris"
+        },
+        {
+          "name": "cmbhvbgs",
+          "dept": "engineering",
+          "salary": 148466,
+          "city": "Paris"
+        },
+        {
+          "name": "xzbduvxh",
+          "dept": "ops",
+          "salary": 197092,
+          "city": "Paris"
+        },
+        {
+          "name": "nkqpvrkb",
+          "dept": "sales",
+          "salary": 95494,
+          "city": "Paris"
+        },
+        {
+          "name": "ddhvblax",
+          "dept": "engineering",
+          "salary": 48855,
+          "city": "Tokyo"
+        },
+        {
+          "name": "hkhophjw",
+          "dept": "engineering",
+          "salary": 132384,
+          "city": "Sydney"
+        },
+        {
+          "name": "dyjwvqlv",
+          "dept": "ops",
+          "salary": 169707,
+          "city": "Berlin"
+        },
+        {
+          "name": "xpqfpjar",
+          "dept": "hr",
+          "salary": 53399,
+          "city": "Sydney"
+        },
+        {
+          "name": "qrtizysz",
+          "dept": "hr",
+          "salary": 113019,
+          "city": "NYC"
+        },
+        {
+          "name": "cwpgstqf",
+          "dept": "finance",
+          "salary": 102031,
+          "city": "Sydney"
+        },
+        {
+          "name": "fnouhhmv",
+          "dept": "ops",
+          "salary": 198261,
+          "city": "Sydney"
+        },
+        {
+          "name": "opnnimyd",
+          "dept": "engineering",
+          "salary": 80599,
+          "city": "London"
+        }
+      ]
+    }
+  },
+  "ground_truth": "6",
+  "difficulty": 1
+}

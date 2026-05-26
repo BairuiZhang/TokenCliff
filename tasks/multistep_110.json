@@ -1,0 +1,12 @@
+{
+  "id": "multistep_110",
+  "domain": "multistep",
+  "prompt": "Start with dqhy = 56. Then: subtract item 'guqw' (34); multiply by item 'sukl' (33); add item 'kcff' (89); add item 'cwbf' (76); multiply by item 'qlmv' (45). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "40095",
+  "difficulty": 4
+}

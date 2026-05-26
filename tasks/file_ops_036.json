@@ -1,0 +1,45 @@
+{
+  "id": "file_ops_036",
+  "domain": "file_ops",
+  "prompt": "Search all files in /docs for the keyword 'ammlgyi'. Return the filename containing it.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    },
+    {
+      "name": "find",
+      "desc": "Find files"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/docs/guyoeg.txt": "Document 0 about bmelcsay. No relevant matches here.",
+      "/docs/mjvxjq.txt": "Document 1 about cjwruvss. No relevant matches here.",
+      "/docs/fuextv.txt": "Document 2 about efexgfvh. No relevant matches here.",
+      "/docs/tzjjtr.txt": "Report section 3. Contains keyword ammlgyi in paragraph.",
+      "/docs/daykfz.txt": "Document 4 about ysmkduin. No relevant matches here.",
+      "/docs/dttzbm.txt": "Document 5 about yulifttt. No relevant matches here.",
+      "/docs/tmroui.txt": "Document 6 about bogspilb. No relevant matches here.",
+      "/docs/ipgcoq.txt": "Document 7 about zryktvaa. No relevant matches here.",
+      "/docs/kclpuu.txt": "Document 8 about mrbmpzkf. No relevant matches here.",
+      "/docs/xzahid.txt": "Document 9 about majavbsb. No relevant matches here.",
+      "/docs/ebopmf.txt": "Document 10 about seeowwtx. No relevant matches here.",
+      "/docs/kkyfxk.txt": "Document 11 about jsrxjerl. No relevant matches here.",
+      "/docs/bhicfx.txt": "Document 12 about cqooxllp. No relevant matches here.",
+      "/docs/uuvabj.txt": "Document 13 about iutsseya. No relevant matches here.",
+      "/docs/btarsd.txt": "Document 14 about mayzfjll. No relevant matches here.",
+      "/docs/hqacsj.txt": "Document 15 about laqutfbn. No relevant matches here.",
+      "/docs/irgqgp.txt": "Document 16 about ugelugjh. No relevant matches here.",
+      "/docs/ytfvwg.txt": "Document 17 about kqbszmdo. No relevant matches here.",
+      "/docs/hcknaz.txt": "Document 18 about dbwfylia. No relevant matches here.",
+      "/docs/ckuoty.txt": "Document 19 about jymfrqnl. No relevant matches here."
+    }
+  },
+  "ground_truth": "tzjjtr.txt",
+  "difficulty": 2
+}

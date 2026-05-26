@@ -1,0 +1,45 @@
+{
+  "id": "file_ops_033",
+  "domain": "file_ops",
+  "prompt": "Search all files in /docs for the keyword 'nuow'. Return the filename containing it.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    },
+    {
+      "name": "find",
+      "desc": "Find files"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/docs/pagnzb.txt": "Document 0 about uwaaekjn. No relevant matches here.",
+      "/docs/okboaj.txt": "Document 1 about zwxpzuig. No relevant matches here.",
+      "/docs/jlbhkm.txt": "Document 2 about vcdebrvd. No relevant matches here.",
+      "/docs/goihfb.txt": "Document 3 about nviiqaqo. No relevant matches here.",
+      "/docs/tscsxx.txt": "Document 4 about xliqmklk. No relevant matches here.",
+      "/docs/ptvjmv.txt": "Document 5 about qzxsjhgf. No relevant matches here.",
+      "/docs/vpzsik.txt": "Document 6 about eekxtoje. No relevant matches here.",
+      "/docs/ugaeui.txt": "Document 7 about aszwszsj. No relevant matches here.",
+      "/docs/jdsbiw.txt": "Document 8 about fyqqpptv. No relevant matches here.",
+      "/docs/dzhjtg.txt": "Report section 9. Contains keyword nuow in paragraph.",
+      "/docs/zobxey.txt": "Document 10 about uzxmavgz. No relevant matches here.",
+      "/docs/tjsejz.txt": "Document 11 about fuvuagqz. No relevant matches here.",
+      "/docs/vvsyea.txt": "Document 12 about ealfzncc. No relevant matches here.",
+      "/docs/atjwkq.txt": "Document 13 about xddqqtkm. No relevant matches here.",
+      "/docs/jeohbw.txt": "Document 14 about kbdzljpi. No relevant matches here.",
+      "/docs/tditfk.txt": "Document 15 about bejrwdbp. No relevant matches here.",
+      "/docs/nyjnjt.txt": "Document 16 about nebmnlwl. No relevant matches here.",
+      "/docs/fijcbd.txt": "Document 17 about ycdvviqx. No relevant matches here.",
+      "/docs/fgchag.txt": "Document 18 about lmxnxsib. No relevant matches here.",
+      "/docs/aymgkm.txt": "Document 19 about lwjwmaxs. No relevant matches here."
+    }
+  },
+  "ground_truth": "dzhjtg.txt",
+  "difficulty": 2
+}

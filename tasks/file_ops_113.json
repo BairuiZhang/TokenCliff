@@ -1,0 +1,34 @@
+{
+  "id": "file_ops_113",
+  "domain": "file_ops",
+  "prompt": "Navigate the directory tree to find 'target.txt'. Return its content.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/dkbx/pqyu/target.txt": "5573",
+      "/dkbx/dkbx/snmf/prusfa.txt": "811",
+      "/nazv/pqyu/orjkpq.txt": "917",
+      "/pqyu/pqyu/dkbx/pwvnrx.txt": "398",
+      "/pqyu/mniweu.txt": "985",
+      "/dkbx/xqml/menlfi.txt": "203",
+      "/dkbx/pqyu/pqyu/ermdsv.txt": "962",
+      "/dkbx/pqyu/vvjync.txt": "999",
+      "/pqyu/dkbx/tfulve.txt": "325",
+      "/ffec/hljemj.txt": "502",
+      "/pqyu/pqyu/pqyu/wmszjv.txt": "100",
+      "/dkbx/hrtx/pqyu/hkqlju.txt": "55",
+      "/dkbx/dkbx/dkbx/mknvli.txt": "986"
+    }
+  },
+  "ground_truth": "5573",
+  "difficulty": 3
+}

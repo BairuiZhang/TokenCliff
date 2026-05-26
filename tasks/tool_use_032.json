@@ -1,0 +1,129 @@
+{
+  "id": "tool_use_032",
+  "domain": "tool_use",
+  "prompt": "Use the inventory API to list all items. Find the most expensive item that is in stock. Return its name.",
+  "tools": [
+    {
+      "name": "inventory",
+      "desc": "List items with price and stock"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "inventory": {
+        "responses": {
+          "": {
+            "items": [
+              {
+                "name": "bwkkb",
+                "price": 147,
+                "in_stock": true
+              },
+              {
+                "name": "bhmei",
+                "price": 398,
+                "in_stock": false
+              },
+              {
+                "name": "jltjh",
+                "price": 29,
+                "in_stock": false
+              },
+              {
+                "name": "cpxky",
+                "price": 70,
+                "in_stock": false
+              },
+              {
+                "name": "axewx",
+                "price": 238,
+                "in_stock": false
+              },
+              {
+                "name": "gazno",
+                "price": 342,
+                "in_stock": false
+              },
+              {
+                "name": "fvmyw",
+                "price": 246,
+                "in_stock": false
+              },
+              {
+                "name": "wymjj",
+                "price": 300,
+                "in_stock": true
+              },
+              {
+                "name": "vfvmp",
+                "price": 234,
+                "in_stock": false
+              },
+              {
+                "name": "qcjwc",
+                "price": 35,
+                "in_stock": false
+              }
+            ]
+          }
+        },
+        "default_response": {
+          "items": [
+            {
+              "name": "bwkkb",
+              "price": 147,
+              "in_stock": true
+            },
+            {
+              "name": "bhmei",
+              "price": 398,
+              "in_stock": false
+            },
+            {
+              "name": "jltjh",
+              "price": 29,
+              "in_stock": false
+            },
+            {
+              "name": "cpxky",
+              "price": 70,
+              "in_stock": false
+            },
+            {
+              "name": "axewx",
+              "price": 238,
+              "in_stock": false
+            },
+            {
+              "name": "gazno",
+              "price": 342,
+              "in_stock": false
+            },
+            {
+              "name": "fvmyw",
+              "price": 246,
+              "in_stock": false
+            },
+            {
+              "name": "wymjj",
+              "price": 300,
+              "in_stock": true
+            },
+            {
+              "name": "vfvmp",
+              "price": 234,
+              "in_stock": false
+            },
+            {
+              "name": "qcjwc",
+              "price": 35,
+              "in_stock": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ground_truth": "wymjj",
+  "difficulty": 2
+}

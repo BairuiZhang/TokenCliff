@@ -1,0 +1,33 @@
+{
+  "id": "file_ops_031",
+  "domain": "file_ops",
+  "prompt": "Search all files in /docs for the keyword 'btyvtws'. Return the filename containing it.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    },
+    {
+      "name": "find",
+      "desc": "Find files"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/docs/ukvqnq.txt": "Document 0 about invatxaq. No relevant matches here.",
+      "/docs/sfbafy.txt": "Document 1 about zscytnhk. No relevant matches here.",
+      "/docs/iekqbb.txt": "Report section 2. Contains keyword btyvtws in paragraph.",
+      "/docs/cxupzb.txt": "Document 3 about dkfoyazq. No relevant matches here.",
+      "/docs/iwoqxo.txt": "Document 4 about nndzplbv. No relevant matches here.",
+      "/docs/aklzxu.txt": "Document 5 about kqavresj. No relevant matches here.",
+      "/docs/vfsmhr.txt": "Document 6 about dpztinek. No relevant matches here.",
+      "/docs/hoevbk.txt": "Document 7 about ovuvqufi. No relevant matches here."
+    }
+  },
+  "ground_truth": "iekqbb.txt",
+  "difficulty": 2
+}

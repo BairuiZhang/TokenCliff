@@ -1,0 +1,12 @@
+{
+  "id": "multistep_126",
+  "domain": "multistep",
+  "prompt": "Start with uvky = 55. Then: multiply by item 'xajo' (27); multiply by item 'kugl' (57); multiply by item 'opaw' (47); multiply by item 'xmyk' (16); add item 'nzor' (29). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "63653069",
+  "difficulty": 4
+}

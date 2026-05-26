@@ -1,0 +1,40 @@
+{
+  "id": "file_ops_045",
+  "domain": "file_ops",
+  "prompt": "Search all files in /docs for the keyword 'peiflm'. Return the filename containing it.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    },
+    {
+      "name": "find",
+      "desc": "Find files"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/docs/jwqpef.txt": "Document 0 about adqqqkkj. No relevant matches here.",
+      "/docs/ethbso.txt": "Document 1 about paczafvq. No relevant matches here.",
+      "/docs/uinpcf.txt": "Document 2 about fagcoyaj. No relevant matches here.",
+      "/docs/nkxcrz.txt": "Document 3 about srlkkdgm. No relevant matches here.",
+      "/docs/jzjxzh.txt": "Document 4 about gtxmljmo. No relevant matches here.",
+      "/docs/vqkeka.txt": "Document 5 about ytgnedlg. No relevant matches here.",
+      "/docs/dfhiac.txt": "Report section 6. Contains keyword peiflm in paragraph.",
+      "/docs/ithcsz.txt": "Document 7 about gihesuyl. No relevant matches here.",
+      "/docs/izmtsh.txt": "Document 8 about uuommqzo. No relevant matches here.",
+      "/docs/cdunji.txt": "Document 9 about borixdkh. No relevant matches here.",
+      "/docs/ekbvpz.txt": "Document 10 about ibokqlyb. No relevant matches here.",
+      "/docs/iysfja.txt": "Document 11 about fntixslg. No relevant matches here.",
+      "/docs/wfjmqd.txt": "Document 12 about sflxpjyn. No relevant matches here.",
+      "/docs/lxlqpk.txt": "Document 13 about nmdealeh. No relevant matches here.",
+      "/docs/gnuejz.txt": "Document 14 about thcusqjj. No relevant matches here."
+    }
+  },
+  "ground_truth": "dfhiac.txt",
+  "difficulty": 2
+}

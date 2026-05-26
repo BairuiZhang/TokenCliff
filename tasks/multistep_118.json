@@ -1,0 +1,12 @@
+{
+  "id": "multistep_118",
+  "domain": "multistep",
+  "prompt": "Start with lrfs = 39. Then: subtract item 'uvbg' (89); add item 'fuiy' (67); subtract item 'tnri' (55); subtract item 'rtjf' (37); subtract item 'krsw' (20); multiply by item 'vsbl' (29). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "-2755",
+  "difficulty": 5
+}

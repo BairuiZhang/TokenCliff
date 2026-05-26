@@ -1,0 +1,12 @@
+{
+  "id": "multistep_139",
+  "domain": "multistep",
+  "prompt": "Start with ojsg = 97. Then: add item 'dzsj' (22); multiply by item 'vxtn' (88); subtract item 'uuwm' (47); add item 'qbms' (73). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "10498",
+  "difficulty": 3
+}

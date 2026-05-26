@@ -1,0 +1,27 @@
+{
+  "id": "tool_use_062",
+  "domain": "tool_use",
+  "prompt": "Use exchange_rate API to get USD to JPY rate. Convert 1145 USD. Return result rounded to 2 decimals.",
+  "tools": [
+    {
+      "name": "exchange_rate",
+      "desc": "Get exchange rate"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "exchange_rate": {
+        "responses": {
+          "{\"from\": \"USD\", \"to\": \"JPY\"}": {
+            "rate": 147.9
+          }
+        },
+        "default_response": {
+          "error": "pair not found"
+        }
+      }
+    }
+  },
+  "ground_truth": "169345.5",
+  "difficulty": 2
+}

@@ -1,0 +1,129 @@
+{
+  "id": "tool_use_044",
+  "domain": "tool_use",
+  "prompt": "Use the inventory API to list all items. Find the most expensive item that is in stock. Return its name.",
+  "tools": [
+    {
+      "name": "inventory",
+      "desc": "List items with price and stock"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "inventory": {
+        "responses": {
+          "": {
+            "items": [
+              {
+                "name": "mrfps",
+                "price": 213,
+                "in_stock": false
+              },
+              {
+                "name": "jcpxk",
+                "price": 304,
+                "in_stock": true
+              },
+              {
+                "name": "iicca",
+                "price": 404,
+                "in_stock": false
+              },
+              {
+                "name": "lbwdp",
+                "price": 443,
+                "in_stock": false
+              },
+              {
+                "name": "nzitb",
+                "price": 135,
+                "in_stock": false
+              },
+              {
+                "name": "ccjnz",
+                "price": 347,
+                "in_stock": true
+              },
+              {
+                "name": "kckef",
+                "price": 86,
+                "in_stock": false
+              },
+              {
+                "name": "oxnsp",
+                "price": 22,
+                "in_stock": true
+              },
+              {
+                "name": "ksjjr",
+                "price": 156,
+                "in_stock": false
+              },
+              {
+                "name": "njoij",
+                "price": 227,
+                "in_stock": false
+              }
+            ]
+          }
+        },
+        "default_response": {
+          "items": [
+            {
+              "name": "mrfps",
+              "price": 213,
+              "in_stock": false
+            },
+            {
+              "name": "jcpxk",
+              "price": 304,
+              "in_stock": true
+            },
+            {
+              "name": "iicca",
+              "price": 404,
+              "in_stock": false
+            },
+            {
+              "name": "lbwdp",
+              "price": 443,
+              "in_stock": false
+            },
+            {
+              "name": "nzitb",
+              "price": 135,
+              "in_stock": false
+            },
+            {
+              "name": "ccjnz",
+              "price": 347,
+              "in_stock": true
+            },
+            {
+              "name": "kckef",
+              "price": 86,
+              "in_stock": false
+            },
+            {
+              "name": "oxnsp",
+              "price": 22,
+              "in_stock": true
+            },
+            {
+              "name": "ksjjr",
+              "price": 156,
+              "in_stock": false
+            },
+            {
+              "name": "njoij",
+              "price": 227,
+              "in_stock": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ground_truth": "ccjnz",
+  "difficulty": 2
+}

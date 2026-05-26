@@ -1,0 +1,31 @@
+{
+  "id": "multistep_084",
+  "domain": "multistep",
+  "prompt": "Read all files in /reports. Find the values for these metrics: metric_jad, metric_coc, metric_npu, metric_jyc. Return their sum.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/reports/tyagj.txt": "This quarterly report covers the period ending Q3 2026. Performance indicators show mixed results across divisions. The metric_jad measurement recorded a value of 734 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/ywbmy.txt": "This quarterly report covers the period ending Q2 2026. Performance indicators show mixed results across divisions. The metric_coc measurement recorded a value of 753 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/eboox.txt": "This quarterly report covers the period ending Q3 2026. Performance indicators show mixed results across divisions. The metric_npu measurement recorded a value of 284 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/mjlls.txt": "This quarterly report covers the period ending Q4 2026. Performance indicators show mixed results across divisions. The metric_zvf measurement recorded a value of 557 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/qofzv.txt": "This quarterly report covers the period ending Q2 2026. Performance indicators show mixed results across divisions. The metric_jyc measurement recorded a value of 930 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/oxigi.txt": "This quarterly report covers the period ending Q2 2026. Performance indicators show mixed results across divisions. The metric_rwt measurement recorded a value of 772 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/klqny.txt": "This quarterly report covers the period ending Q2 2026. Performance indicators show mixed results across divisions. The metric_rli measurement recorded a value of 600 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/pdppt.txt": "This quarterly report covers the period ending Q3 2026. Performance indicators show mixed results across divisions. The metric_rma measurement recorded a value of 47 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/sywtk.txt": "This quarterly report covers the period ending Q4 2026. Performance indicators show mixed results across divisions. The metric_ncj measurement recorded a value of 91 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/mqjlq.txt": "This quarterly report covers the period ending Q2 2026. Performance indicators show mixed results across divisions. The metric_muo measurement recorded a value of 587 this period. Further analysis is needed to determine long-term trends."
+    }
+  },
+  "ground_truth": "2701",
+  "difficulty": 4
+}

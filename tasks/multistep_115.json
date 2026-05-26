@@ -1,0 +1,12 @@
+{
+  "id": "multistep_115",
+  "domain": "multistep",
+  "prompt": "Start with exwn = 92. Then: subtract item 'guki' (64); add item 'czca' (12); multiply by item 'eput' (71); subtract item 'mlad' (86). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "2754",
+  "difficulty": 3
+}

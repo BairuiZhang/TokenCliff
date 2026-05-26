@@ -1,0 +1,34 @@
+{
+  "id": "file_ops_037",
+  "domain": "file_ops",
+  "prompt": "Search all files in /docs for the keyword 'bxiobgl'. Return the filename containing it.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    },
+    {
+      "name": "find",
+      "desc": "Find files"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/docs/oufrfi.txt": "Document 0 about jhmkuert. No relevant matches here.",
+      "/docs/rpfccm.txt": "Document 1 about okpnxrlp. No relevant matches here.",
+      "/docs/qmyfzm.txt": "Document 2 about lzaxsegt. No relevant matches here.",
+      "/docs/fdiolo.txt": "Report section 3. Contains keyword bxiobgl in paragraph.",
+      "/docs/nfqwzc.txt": "Document 4 about dwcypmca. No relevant matches here.",
+      "/docs/smonut.txt": "Document 5 about qjrrpuna. No relevant matches here.",
+      "/docs/nczeox.txt": "Document 6 about tyhfxukr. No relevant matches here.",
+      "/docs/xdtlqm.txt": "Document 7 about zungbcku. No relevant matches here.",
+      "/docs/veftfb.txt": "Document 8 about rgevxexi. No relevant matches here."
+    }
+  },
+  "ground_truth": "fdiolo.txt",
+  "difficulty": 2
+}

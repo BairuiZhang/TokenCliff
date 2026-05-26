@@ -1,0 +1,28 @@
+{
+  "id": "file_ops_108",
+  "domain": "file_ops",
+  "prompt": "Navigate the directory tree to find 'target.txt'. Return its content.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/wvat/tbhm/bzhh/amuo/target.txt": "7917",
+      "/amuo/wvat/kyfwtm.txt": "263",
+      "/wvat/bzhh/qsyvjw.txt": "932",
+      "/tbhm/amuo/rgvmay.txt": "499",
+      "/tbhm/amuo/lyyvic.txt": "692",
+      "/tbhm/aoqkfp.txt": "183",
+      "/wvat/pfqsbo.txt": "271"
+    }
+  },
+  "ground_truth": "7917",
+  "difficulty": 3
+}

@@ -1,0 +1,109 @@
+{
+  "id": "tool_use_037",
+  "domain": "tool_use",
+  "prompt": "Use the inventory API to list all items. Find the cheapest item that is in stock. Return its name.",
+  "tools": [
+    {
+      "name": "inventory",
+      "desc": "List items with price and stock"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "inventory": {
+        "responses": {
+          "": {
+            "items": [
+              {
+                "name": "brzqn",
+                "price": 90,
+                "in_stock": true
+              },
+              {
+                "name": "igelh",
+                "price": 173,
+                "in_stock": true
+              },
+              {
+                "name": "ybfjc",
+                "price": 362,
+                "in_stock": false
+              },
+              {
+                "name": "huszr",
+                "price": 310,
+                "in_stock": true
+              },
+              {
+                "name": "ynepk",
+                "price": 280,
+                "in_stock": false
+              },
+              {
+                "name": "drtwv",
+                "price": 317,
+                "in_stock": true
+              },
+              {
+                "name": "wdmza",
+                "price": 86,
+                "in_stock": true
+              },
+              {
+                "name": "oxkln",
+                "price": 12,
+                "in_stock": false
+              }
+            ]
+          }
+        },
+        "default_response": {
+          "items": [
+            {
+              "name": "brzqn",
+              "price": 90,
+              "in_stock": true
+            },
+            {
+              "name": "igelh",
+              "price": 173,
+              "in_stock": true
+            },
+            {
+              "name": "ybfjc",
+              "price": 362,
+              "in_stock": false
+            },
+            {
+              "name": "huszr",
+              "price": 310,
+              "in_stock": true
+            },
+            {
+              "name": "ynepk",
+              "price": 280,
+              "in_stock": false
+            },
+            {
+              "name": "drtwv",
+              "price": 317,
+              "in_stock": true
+            },
+            {
+              "name": "wdmza",
+              "price": 86,
+              "in_stock": true
+            },
+            {
+              "name": "oxkln",
+              "price": 12,
+              "in_stock": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ground_truth": "wdmza",
+  "difficulty": 2
+}

@@ -1,0 +1,109 @@
+{
+  "id": "tool_use_049",
+  "domain": "tool_use",
+  "prompt": "Use the inventory API to list all items. Find the cheapest item that is in stock. Return its name.",
+  "tools": [
+    {
+      "name": "inventory",
+      "desc": "List items with price and stock"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "inventory": {
+        "responses": {
+          "": {
+            "items": [
+              {
+                "name": "dufwa",
+                "price": 104,
+                "in_stock": true
+              },
+              {
+                "name": "ijkvu",
+                "price": 51,
+                "in_stock": true
+              },
+              {
+                "name": "bexhm",
+                "price": 20,
+                "in_stock": false
+              },
+              {
+                "name": "eezky",
+                "price": 85,
+                "in_stock": false
+              },
+              {
+                "name": "ejoad",
+                "price": 294,
+                "in_stock": true
+              },
+              {
+                "name": "rsxko",
+                "price": 399,
+                "in_stock": true
+              },
+              {
+                "name": "dstld",
+                "price": 389,
+                "in_stock": false
+              },
+              {
+                "name": "jpiqn",
+                "price": 11,
+                "in_stock": false
+              }
+            ]
+          }
+        },
+        "default_response": {
+          "items": [
+            {
+              "name": "dufwa",
+              "price": 104,
+              "in_stock": true
+            },
+            {
+              "name": "ijkvu",
+              "price": 51,
+              "in_stock": true
+            },
+            {
+              "name": "bexhm",
+              "price": 20,
+              "in_stock": false
+            },
+            {
+              "name": "eezky",
+              "price": 85,
+              "in_stock": false
+            },
+            {
+              "name": "ejoad",
+              "price": 294,
+              "in_stock": true
+            },
+            {
+              "name": "rsxko",
+              "price": 399,
+              "in_stock": true
+            },
+            {
+              "name": "dstld",
+              "price": 389,
+              "in_stock": false
+            },
+            {
+              "name": "jpiqn",
+              "price": 11,
+              "in_stock": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ground_truth": "ijkvu",
+  "difficulty": 2
+}

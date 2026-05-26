@@ -1,0 +1,35 @@
+{
+  "id": "file_ops_106",
+  "domain": "file_ops",
+  "prompt": "Navigate the directory tree to find 'target.txt'. Return its content.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/xsgs/lkcj/ackw/target.txt": "7847",
+      "/jxfk/ackw/cujovj.txt": "629",
+      "/ackw/lkcj/thfvpz.txt": "578",
+      "/ackw/phkk/ouwliy.txt": "908",
+      "/ackw/ytjobv.txt": "410",
+      "/ackw/dpbfup.txt": "171",
+      "/ackw/ffools.txt": "676",
+      "/xsgs/gvou/ackw/qiyfhb.txt": "643",
+      "/dskd/ahsylf.txt": "323",
+      "/lkcj/ackw/lkcj/lgetqy.txt": "20",
+      "/xsgs/mwav/ackw/ydpdyj.txt": "184",
+      "/ackw/yijaog.txt": "148",
+      "/xsgs/mflayf.txt": "969",
+      "/xsgs/nberej.txt": "264"
+    }
+  },
+  "ground_truth": "7847",
+  "difficulty": 3
+}

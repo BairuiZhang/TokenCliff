@@ -1,0 +1,12 @@
+{
+  "id": "multistep_122",
+  "domain": "multistep",
+  "prompt": "Start with vqbj = 67. Then: add item 'ikya' (97); add item 'sgmn' (73); subtract item 'cdrw' (29); subtract item 'udiz' (29); subtract item 'ealk' (14). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "165",
+  "difficulty": 4
+}

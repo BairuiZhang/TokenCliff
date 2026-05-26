@@ -1,0 +1,119 @@
+{
+  "id": "data_transform_106",
+  "domain": "data_transform",
+  "prompt": "Find the top 4 items by score. Return the sum of their scores.",
+  "tools": [
+    {
+      "name": "query",
+      "desc": "Query table"
+    }
+  ],
+  "environment": {
+    "tables": {
+      "items": [
+        {
+          "name": "pbqijz",
+          "score": 15,
+          "category": "Z"
+        },
+        {
+          "name": "seycft",
+          "score": 79,
+          "category": "Y"
+        },
+        {
+          "name": "ywpbgi",
+          "score": 72,
+          "category": "Y"
+        },
+        {
+          "name": "zdafyw",
+          "score": 69,
+          "category": "X"
+        },
+        {
+          "name": "qqqntv",
+          "score": 89,
+          "category": "Z"
+        },
+        {
+          "name": "yylobc",
+          "score": 10,
+          "category": "Z"
+        },
+        {
+          "name": "uoluwo",
+          "score": 75,
+          "category": "X"
+        },
+        {
+          "name": "nomhwk",
+          "score": 44,
+          "category": "Y"
+        },
+        {
+          "name": "kyustg",
+          "score": 76,
+          "category": "Y"
+        },
+        {
+          "name": "tsviku",
+          "score": 31,
+          "category": "Y"
+        },
+        {
+          "name": "flpxdb",
+          "score": 53,
+          "category": "Z"
+        },
+        {
+          "name": "jfjfzx",
+          "score": 88,
+          "category": "Y"
+        },
+        {
+          "name": "ctqbvt",
+          "score": 56,
+          "category": "Y"
+        },
+        {
+          "name": "jelhsf",
+          "score": 48,
+          "category": "X"
+        },
+        {
+          "name": "mabmhx",
+          "score": 91,
+          "category": "X"
+        },
+        {
+          "name": "cfswqh",
+          "score": 33,
+          "category": "Y"
+        },
+        {
+          "name": "eewppc",
+          "score": 22,
+          "category": "Y"
+        },
+        {
+          "name": "lfsxhl",
+          "score": 47,
+          "category": "Y"
+        },
+        {
+          "name": "afuxvh",
+          "score": 6,
+          "category": "Y"
+        },
+        {
+          "name": "mnwzmy",
+          "score": 59,
+          "category": "Z"
+        }
+      ]
+    }
+  },
+  "ground_truth": "347",
+  "difficulty": 3
+}

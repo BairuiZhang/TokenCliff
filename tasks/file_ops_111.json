@@ -1,0 +1,37 @@
+{
+  "id": "file_ops_111",
+  "domain": "file_ops",
+  "prompt": "Navigate the directory tree to find 'target.txt'. Return its content.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/spcv/hobs/uhst/naks/target.txt": "4810",
+      "/spcv/guwbwr.txt": "275",
+      "/hobs/hobs/acespi.txt": "386",
+      "/naks/yildrx.txt": "811",
+      "/uhst/koqklf.txt": "636",
+      "/uhst/naks/naks/dzfppn.txt": "956",
+      "/spcv/hobs/hobs/ihsffr.txt": "885",
+      "/spcv/naks/rlweuz.txt": "558",
+      "/hobs/ubimxd.txt": "100",
+      "/spcv/rcsckj.txt": "556",
+      "/uhst/uhst/blwkhw.txt": "870",
+      "/naks/uhst/ruppnl.txt": "577",
+      "/naks/yufubc.txt": "24",
+      "/naks/ufyemw.txt": "363",
+      "/hobs/hobs/cenjqq.txt": "582",
+      "/ksmn/spcv/ysiuap.txt": "206"
+    }
+  },
+  "ground_truth": "4810",
+  "difficulty": 3
+}

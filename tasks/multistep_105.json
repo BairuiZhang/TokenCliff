@@ -1,0 +1,12 @@
+{
+  "id": "multistep_105",
+  "domain": "multistep",
+  "prompt": "Start with dcmd = 40. Then: add item 'lgya' (32); subtract item 'irvi' (94); subtract item 'fdfb' (19); subtract item 'vycb' (57); subtract item 'bqhy' (76); multiply by item 'rrbx' (46). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "-8004",
+  "difficulty": 5
+}

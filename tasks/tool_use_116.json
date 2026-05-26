@@ -1,0 +1,41 @@
+{
+  "id": "tool_use_116",
+  "domain": "tool_use",
+  "prompt": "Use calculator API to subtract 74 and 7, then apply a 30% discount. Return the final value rounded to 2 decimals.",
+  "tools": [
+    {
+      "name": "calculator",
+      "desc": "Perform arithmetic"
+    },
+    {
+      "name": "discount",
+      "desc": "Apply discount"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "calculator": {
+        "responses": {
+          "{\"a\": 74, \"b\": 7, \"op\": \"subtract\"}": {
+            "result": 67
+          }
+        },
+        "default_response": {
+          "error": "invalid"
+        }
+      },
+      "discount": {
+        "responses": {
+          "{\"amount\": 67, \"percent\": 30}": {
+            "final": 46.9
+          }
+        },
+        "default_response": {
+          "error": "invalid"
+        }
+      }
+    }
+  },
+  "ground_truth": "46.9",
+  "difficulty": 3
+}

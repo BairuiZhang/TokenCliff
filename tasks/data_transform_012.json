@@ -1,0 +1,181 @@
+{
+  "id": "data_transform_012",
+  "domain": "data_transform",
+  "prompt": "How many employees are in the 'legal' department? Return just the number.",
+  "tools": [
+    {
+      "name": "query",
+      "desc": "Query table with where/select/agg/group_by"
+    }
+  ],
+  "environment": {
+    "tables": {
+      "employees": [
+        {
+          "name": "rebmfjbq",
+          "dept": "engineering",
+          "salary": 198102,
+          "city": "Tokyo"
+        },
+        {
+          "name": "axuyvabw",
+          "dept": "engineering",
+          "salary": 167548,
+          "city": "Berlin"
+        },
+        {
+          "name": "xlnzwoal",
+          "dept": "hr",
+          "salary": 128574,
+          "city": "London"
+        },
+        {
+          "name": "aimvcsyc",
+          "dept": "marketing",
+          "salary": 71433,
+          "city": "NYC"
+        },
+        {
+          "name": "bhwwksmi",
+          "dept": "engineering",
+          "salary": 146265,
+          "city": "Tokyo"
+        },
+        {
+          "name": "yuchjfwp",
+          "dept": "engineering",
+          "salary": 147035,
+          "city": "NYC"
+        },
+        {
+          "name": "ggemzabx",
+          "dept": "sales",
+          "salary": 92447,
+          "city": "Tokyo"
+        },
+        {
+          "name": "rckuuqjs",
+          "dept": "marketing",
+          "salary": 187908,
+          "city": "Paris"
+        },
+        {
+          "name": "pcezwmqh",
+          "dept": "hr",
+          "salary": 119421,
+          "city": "NYC"
+        },
+        {
+          "name": "rqskkyjp",
+          "dept": "engineering",
+          "salary": 185809,
+          "city": "Berlin"
+        },
+        {
+          "name": "oryvnjau",
+          "dept": "marketing",
+          "salary": 126678,
+          "city": "London"
+        },
+        {
+          "name": "zdxqltkf",
+          "dept": "engineering",
+          "salary": 69230,
+          "city": "NYC"
+        },
+        {
+          "name": "reufjzvv",
+          "dept": "ops",
+          "salary": 151314,
+          "city": "Paris"
+        },
+        {
+          "name": "ovfpwrbj",
+          "dept": "engineering",
+          "salary": 130693,
+          "city": "London"
+        },
+        {
+          "name": "bcnmfguq",
+          "dept": "marketing",
+          "salary": 179052,
+          "city": "Sydney"
+        },
+        {
+          "name": "rpxxbuqz",
+          "dept": "ops",
+          "salary": 104176,
+          "city": "Tokyo"
+        },
+        {
+          "name": "xjlnspvq",
+          "dept": "sales",
+          "salary": 142998,
+          "city": "Sydney"
+        },
+        {
+          "name": "rennbgjy",
+          "dept": "sales",
+          "salary": 74444,
+          "city": "Paris"
+        },
+        {
+          "name": "bkgmvugl",
+          "dept": "legal",
+          "salary": 188532,
+          "city": "Tokyo"
+        },
+        {
+          "name": "zreucuzq",
+          "dept": "sales",
+          "salary": 113361,
+          "city": "Paris"
+        },
+        {
+          "name": "ysgobtdi",
+          "dept": "hr",
+          "salary": 166281,
+          "city": "Sydney"
+        },
+        {
+          "name": "pajatewa",
+          "dept": "ops",
+          "salary": 141123,
+          "city": "London"
+        },
+        {
+          "name": "gyswyiyu",
+          "dept": "engineering",
+          "salary": 112116,
+          "city": "NYC"
+        },
+        {
+          "name": "ifzjscdm",
+          "dept": "ops",
+          "salary": 196906,
+          "city": "London"
+        },
+        {
+          "name": "wchfiugs",
+          "dept": "sales",
+          "salary": 151775,
+          "city": "Tokyo"
+        },
+        {
+          "name": "pvylocaw",
+          "dept": "engineering",
+          "salary": 80782,
+          "city": "Sydney"
+        },
+        {
+          "name": "jnpkgmfj",
+          "dept": "marketing",
+          "salary": 199718,
+          "city": "Paris"
+        }
+      ]
+    }
+  },
+  "ground_truth": "1",
+  "difficulty": 1
+}

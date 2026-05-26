@@ -1,0 +1,99 @@
+{
+  "id": "tool_use_060",
+  "domain": "tool_use",
+  "prompt": "Use the inventory API to list all items. Find the cheapest item regardless of stock. Return its name.",
+  "tools": [
+    {
+      "name": "inventory",
+      "desc": "List items with price and stock"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "inventory": {
+        "responses": {
+          "": {
+            "items": [
+              {
+                "name": "xcvzz",
+                "price": 265,
+                "in_stock": false
+              },
+              {
+                "name": "fgral",
+                "price": 388,
+                "in_stock": false
+              },
+              {
+                "name": "otpzv",
+                "price": 64,
+                "in_stock": true
+              },
+              {
+                "name": "sulrh",
+                "price": 120,
+                "in_stock": false
+              },
+              {
+                "name": "xsihh",
+                "price": 470,
+                "in_stock": true
+              },
+              {
+                "name": "nwbka",
+                "price": 76,
+                "in_stock": true
+              },
+              {
+                "name": "miykm",
+                "price": 438,
+                "in_stock": true
+              }
+            ]
+          }
+        },
+        "default_response": {
+          "items": [
+            {
+              "name": "xcvzz",
+              "price": 265,
+              "in_stock": false
+            },
+            {
+              "name": "fgral",
+              "price": 388,
+              "in_stock": false
+            },
+            {
+              "name": "otpzv",
+              "price": 64,
+              "in_stock": true
+            },
+            {
+              "name": "sulrh",
+              "price": 120,
+              "in_stock": false
+            },
+            {
+              "name": "xsihh",
+              "price": 470,
+              "in_stock": true
+            },
+            {
+              "name": "nwbka",
+              "price": 76,
+              "in_stock": true
+            },
+            {
+              "name": "miykm",
+              "price": 438,
+              "in_stock": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ground_truth": "otpzv",
+  "difficulty": 2
+}

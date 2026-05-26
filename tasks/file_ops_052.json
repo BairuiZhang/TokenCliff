@@ -1,0 +1,35 @@
+{
+  "id": "file_ops_052",
+  "domain": "file_ops",
+  "prompt": "Search all files in /docs for the keyword 'wogqzmb'. Return the filename containing it.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    },
+    {
+      "name": "find",
+      "desc": "Find files"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/docs/mxevtr.txt": "Document 0 about obvmfxlz. No relevant matches here.",
+      "/docs/vhijkc.txt": "Document 1 about fzldomhd. No relevant matches here.",
+      "/docs/anxfev.txt": "Document 2 about kpjvbbep. No relevant matches here.",
+      "/docs/spqykg.txt": "Document 3 about elqsycay. No relevant matches here.",
+      "/docs/hqbylp.txt": "Report section 4. Contains keyword wogqzmb in paragraph.",
+      "/docs/sckufc.txt": "Document 5 about atobthsa. No relevant matches here.",
+      "/docs/preybk.txt": "Document 6 about akyjgpni. No relevant matches here.",
+      "/docs/upneie.txt": "Document 7 about amdlfqoo. No relevant matches here.",
+      "/docs/bzehsf.txt": "Document 8 about ahbkcenb. No relevant matches here.",
+      "/docs/uuswcy.txt": "Document 9 about dicwttrs. No relevant matches here."
+    }
+  },
+  "ground_truth": "hqbylp.txt",
+  "difficulty": 2
+}

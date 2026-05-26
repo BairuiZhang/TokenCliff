@@ -1,0 +1,37 @@
+{
+  "id": "file_ops_116",
+  "domain": "file_ops",
+  "prompt": "Navigate the directory tree to find 'target.txt'. Return its content.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/wnqr/uzlk/elvg/yjkr/target.txt": "3110",
+      "/wnqr/udecbj.txt": "292",
+      "/wnqr/nvyiim.txt": "393",
+      "/elvg/vytjuj.txt": "312",
+      "/elvg/elvg/uzlk/yweffm.txt": "226",
+      "/svbs/yvbudw.txt": "918",
+      "/yjkr/uzlk/yjkr/sqieby.txt": "829",
+      "/eidc/uzlk/eidc/egjzbu.txt": "354",
+      "/yjkr/eyba/elvg/oagcwj.txt": "780",
+      "/elvg/xhpuwf.txt": "864",
+      "/elvg/fpuzac.txt": "982",
+      "/yjkr/bsqh/bilrvs.txt": "652",
+      "/elvg/uzlk/yjkr/vhaawt.txt": "286",
+      "/yjkr/ghfw/napdnl.txt": "502",
+      "/wnqr/wnqr/clhrzm.txt": "230",
+      "/elvg/elvg/wnqr/bxygsf.txt": "660"
+    }
+  },
+  "ground_truth": "3110",
+  "difficulty": 3
+}

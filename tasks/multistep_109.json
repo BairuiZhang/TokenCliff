@@ -1,0 +1,12 @@
+{
+  "id": "multistep_109",
+  "domain": "multistep",
+  "prompt": "Start with cqku = 47. Then: add item 'qqrj' (45); subtract item 'hdls' (44); add item 'mrsl' (46); multiply by item 'wwlu' (77). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "7238",
+  "difficulty": 3
+}

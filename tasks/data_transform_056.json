@@ -1,0 +1,184 @@
+{
+  "id": "data_transform_056",
+  "domain": "data_transform",
+  "prompt": "Find the department with the most employees. Return only the department name.",
+  "tools": [
+    {
+      "name": "query",
+      "desc": "Query table with where/select/agg/group_by"
+    }
+  ],
+  "environment": {
+    "tables": {
+      "employees": [
+        {
+          "name": "adxleait",
+          "dept": "engineering",
+          "salary": 184066
+        },
+        {
+          "name": "vcpufkzj",
+          "dept": "engineering",
+          "salary": 54089
+        },
+        {
+          "name": "dkgbbmvo",
+          "dept": "hr",
+          "salary": 136924
+        },
+        {
+          "name": "fceoxhor",
+          "dept": "marketing",
+          "salary": 137924
+        },
+        {
+          "name": "xmressrv",
+          "dept": "sales",
+          "salary": 110609
+        },
+        {
+          "name": "wthbyfee",
+          "dept": "marketing",
+          "salary": 188737
+        },
+        {
+          "name": "jomwoltc",
+          "dept": "sales",
+          "salary": 133875
+        },
+        {
+          "name": "uukfavia",
+          "dept": "engineering",
+          "salary": 78277
+        },
+        {
+          "name": "wbbfpufm",
+          "dept": "marketing",
+          "salary": 187461
+        },
+        {
+          "name": "swhjmahz",
+          "dept": "sales",
+          "salary": 62189
+        },
+        {
+          "name": "ajuxjmbv",
+          "dept": "engineering",
+          "salary": 138211
+        },
+        {
+          "name": "vtaiowin",
+          "dept": "sales",
+          "salary": 123697
+        },
+        {
+          "name": "dxwqyett",
+          "dept": "sales",
+          "salary": 43011
+        },
+        {
+          "name": "zkkulacu",
+          "dept": "marketing",
+          "salary": 94896
+        },
+        {
+          "name": "rhoruexf",
+          "dept": "marketing",
+          "salary": 141370
+        },
+        {
+          "name": "jdineqgv",
+          "dept": "marketing",
+          "salary": 59645
+        },
+        {
+          "name": "mmttsdbw",
+          "dept": "hr",
+          "salary": 183439
+        },
+        {
+          "name": "vrqkbids",
+          "dept": "engineering",
+          "salary": 68975
+        },
+        {
+          "name": "edorvdum",
+          "dept": "marketing",
+          "salary": 115925
+        },
+        {
+          "name": "gumnqadj",
+          "dept": "sales",
+          "salary": 41541
+        },
+        {
+          "name": "guikzmyb",
+          "dept": "sales",
+          "salary": 162891
+        },
+        {
+          "name": "elghfjdc",
+          "dept": "hr",
+          "salary": 157308
+        },
+        {
+          "name": "oybaedpu",
+          "dept": "sales",
+          "salary": 87999
+        },
+        {
+          "name": "pxypzilt",
+          "dept": "sales",
+          "salary": 139136
+        },
+        {
+          "name": "ymoltabl",
+          "dept": "engineering",
+          "salary": 140218
+        },
+        {
+          "name": "dzmikfjr",
+          "dept": "sales",
+          "salary": 95980
+        },
+        {
+          "name": "vktrkaoh",
+          "dept": "marketing",
+          "salary": 120044
+        },
+        {
+          "name": "tpjbzhbb",
+          "dept": "engineering",
+          "salary": 135698
+        },
+        {
+          "name": "bpxinsty",
+          "dept": "sales",
+          "salary": 60584
+        },
+        {
+          "name": "scwqxysq",
+          "dept": "sales",
+          "salary": 58355
+        },
+        {
+          "name": "ypiuntrc",
+          "dept": "marketing",
+          "salary": 120404
+        },
+        {
+          "name": "tvdeqbss",
+          "dept": "marketing",
+          "salary": 134057
+        },
+        {
+          "name": "veatashl",
+          "dept": "engineering",
+          "salary": 146184
+        }
+      ]
+    }
+  },
+  "ground_truth": "sales",
+  "difficulty": 3
+}

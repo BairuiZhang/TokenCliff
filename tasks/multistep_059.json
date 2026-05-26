@@ -1,0 +1,29 @@
+{
+  "id": "multistep_059",
+  "domain": "multistep",
+  "prompt": "Read all files in /reports. Find the values for: metric_eqb, metric_gvt, metric_shz, metric_ftq. Return their average (rounded to integer).",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/reports/widqf.txt": "This quarterly report covers the period ending Q3 2026. Performance indicators show mixed results across divisions. The metric_eqb measurement recorded a value of 222 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/jnlod.txt": "This quarterly report covers the period ending Q2 2026. Performance indicators show mixed results across divisions. The metric_gvt measurement recorded a value of 756 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/yhcyq.txt": "This quarterly report covers the period ending Q3 2026. Performance indicators show mixed results across divisions. The metric_shz measurement recorded a value of 109 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/eumob.txt": "This quarterly report covers the period ending Q4 2026. Performance indicators show mixed results across divisions. The metric_ftq measurement recorded a value of 606 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/qwaqp.txt": "This quarterly report covers the period ending Q4 2026. Performance indicators show mixed results across divisions. The metric_xtr measurement recorded a value of 542 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/rvlso.txt": "This quarterly report covers the period ending Q4 2026. Performance indicators show mixed results across divisions. The metric_fss measurement recorded a value of 261 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/ssklk.txt": "This quarterly report covers the period ending Q1 2026. Performance indicators show mixed results across divisions. The metric_fzy measurement recorded a value of 492 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/veufa.txt": "This quarterly report covers the period ending Q2 2026. Performance indicators show mixed results across divisions. The metric_adv measurement recorded a value of 457 this period. Further analysis is needed to determine long-term trends."
+    }
+  },
+  "ground_truth": "423",
+  "difficulty": 4
+}

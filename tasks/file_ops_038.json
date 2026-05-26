@@ -1,0 +1,45 @@
+{
+  "id": "file_ops_038",
+  "domain": "file_ops",
+  "prompt": "Search all files in /docs for the keyword 'utbkz'. Return the filename containing it.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    },
+    {
+      "name": "find",
+      "desc": "Find files"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/docs/esvsbl.txt": "Document 0 about hhwswrso. No relevant matches here.",
+      "/docs/xjumad.txt": "Document 1 about ulyjobuy. No relevant matches here.",
+      "/docs/edeoyz.txt": "Document 2 about pylzyrxd. No relevant matches here.",
+      "/docs/ulzxpl.txt": "Document 3 about synzyzpy. No relevant matches here.",
+      "/docs/dkuifu.txt": "Document 4 about osjbehhm. No relevant matches here.",
+      "/docs/yoxpiv.txt": "Document 5 about auzdisce. No relevant matches here.",
+      "/docs/ynfbkk.txt": "Document 6 about hkznynpk. No relevant matches here.",
+      "/docs/nvdvsi.txt": "Document 7 about wjehoprh. No relevant matches here.",
+      "/docs/oqsffd.txt": "Document 8 about frcowchh. No relevant matches here.",
+      "/docs/ewuqiq.txt": "Document 9 about sshiuklh. No relevant matches here.",
+      "/docs/jdfhny.txt": "Document 10 about ohoqufdq. No relevant matches here.",
+      "/docs/qjfnvb.txt": "Report section 11. Contains keyword utbkz in paragraph.",
+      "/docs/zpsadg.txt": "Document 12 about zqqopvjx. No relevant matches here.",
+      "/docs/xkfegs.txt": "Document 13 about zkaitdai. No relevant matches here.",
+      "/docs/qmpwkt.txt": "Document 14 about qhwyywio. No relevant matches here.",
+      "/docs/hznxyw.txt": "Document 15 about xhbmommg. No relevant matches here.",
+      "/docs/uuzndu.txt": "Document 16 about sbpzrpbb. No relevant matches here.",
+      "/docs/qinzcg.txt": "Document 17 about ubeorcbt. No relevant matches here.",
+      "/docs/aefgez.txt": "Document 18 about bgcteljz. No relevant matches here.",
+      "/docs/bbmglm.txt": "Document 19 about caqhydvx. No relevant matches here."
+    }
+  },
+  "ground_truth": "qjfnvb.txt",
+  "difficulty": 2
+}

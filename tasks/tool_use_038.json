@@ -1,0 +1,119 @@
+{
+  "id": "tool_use_038",
+  "domain": "tool_use",
+  "prompt": "Use the inventory API to list all items. Find the most expensive item that is in stock. Return its name.",
+  "tools": [
+    {
+      "name": "inventory",
+      "desc": "List items with price and stock"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "inventory": {
+        "responses": {
+          "": {
+            "items": [
+              {
+                "name": "tdekh",
+                "price": 472,
+                "in_stock": true
+              },
+              {
+                "name": "zfgdc",
+                "price": 58,
+                "in_stock": true
+              },
+              {
+                "name": "amqno",
+                "price": 310,
+                "in_stock": false
+              },
+              {
+                "name": "jznvk",
+                "price": 389,
+                "in_stock": true
+              },
+              {
+                "name": "nvdzs",
+                "price": 322,
+                "in_stock": true
+              },
+              {
+                "name": "taohr",
+                "price": 330,
+                "in_stock": true
+              },
+              {
+                "name": "zohsm",
+                "price": 174,
+                "in_stock": true
+              },
+              {
+                "name": "bnmmj",
+                "price": 230,
+                "in_stock": true
+              },
+              {
+                "name": "biavy",
+                "price": 491,
+                "in_stock": true
+              }
+            ]
+          }
+        },
+        "default_response": {
+          "items": [
+            {
+              "name": "tdekh",
+              "price": 472,
+              "in_stock": true
+            },
+            {
+              "name": "zfgdc",
+              "price": 58,
+              "in_stock": true
+            },
+            {
+              "name": "amqno",
+              "price": 310,
+              "in_stock": false
+            },
+            {
+              "name": "jznvk",
+              "price": 389,
+              "in_stock": true
+            },
+            {
+              "name": "nvdzs",
+              "price": 322,
+              "in_stock": true
+            },
+            {
+              "name": "taohr",
+              "price": 330,
+              "in_stock": true
+            },
+            {
+              "name": "zohsm",
+              "price": 174,
+              "in_stock": true
+            },
+            {
+              "name": "bnmmj",
+              "price": 230,
+              "in_stock": true
+            },
+            {
+              "name": "biavy",
+              "price": 491,
+              "in_stock": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ground_truth": "biavy",
+  "difficulty": 2
+}

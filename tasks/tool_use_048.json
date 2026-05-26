@@ -1,0 +1,139 @@
+{
+  "id": "tool_use_048",
+  "domain": "tool_use",
+  "prompt": "Use the inventory API to list all items. Find the cheapest item regardless of stock. Return its name.",
+  "tools": [
+    {
+      "name": "inventory",
+      "desc": "List items with price and stock"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "inventory": {
+        "responses": {
+          "": {
+            "items": [
+              {
+                "name": "lnhze",
+                "price": 256,
+                "in_stock": true
+              },
+              {
+                "name": "exqme",
+                "price": 112,
+                "in_stock": false
+              },
+              {
+                "name": "syoup",
+                "price": 139,
+                "in_stock": false
+              },
+              {
+                "name": "yaqvi",
+                "price": 165,
+                "in_stock": false
+              },
+              {
+                "name": "wiagi",
+                "price": 161,
+                "in_stock": true
+              },
+              {
+                "name": "iprbm",
+                "price": 190,
+                "in_stock": false
+              },
+              {
+                "name": "kdawm",
+                "price": 398,
+                "in_stock": true
+              },
+              {
+                "name": "rloko",
+                "price": 37,
+                "in_stock": true
+              },
+              {
+                "name": "zoxve",
+                "price": 275,
+                "in_stock": false
+              },
+              {
+                "name": "gtjnt",
+                "price": 287,
+                "in_stock": false
+              },
+              {
+                "name": "tanqe",
+                "price": 473,
+                "in_stock": true
+              }
+            ]
+          }
+        },
+        "default_response": {
+          "items": [
+            {
+              "name": "lnhze",
+              "price": 256,
+              "in_stock": true
+            },
+            {
+              "name": "exqme",
+              "price": 112,
+              "in_stock": false
+            },
+            {
+              "name": "syoup",
+              "price": 139,
+              "in_stock": false
+            },
+            {
+              "name": "yaqvi",
+              "price": 165,
+              "in_stock": false
+            },
+            {
+              "name": "wiagi",
+              "price": 161,
+              "in_stock": true
+            },
+            {
+              "name": "iprbm",
+              "price": 190,
+              "in_stock": false
+            },
+            {
+              "name": "kdawm",
+              "price": 398,
+              "in_stock": true
+            },
+            {
+              "name": "rloko",
+              "price": 37,
+              "in_stock": true
+            },
+            {
+              "name": "zoxve",
+              "price": 275,
+              "in_stock": false
+            },
+            {
+              "name": "gtjnt",
+              "price": 287,
+              "in_stock": false
+            },
+            {
+              "name": "tanqe",
+              "price": 473,
+              "in_stock": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ground_truth": "rloko",
+  "difficulty": 2
+}

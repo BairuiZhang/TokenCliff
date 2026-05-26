@@ -1,0 +1,12 @@
+{
+  "id": "planning_092",
+  "domain": "planning",
+  "prompt": "Graph edges (node-node: weight): {\"F-E\": 8, \"E-F\": 8, \"B-A\": 10, \"A-B\": 10, \"B-C\": 7, \"C-B\": 7, \"B-F\": 8, \"F-B\": 8, \"C-A\": 3, \"A-C\": 3, \"C-G\": 7, \"G-C\": 7, \"D-B\": 3, \"B-D\": 3, \"C-E\": 4, \"E-C\": 4, \"F-A\": 1, \"A-F\": 1, \"C-D\": 6, \"D-C\": 6, \"G-D\": 7, \"D-G\": 7}. Shortest path from A to G? Return the total weight.",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "10",
+  "difficulty": 5
+}

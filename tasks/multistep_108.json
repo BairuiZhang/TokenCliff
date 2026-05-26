@@ -1,0 +1,12 @@
+{
+  "id": "multistep_108",
+  "domain": "multistep",
+  "prompt": "Start with mvua = 36. Then: subtract item 'wlqz' (13); multiply by item 'pqij' (35); add item 'fpel' (60); add item 'hamg' (21); multiply by item 'leue' (74). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "65564",
+  "difficulty": 4
+}

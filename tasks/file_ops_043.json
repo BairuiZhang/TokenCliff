@@ -1,0 +1,45 @@
+{
+  "id": "file_ops_043",
+  "domain": "file_ops",
+  "prompt": "Search all files in /docs for the keyword 'mfpn'. Return the filename containing it.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    },
+    {
+      "name": "find",
+      "desc": "Find files"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/docs/zimhkf.txt": "Document 0 about mwkowxoo. No relevant matches here.",
+      "/docs/vafuak.txt": "Document 1 about jfdvcpoz. No relevant matches here.",
+      "/docs/lnswvx.txt": "Document 2 about vjbvwmwu. No relevant matches here.",
+      "/docs/odbxmd.txt": "Document 3 about cyxaayaw. No relevant matches here.",
+      "/docs/ssyxkn.txt": "Document 4 about qsgqrknh. No relevant matches here.",
+      "/docs/hsdoik.txt": "Document 5 about usybdhoa. No relevant matches here.",
+      "/docs/vasrcl.txt": "Document 6 about mrqfkskq. No relevant matches here.",
+      "/docs/sejtol.txt": "Document 7 about egpmploe. No relevant matches here.",
+      "/docs/eflfhx.txt": "Document 8 about iuypmcfb. No relevant matches here.",
+      "/docs/ydszdo.txt": "Document 9 about epwkrjam. No relevant matches here.",
+      "/docs/bmbqoa.txt": "Document 10 about rabpfjmh. No relevant matches here.",
+      "/docs/utuwww.txt": "Document 11 about sudmhmyf. No relevant matches here.",
+      "/docs/uqacub.txt": "Document 12 about izwjfnch. No relevant matches here.",
+      "/docs/cmklkc.txt": "Document 13 about vgqijpme. No relevant matches here.",
+      "/docs/atspnv.txt": "Document 14 about prilszty. No relevant matches here.",
+      "/docs/rrkpaw.txt": "Document 15 about giscftkx. No relevant matches here.",
+      "/docs/ljhukk.txt": "Document 16 about qnjgnwqa. No relevant matches here.",
+      "/docs/fqrmjd.txt": "Document 17 about hfighfnn. No relevant matches here.",
+      "/docs/yqqpwu.txt": "Document 18 about sfesxqqa. No relevant matches here.",
+      "/docs/gtjudq.txt": "Report section 19. Contains keyword mfpn in paragraph."
+    }
+  },
+  "ground_truth": "gtjudq.txt",
+  "difficulty": 2
+}

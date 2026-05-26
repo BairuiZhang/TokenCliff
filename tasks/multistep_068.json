@@ -1,0 +1,29 @@
+{
+  "id": "multistep_068",
+  "domain": "multistep",
+  "prompt": "Read all files in /reports. Find the values for: metric_gxz, metric_zpp, metric_ugy, metric_pga. Return their average (rounded to integer).",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/reports/lbker.txt": "This quarterly report covers the period ending Q2 2026. Performance indicators show mixed results across divisions. The metric_gxz measurement recorded a value of 465 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/ebcop.txt": "This quarterly report covers the period ending Q1 2026. Performance indicators show mixed results across divisions. The metric_zpp measurement recorded a value of 372 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/yjlqg.txt": "This quarterly report covers the period ending Q4 2026. Performance indicators show mixed results across divisions. The metric_ugy measurement recorded a value of 865 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/yaoom.txt": "This quarterly report covers the period ending Q4 2026. Performance indicators show mixed results across divisions. The metric_pga measurement recorded a value of 524 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/acsqf.txt": "This quarterly report covers the period ending Q2 2026. Performance indicators show mixed results across divisions. The metric_tro measurement recorded a value of 369 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/ydhnc.txt": "This quarterly report covers the period ending Q4 2026. Performance indicators show mixed results across divisions. The metric_rgu measurement recorded a value of 629 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/ivmas.txt": "This quarterly report covers the period ending Q3 2026. Performance indicators show mixed results across divisions. The metric_gsh measurement recorded a value of 370 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/oiiwp.txt": "This quarterly report covers the period ending Q4 2026. Performance indicators show mixed results across divisions. The metric_qym measurement recorded a value of 737 this period. Further analysis is needed to determine long-term trends."
+    }
+  },
+  "ground_truth": "556",
+  "difficulty": 4
+}

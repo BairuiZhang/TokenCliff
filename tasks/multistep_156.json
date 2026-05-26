@@ -1,0 +1,12 @@
+{
+  "id": "multistep_156",
+  "domain": "multistep",
+  "prompt": "Start with loph = 53. Then: multiply by item 'nqvu' (66); multiply by item 'efor' (51); multiply by item 'ciux' (45); multiply by item 'dumb' (89). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "714483990",
+  "difficulty": 3
+}

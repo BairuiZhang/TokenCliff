@@ -1,0 +1,12 @@
+{
+  "id": "planning_068",
+  "domain": "planning",
+  "prompt": "Tasks with dependencies: {\"T1\": [], \"T2\": [], \"T3\": [\"T2\", \"T1\"], \"T4\": [\"T1\"], \"T5\": [\"T3\", \"T2\"], \"T6\": [], \"T7\": [\"T0\"]}. Minimum sequential steps to complete all (parallel allowed)? Return the number.",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "3",
+  "difficulty": 4
+}

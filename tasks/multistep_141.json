@@ -1,0 +1,12 @@
+{
+  "id": "multistep_141",
+  "domain": "multistep",
+  "prompt": "Start with rzhl = 91. Then: multiply by item 'uaym' (98); add item 'ffpw' (24); multiply by item 'pckl' (26); add item 'usau' (49); multiply by item 'usio' (25). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "5813525",
+  "difficulty": 4
+}

@@ -1,0 +1,12 @@
+{
+  "id": "multistep_159",
+  "domain": "multistep",
+  "prompt": "Start with ghxe = 71. Then: multiply by item 'oxje' (57); add item 'iuis' (25); add item 'jmuv' (50); add item 'eagd' (14). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "4136",
+  "difficulty": 3
+}

@@ -1,0 +1,41 @@
+{
+  "id": "tool_use_106",
+  "domain": "tool_use",
+  "prompt": "Use calculator API to add 24 and 5, then apply a 13% discount. Return the final value rounded to 2 decimals.",
+  "tools": [
+    {
+      "name": "calculator",
+      "desc": "Perform arithmetic"
+    },
+    {
+      "name": "discount",
+      "desc": "Apply discount"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "calculator": {
+        "responses": {
+          "{\"a\": 24, \"b\": 5, \"op\": \"add\"}": {
+            "result": 29
+          }
+        },
+        "default_response": {
+          "error": "invalid"
+        }
+      },
+      "discount": {
+        "responses": {
+          "{\"amount\": 29, \"percent\": 13}": {
+            "final": 25.23
+          }
+        },
+        "default_response": {
+          "error": "invalid"
+        }
+      }
+    }
+  },
+  "ground_truth": "25.23",
+  "difficulty": 3
+}

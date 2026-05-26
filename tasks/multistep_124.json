@@ -1,0 +1,12 @@
+{
+  "id": "multistep_124",
+  "domain": "multistep",
+  "prompt": "Start with vkmo = 46. Then: subtract item 'nzqv' (33); multiply by item 'memc' (15); add item 'fxcm' (36); add item 'imka' (30); subtract item 'zrlk' (95). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "166",
+  "difficulty": 4
+}

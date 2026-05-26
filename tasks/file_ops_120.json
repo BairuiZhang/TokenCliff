@@ -1,0 +1,27 @@
+{
+  "id": "file_ops_120",
+  "domain": "file_ops",
+  "prompt": "Navigate the directory tree to find 'target.txt'. Return its content.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/pptd/sjvt/ftyg/nvyx/target.txt": "7410",
+      "/hrzm/yxuyjd.txt": "387",
+      "/pptd/sjvt/ftyg/mkuwvh.txt": "33",
+      "/sjvt/ltrf/dpvftp.txt": "438",
+      "/cpuv/ftyg/ftyg/capksx.txt": "844",
+      "/nvyx/nvyx/iuavxy.txt": "252"
+    }
+  },
+  "ground_truth": "7410",
+  "difficulty": 3
+}

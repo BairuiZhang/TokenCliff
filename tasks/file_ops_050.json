@@ -1,0 +1,36 @@
+{
+  "id": "file_ops_050",
+  "domain": "file_ops",
+  "prompt": "Search all files in /docs for the keyword 'uyeqv'. Return the filename containing it.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    },
+    {
+      "name": "find",
+      "desc": "Find files"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/docs/tphpwk.txt": "Document 0 about brrjiwso. No relevant matches here.",
+      "/docs/celbed.txt": "Document 1 about vbxirphk. No relevant matches here.",
+      "/docs/vhtttc.txt": "Document 2 about heahtyav. No relevant matches here.",
+      "/docs/brcrxk.txt": "Document 3 about qssjzjsn. No relevant matches here.",
+      "/docs/lhlghh.txt": "Document 4 about kjfeljwx. No relevant matches here.",
+      "/docs/ntwhbu.txt": "Document 5 about oqsbnfni. No relevant matches here.",
+      "/docs/gddkec.txt": "Document 6 about yuglzqcx. No relevant matches here.",
+      "/docs/qmhmjw.txt": "Document 7 about fxfsmcxl. No relevant matches here.",
+      "/docs/edigzc.txt": "Document 8 about vgnhwpjg. No relevant matches here.",
+      "/docs/ayrbnw.txt": "Document 9 about qggaovqq. No relevant matches here.",
+      "/docs/ftkixg.txt": "Report section 10. Contains keyword uyeqv in paragraph."
+    }
+  },
+  "ground_truth": "ftkixg.txt",
+  "difficulty": 2
+}

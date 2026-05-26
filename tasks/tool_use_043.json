@@ -1,0 +1,149 @@
+{
+  "id": "tool_use_043",
+  "domain": "tool_use",
+  "prompt": "Use the inventory API to list all items. Find the cheapest item that is in stock. Return its name.",
+  "tools": [
+    {
+      "name": "inventory",
+      "desc": "List items with price and stock"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "inventory": {
+        "responses": {
+          "": {
+            "items": [
+              {
+                "name": "jacxc",
+                "price": 121,
+                "in_stock": true
+              },
+              {
+                "name": "iicef",
+                "price": 462,
+                "in_stock": false
+              },
+              {
+                "name": "lvmus",
+                "price": 248,
+                "in_stock": false
+              },
+              {
+                "name": "ocwdt",
+                "price": 251,
+                "in_stock": true
+              },
+              {
+                "name": "myexj",
+                "price": 78,
+                "in_stock": false
+              },
+              {
+                "name": "iybpn",
+                "price": 358,
+                "in_stock": false
+              },
+              {
+                "name": "knzwp",
+                "price": 156,
+                "in_stock": true
+              },
+              {
+                "name": "vucrz",
+                "price": 348,
+                "in_stock": true
+              },
+              {
+                "name": "vbpuq",
+                "price": 56,
+                "in_stock": false
+              },
+              {
+                "name": "ekrlm",
+                "price": 261,
+                "in_stock": false
+              },
+              {
+                "name": "beprq",
+                "price": 410,
+                "in_stock": true
+              },
+              {
+                "name": "qqpyp",
+                "price": 88,
+                "in_stock": true
+              }
+            ]
+          }
+        },
+        "default_response": {
+          "items": [
+            {
+              "name": "jacxc",
+              "price": 121,
+              "in_stock": true
+            },
+            {
+              "name": "iicef",
+              "price": 462,
+              "in_stock": false
+            },
+            {
+              "name": "lvmus",
+              "price": 248,
+              "in_stock": false
+            },
+            {
+              "name": "ocwdt",
+              "price": 251,
+              "in_stock": true
+            },
+            {
+              "name": "myexj",
+              "price": 78,
+              "in_stock": false
+            },
+            {
+              "name": "iybpn",
+              "price": 358,
+              "in_stock": false
+            },
+            {
+              "name": "knzwp",
+              "price": 156,
+              "in_stock": true
+            },
+            {
+              "name": "vucrz",
+              "price": 348,
+              "in_stock": true
+            },
+            {
+              "name": "vbpuq",
+              "price": 56,
+              "in_stock": false
+            },
+            {
+              "name": "ekrlm",
+              "price": 261,
+              "in_stock": false
+            },
+            {
+              "name": "beprq",
+              "price": 410,
+              "in_stock": true
+            },
+            {
+              "name": "qqpyp",
+              "price": 88,
+              "in_stock": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ground_truth": "qqpyp",
+  "difficulty": 2
+}

@@ -1,0 +1,41 @@
+{
+  "id": "file_ops_058",
+  "domain": "file_ops",
+  "prompt": "Search all files in /docs for the keyword 'ycru'. Return the filename containing it.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    },
+    {
+      "name": "find",
+      "desc": "Find files"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/docs/kjehpq.txt": "Document 0 about ibyvrgne. No relevant matches here.",
+      "/docs/wvykjw.txt": "Document 1 about mxupdweu. No relevant matches here.",
+      "/docs/igcztk.txt": "Document 2 about cepcqotk. No relevant matches here.",
+      "/docs/mfdptr.txt": "Document 3 about npddldai. No relevant matches here.",
+      "/docs/jhjmfv.txt": "Document 4 about lxgpmuzr. No relevant matches here.",
+      "/docs/oftrcc.txt": "Report section 5. Contains keyword ycru in paragraph.",
+      "/docs/mdgtdg.txt": "Document 6 about phjynvna. No relevant matches here.",
+      "/docs/fdvhek.txt": "Document 7 about hgwfkrvf. No relevant matches here.",
+      "/docs/cfkabt.txt": "Document 8 about arfohkro. No relevant matches here.",
+      "/docs/kwvxni.txt": "Document 9 about fceziksd. No relevant matches here.",
+      "/docs/balsie.txt": "Document 10 about hfegicmd. No relevant matches here.",
+      "/docs/sdcgvq.txt": "Document 11 about ywldlezf. No relevant matches here.",
+      "/docs/yqxyff.txt": "Document 12 about ruwkphtt. No relevant matches here.",
+      "/docs/sxqoec.txt": "Document 13 about bdwgkmdd. No relevant matches here.",
+      "/docs/rraaws.txt": "Document 14 about ouvcuemq. No relevant matches here.",
+      "/docs/jpizeh.txt": "Document 15 about rlbjlyax. No relevant matches here."
+    }
+  },
+  "ground_truth": "oftrcc.txt",
+  "difficulty": 2
+}

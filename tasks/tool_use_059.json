@@ -1,0 +1,129 @@
+{
+  "id": "tool_use_059",
+  "domain": "tool_use",
+  "prompt": "Use the inventory API to list all items. Find the most expensive item that is in stock. Return its name.",
+  "tools": [
+    {
+      "name": "inventory",
+      "desc": "List items with price and stock"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "inventory": {
+        "responses": {
+          "": {
+            "items": [
+              {
+                "name": "dgqsu",
+                "price": 480,
+                "in_stock": true
+              },
+              {
+                "name": "eihio",
+                "price": 75,
+                "in_stock": false
+              },
+              {
+                "name": "pdvja",
+                "price": 87,
+                "in_stock": false
+              },
+              {
+                "name": "xdlbs",
+                "price": 394,
+                "in_stock": false
+              },
+              {
+                "name": "ldwtf",
+                "price": 455,
+                "in_stock": false
+              },
+              {
+                "name": "tsrge",
+                "price": 347,
+                "in_stock": true
+              },
+              {
+                "name": "isweb",
+                "price": 97,
+                "in_stock": true
+              },
+              {
+                "name": "kebrj",
+                "price": 337,
+                "in_stock": true
+              },
+              {
+                "name": "qjnbf",
+                "price": 124,
+                "in_stock": true
+              },
+              {
+                "name": "nabyu",
+                "price": 178,
+                "in_stock": true
+              }
+            ]
+          }
+        },
+        "default_response": {
+          "items": [
+            {
+              "name": "dgqsu",
+              "price": 480,
+              "in_stock": true
+            },
+            {
+              "name": "eihio",
+              "price": 75,
+              "in_stock": false
+            },
+            {
+              "name": "pdvja",
+              "price": 87,
+              "in_stock": false
+            },
+            {
+              "name": "xdlbs",
+              "price": 394,
+              "in_stock": false
+            },
+            {
+              "name": "ldwtf",
+              "price": 455,
+              "in_stock": false
+            },
+            {
+              "name": "tsrge",
+              "price": 347,
+              "in_stock": true
+            },
+            {
+              "name": "isweb",
+              "price": 97,
+              "in_stock": true
+            },
+            {
+              "name": "kebrj",
+              "price": 337,
+              "in_stock": true
+            },
+            {
+              "name": "qjnbf",
+              "price": 124,
+              "in_stock": true
+            },
+            {
+              "name": "nabyu",
+              "price": 178,
+              "in_stock": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ground_truth": "dgqsu",
+  "difficulty": 2
+}

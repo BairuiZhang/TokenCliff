@@ -1,0 +1,491 @@
+{
+  "id": "multistep_025",
+  "domain": "multistep",
+  "prompt": "Given the following records table, answer: How many categories have at least 6 active records? Return the count. Return ONLY the answer.",
+  "tools": [
+    {
+      "name": "query",
+      "desc": "Query records"
+    }
+  ],
+  "environment": {
+    "tables": {
+      "records": [
+        {
+          "id": 1,
+          "category": "beta",
+          "status": "pending",
+          "region": "north",
+          "value": 100,
+          "priority": 4
+        },
+        {
+          "id": 2,
+          "category": "beta",
+          "status": "inactive",
+          "region": "north",
+          "value": 276,
+          "priority": 3
+        },
+        {
+          "id": 3,
+          "category": "alpha",
+          "status": "active",
+          "region": "south",
+          "value": 329,
+          "priority": 5
+        },
+        {
+          "id": 4,
+          "category": "epsilon",
+          "status": "active",
+          "region": "south",
+          "value": 338,
+          "priority": 2
+        },
+        {
+          "id": 5,
+          "category": "gamma",
+          "status": "active",
+          "region": "north",
+          "value": 447,
+          "priority": 4
+        },
+        {
+          "id": 6,
+          "category": "alpha",
+          "status": "inactive",
+          "region": "north",
+          "value": 484,
+          "priority": 5
+        },
+        {
+          "id": 7,
+          "category": "delta",
+          "status": "active",
+          "region": "west",
+          "value": 376,
+          "priority": 5
+        },
+        {
+          "id": 8,
+          "category": "gamma",
+          "status": "active",
+          "region": "south",
+          "value": 310,
+          "priority": 4
+        },
+        {
+          "id": 9,
+          "category": "alpha",
+          "status": "inactive",
+          "region": "west",
+          "value": 308,
+          "priority": 4
+        },
+        {
+          "id": 10,
+          "category": "alpha",
+          "status": "inactive",
+          "region": "west",
+          "value": 461,
+          "priority": 3
+        },
+        {
+          "id": 11,
+          "category": "delta",
+          "status": "active",
+          "region": "east",
+          "value": 129,
+          "priority": 4
+        },
+        {
+          "id": 12,
+          "category": "delta",
+          "status": "active",
+          "region": "north",
+          "value": 180,
+          "priority": 1
+        },
+        {
+          "id": 13,
+          "category": "beta",
+          "status": "inactive",
+          "region": "east",
+          "value": 304,
+          "priority": 5
+        },
+        {
+          "id": 14,
+          "category": "gamma",
+          "status": "inactive",
+          "region": "north",
+          "value": 458,
+          "priority": 3
+        },
+        {
+          "id": 15,
+          "category": "delta",
+          "status": "pending",
+          "region": "west",
+          "value": 455,
+          "priority": 5
+        },
+        {
+          "id": 16,
+          "category": "beta",
+          "status": "inactive",
+          "region": "east",
+          "value": 73,
+          "priority": 3
+        },
+        {
+          "id": 17,
+          "category": "epsilon",
+          "status": "pending",
+          "region": "south",
+          "value": 90,
+          "priority": 2
+        },
+        {
+          "id": 18,
+          "category": "beta",
+          "status": "inactive",
+          "region": "south",
+          "value": 40,
+          "priority": 4
+        },
+        {
+          "id": 19,
+          "category": "gamma",
+          "status": "active",
+          "region": "south",
+          "value": 110,
+          "priority": 1
+        },
+        {
+          "id": 20,
+          "category": "alpha",
+          "status": "pending",
+          "region": "west",
+          "value": 140,
+          "priority": 3
+        },
+        {
+          "id": 21,
+          "category": "epsilon",
+          "status": "inactive",
+          "region": "north",
+          "value": 23,
+          "priority": 2
+        },
+        {
+          "id": 22,
+          "category": "delta",
+          "status": "active",
+          "region": "north",
+          "value": 474,
+          "priority": 1
+        },
+        {
+          "id": 23,
+          "category": "delta",
+          "status": "inactive",
+          "region": "south",
+          "value": 310,
+          "priority": 1
+        },
+        {
+          "id": 24,
+          "category": "alpha",
+          "status": "inactive",
+          "region": "east",
+          "value": 445,
+          "priority": 3
+        },
+        {
+          "id": 25,
+          "category": "beta",
+          "status": "active",
+          "region": "west",
+          "value": 294,
+          "priority": 3
+        },
+        {
+          "id": 26,
+          "category": "alpha",
+          "status": "inactive",
+          "region": "south",
+          "value": 451,
+          "priority": 1
+        },
+        {
+          "id": 27,
+          "category": "epsilon",
+          "status": "pending",
+          "region": "north",
+          "value": 247,
+          "priority": 1
+        },
+        {
+          "id": 28,
+          "category": "delta",
+          "status": "inactive",
+          "region": "east",
+          "value": 19,
+          "priority": 3
+        },
+        {
+          "id": 29,
+          "category": "gamma",
+          "status": "active",
+          "region": "south",
+          "value": 477,
+          "priority": 4
+        },
+        {
+          "id": 30,
+          "category": "alpha",
+          "status": "inactive",
+          "region": "south",
+          "value": 329,
+          "priority": 4
+        },
+        {
+          "id": 31,
+          "category": "delta",
+          "status": "inactive",
+          "region": "south",
+          "value": 394,
+          "priority": 1
+        },
+        {
+          "id": 32,
+          "category": "beta",
+          "status": "inactive",
+          "region": "west",
+          "value": 114,
+          "priority": 3
+        },
+        {
+          "id": 33,
+          "category": "epsilon",
+          "status": "active",
+          "region": "west",
+          "value": 386,
+          "priority": 1
+        },
+        {
+          "id": 34,
+          "category": "gamma",
+          "status": "inactive",
+          "region": "east",
+          "value": 439,
+          "priority": 1
+        },
+        {
+          "id": 35,
+          "category": "alpha",
+          "status": "inactive",
+          "region": "north",
+          "value": 41,
+          "priority": 3
+        },
+        {
+          "id": 36,
+          "category": "alpha",
+          "status": "pending",
+          "region": "south",
+          "value": 127,
+          "priority": 3
+        },
+        {
+          "id": 37,
+          "category": "delta",
+          "status": "active",
+          "region": "west",
+          "value": 266,
+          "priority": 5
+        },
+        {
+          "id": 38,
+          "category": "alpha",
+          "status": "inactive",
+          "region": "north",
+          "value": 56,
+          "priority": 3
+        },
+        {
+          "id": 39,
+          "category": "beta",
+          "status": "inactive",
+          "region": "south",
+          "value": 66,
+          "priority": 1
+        },
+        {
+          "id": 40,
+          "category": "delta",
+          "status": "pending",
+          "region": "east",
+          "value": 466,
+          "priority": 5
+        },
+        {
+          "id": 41,
+          "category": "epsilon",
+          "status": "inactive",
+          "region": "west",
+          "value": 428,
+          "priority": 3
+        },
+        {
+          "id": 42,
+          "category": "beta",
+          "status": "inactive",
+          "region": "north",
+          "value": 410,
+          "priority": 4
+        },
+        {
+          "id": 43,
+          "category": "gamma",
+          "status": "inactive",
+          "region": "west",
+          "value": 389,
+          "priority": 5
+        },
+        {
+          "id": 44,
+          "category": "gamma",
+          "status": "inactive",
+          "region": "north",
+          "value": 123,
+          "priority": 3
+        },
+        {
+          "id": 45,
+          "category": "epsilon",
+          "status": "inactive",
+          "region": "south",
+          "value": 334,
+          "priority": 4
+        },
+        {
+          "id": 46,
+          "category": "delta",
+          "status": "active",
+          "region": "west",
+          "value": 363,
+          "priority": 4
+        },
+        {
+          "id": 47,
+          "category": "beta",
+          "status": "pending",
+          "region": "north",
+          "value": 426,
+          "priority": 2
+        },
+        {
+          "id": 48,
+          "category": "beta",
+          "status": "inactive",
+          "region": "north",
+          "value": 318,
+          "priority": 3
+        },
+        {
+          "id": 49,
+          "category": "alpha",
+          "status": "inactive",
+          "region": "west",
+          "value": 52,
+          "priority": 5
+        },
+        {
+          "id": 50,
+          "category": "epsilon",
+          "status": "active",
+          "region": "east",
+          "value": 390,
+          "priority": 4
+        },
+        {
+          "id": 51,
+          "category": "alpha",
+          "status": "pending",
+          "region": "east",
+          "value": 272,
+          "priority": 4
+        },
+        {
+          "id": 52,
+          "category": "alpha",
+          "status": "inactive",
+          "region": "north",
+          "value": 154,
+          "priority": 3
+        },
+        {
+          "id": 53,
+          "category": "beta",
+          "status": "pending",
+          "region": "east",
+          "value": 394,
+          "priority": 2
+        },
+        {
+          "id": 54,
+          "category": "epsilon",
+          "status": "active",
+          "region": "west",
+          "value": 189,
+          "priority": 1
+        },
+        {
+          "id": 55,
+          "category": "alpha",
+          "status": "pending",
+          "region": "east",
+          "value": 53,
+          "priority": 3
+        },
+        {
+          "id": 56,
+          "category": "alpha",
+          "status": "pending",
+          "region": "west",
+          "value": 144,
+          "priority": 5
+        },
+        {
+          "id": 57,
+          "category": "alpha",
+          "status": "active",
+          "region": "east",
+          "value": 327,
+          "priority": 3
+        },
+        {
+          "id": 58,
+          "category": "alpha",
+          "status": "active",
+          "region": "west",
+          "value": 358,
+          "priority": 1
+        },
+        {
+          "id": 59,
+          "category": "alpha",
+          "status": "pending",
+          "region": "west",
+          "value": 104,
+          "priority": 5
+        }
+      ]
+    }
+  },
+  "ground_truth": "1",
+  "difficulty": 4
+}

@@ -1,0 +1,41 @@
+{
+  "id": "file_ops_054",
+  "domain": "file_ops",
+  "prompt": "Search all files in /docs for the keyword 'slkpyqu'. Return the filename containing it.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    },
+    {
+      "name": "find",
+      "desc": "Find files"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/docs/vnnexy.txt": "Document 0 about qfbdwbem. No relevant matches here.",
+      "/docs/libnla.txt": "Document 1 about dgqscbdk. No relevant matches here.",
+      "/docs/qpefhh.txt": "Document 2 about qdtjdhny. No relevant matches here.",
+      "/docs/krhhdv.txt": "Document 3 about lsofnodh. No relevant matches here.",
+      "/docs/zyhsev.txt": "Document 4 about lnctmluz. No relevant matches here.",
+      "/docs/wiizmm.txt": "Document 5 about bokglprj. No relevant matches here.",
+      "/docs/acyryh.txt": "Document 6 about srhjjazz. No relevant matches here.",
+      "/docs/zgrrit.txt": "Document 7 about dhffzdxc. No relevant matches here.",
+      "/docs/uwpzwd.txt": "Document 8 about hfpdimsh. No relevant matches here.",
+      "/docs/myfoec.txt": "Report section 9. Contains keyword slkpyqu in paragraph.",
+      "/docs/bumlit.txt": "Document 10 about jgedujkw. No relevant matches here.",
+      "/docs/qgflqy.txt": "Document 11 about iqlbofko. No relevant matches here.",
+      "/docs/kpgdyd.txt": "Document 12 about vsuggzli. No relevant matches here.",
+      "/docs/pnslvd.txt": "Document 13 about wvoznqgd. No relevant matches here.",
+      "/docs/pqopej.txt": "Document 14 about prhyknad. No relevant matches here.",
+      "/docs/olvssx.txt": "Document 15 about mbwrpgsw. No relevant matches here."
+    }
+  },
+  "ground_truth": "myfoec.txt",
+  "difficulty": 2
+}

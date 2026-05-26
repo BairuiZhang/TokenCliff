@@ -1,0 +1,31 @@
+{
+  "id": "file_ops_112",
+  "domain": "file_ops",
+  "prompt": "Navigate the directory tree to find 'target.txt'. Return its content.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/uidc/pwki/rltx/kyop/target.txt": "4694",
+      "/uidc/kyop/rsbvak.txt": "292",
+      "/kyop/tyitzu.txt": "991",
+      "/pwki/uidc/iwooee.txt": "213",
+      "/kyop/rltx/cjyvlf.txt": "255",
+      "/rltx/hjvqms.txt": "190",
+      "/pwki/vztays.txt": "73",
+      "/kyop/pwki/pwki/hxyosb.txt": "844",
+      "/uidc/hptdjo.txt": "122",
+      "/amud/kyop/amud/ldtloe.txt": "722"
+    }
+  },
+  "ground_truth": "4694",
+  "difficulty": 3
+}

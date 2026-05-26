@@ -1,0 +1,12 @@
+{
+  "id": "multistep_119",
+  "domain": "multistep",
+  "prompt": "Start with ivvc = 47. Then: add item 'svgm' (58); add item 'uugi' (96); multiply by item 'sgox' (81); add item 'ruhx' (27); multiply by item 'czzx' (32). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "521856",
+  "difficulty": 4
+}

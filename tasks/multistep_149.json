@@ -1,0 +1,12 @@
+{
+  "id": "multistep_149",
+  "domain": "multistep",
+  "prompt": "Start with dntu = 44. Then: multiply by item 'kplh' (78); subtract item 'clvb' (94); add item 'rtlf' (53); add item 'pmrj' (40). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "3431",
+  "difficulty": 3
+}

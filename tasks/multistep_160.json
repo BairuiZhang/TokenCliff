@@ -1,0 +1,12 @@
+{
+  "id": "multistep_160",
+  "domain": "multistep",
+  "prompt": "Start with vpwe = 55. Then: add item 'ikrp' (78); subtract item 'xrhc' (74); add item 'zglc' (32); subtract item 'mzgj' (31); multiply by item 'betz' (71); multiply by item 'pqle' (81). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "345060",
+  "difficulty": 5
+}

@@ -1,0 +1,27 @@
+{
+  "id": "tool_use_083",
+  "domain": "tool_use",
+  "prompt": "Use exchange_rate API to get EUR to GBP rate. Convert 4628 EUR. Return result rounded to 2 decimals.",
+  "tools": [
+    {
+      "name": "exchange_rate",
+      "desc": "Get exchange rate"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "exchange_rate": {
+        "responses": {
+          "{\"from\": \"EUR\", \"to\": \"GBP\"}": {
+            "rate": 0.8852
+          }
+        },
+        "default_response": {
+          "error": "pair not found"
+        }
+      }
+    }
+  },
+  "ground_truth": "4096.71",
+  "difficulty": 2
+}

@@ -1,0 +1,33 @@
+{
+  "id": "file_ops_047",
+  "domain": "file_ops",
+  "prompt": "Search all files in /docs for the keyword 'zovxysv'. Return the filename containing it.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    },
+    {
+      "name": "find",
+      "desc": "Find files"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/docs/zxcdij.txt": "Document 0 about gmyisogz. No relevant matches here.",
+      "/docs/vrhwla.txt": "Report section 1. Contains keyword zovxysv in paragraph.",
+      "/docs/jhlepj.txt": "Document 2 about fyugbzbm. No relevant matches here.",
+      "/docs/srjqsq.txt": "Document 3 about zbxwrmdf. No relevant matches here.",
+      "/docs/mpxafm.txt": "Document 4 about nfanrica. No relevant matches here.",
+      "/docs/yjvdhd.txt": "Document 5 about pzkfrzaq. No relevant matches here.",
+      "/docs/zuttea.txt": "Document 6 about mrdelqgi. No relevant matches here.",
+      "/docs/wzttiy.txt": "Document 7 about dwmzwpge. No relevant matches here."
+    }
+  },
+  "ground_truth": "vrhwla.txt",
+  "difficulty": 2
+}

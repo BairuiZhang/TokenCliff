@@ -1,0 +1,32 @@
+{
+  "id": "file_ops_046",
+  "domain": "file_ops",
+  "prompt": "Search all files in /docs for the keyword 'qzdq'. Return the filename containing it.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    },
+    {
+      "name": "find",
+      "desc": "Find files"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/docs/qkyspt.txt": "Document 0 about aqdhpxqn. No relevant matches here.",
+      "/docs/lkkqwg.txt": "Document 1 about drrlezej. No relevant matches here.",
+      "/docs/hxclqa.txt": "Document 2 about cunrmnud. No relevant matches here.",
+      "/docs/thhnmr.txt": "Document 3 about vsnxskgj. No relevant matches here.",
+      "/docs/msgvbf.txt": "Document 4 about rgnvxjlv. No relevant matches here.",
+      "/docs/nbswvb.txt": "Document 5 about tzrsntal. No relevant matches here.",
+      "/docs/afiiun.txt": "Report section 6. Contains keyword qzdq in paragraph."
+    }
+  },
+  "ground_truth": "afiiun.txt",
+  "difficulty": 2
+}

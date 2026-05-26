@@ -1,0 +1,229 @@
+{
+  "id": "data_transform_100",
+  "domain": "data_transform",
+  "prompt": "How many employees in 'Tokyo' have salary above 60000? Return just the number.",
+  "tools": [
+    {
+      "name": "query",
+      "desc": "Query table"
+    }
+  ],
+  "environment": {
+    "tables": {
+      "employees": [
+        {
+          "name": "acbkxfsc",
+          "dept": "engineering",
+          "salary": 197210,
+          "city": "London",
+          "years": 10
+        },
+        {
+          "name": "nvudnsue",
+          "dept": "engineering",
+          "salary": 175421,
+          "city": "Tokyo",
+          "years": 9
+        },
+        {
+          "name": "yxplrqje",
+          "dept": "sales",
+          "salary": 168201,
+          "city": "Tokyo",
+          "years": 10
+        },
+        {
+          "name": "hruiuxsr",
+          "dept": "hr",
+          "salary": 196244,
+          "city": "NYC",
+          "years": 15
+        },
+        {
+          "name": "mqwfrilw",
+          "dept": "sales",
+          "salary": 108069,
+          "city": "NYC",
+          "years": 14
+        },
+        {
+          "name": "euecfpti",
+          "dept": "engineering",
+          "salary": 148322,
+          "city": "Tokyo",
+          "years": 3
+        },
+        {
+          "name": "eglpennx",
+          "dept": "engineering",
+          "salary": 103877,
+          "city": "Berlin",
+          "years": 2
+        },
+        {
+          "name": "dpbypeph",
+          "dept": "hr",
+          "salary": 42662,
+          "city": "London",
+          "years": 3
+        },
+        {
+          "name": "etgkdaty",
+          "dept": "engineering",
+          "salary": 107536,
+          "city": "Tokyo",
+          "years": 10
+        },
+        {
+          "name": "eykgxprt",
+          "dept": "sales",
+          "salary": 96125,
+          "city": "Tokyo",
+          "years": 1
+        },
+        {
+          "name": "znjwndif",
+          "dept": "engineering",
+          "salary": 146063,
+          "city": "NYC",
+          "years": 3
+        },
+        {
+          "name": "odabrttb",
+          "dept": "sales",
+          "salary": 171979,
+          "city": "Berlin",
+          "years": 4
+        },
+        {
+          "name": "emfutllk",
+          "dept": "marketing",
+          "salary": 101719,
+          "city": "Berlin",
+          "years": 17
+        },
+        {
+          "name": "vnrhhkkq",
+          "dept": "hr",
+          "salary": 145936,
+          "city": "London",
+          "years": 6
+        },
+        {
+          "name": "xusovlyi",
+          "dept": "sales",
+          "salary": 78088,
+          "city": "Berlin",
+          "years": 19
+        },
+        {
+          "name": "labpoapz",
+          "dept": "engineering",
+          "salary": 53989,
+          "city": "London",
+          "years": 18
+        },
+        {
+          "name": "fftfzpfx",
+          "dept": "marketing",
+          "salary": 195910,
+          "city": "NYC",
+          "years": 11
+        },
+        {
+          "name": "rhwistqt",
+          "dept": "engineering",
+          "salary": 128650,
+          "city": "Tokyo",
+          "years": 4
+        },
+        {
+          "name": "smxuubwh",
+          "dept": "sales",
+          "salary": 73346,
+          "city": "Tokyo",
+          "years": 1
+        },
+        {
+          "name": "ygmirzmv",
+          "dept": "sales",
+          "salary": 153938,
+          "city": "Tokyo",
+          "years": 5
+        },
+        {
+          "name": "mvoefmkm",
+          "dept": "hr",
+          "salary": 131566,
+          "city": "NYC",
+          "years": 15
+        },
+        {
+          "name": "vctdwvfe",
+          "dept": "engineering",
+          "salary": 118525,
+          "city": "London",
+          "years": 18
+        },
+        {
+          "name": "gwchfnwi",
+          "dept": "marketing",
+          "salary": 74564,
+          "city": "NYC",
+          "years": 3
+        },
+        {
+          "name": "fmeekbuh",
+          "dept": "sales",
+          "salary": 174235,
+          "city": "Tokyo",
+          "years": 18
+        },
+        {
+          "name": "zkkuwyzj",
+          "dept": "hr",
+          "salary": 46854,
+          "city": "NYC",
+          "years": 4
+        },
+        {
+          "name": "tgnefovy",
+          "dept": "sales",
+          "salary": 174032,
+          "city": "London",
+          "years": 3
+        },
+        {
+          "name": "yfzqqfzx",
+          "dept": "sales",
+          "salary": 88408,
+          "city": "Berlin",
+          "years": 7
+        },
+        {
+          "name": "cxfzpynf",
+          "dept": "hr",
+          "salary": 82160,
+          "city": "Berlin",
+          "years": 20
+        },
+        {
+          "name": "xuvpsaka",
+          "dept": "sales",
+          "salary": 148763,
+          "city": "Tokyo",
+          "years": 12
+        },
+        {
+          "name": "suehzxii",
+          "dept": "sales",
+          "salary": 178787,
+          "city": "Tokyo",
+          "years": 11
+        }
+      ]
+    }
+  },
+  "ground_truth": "11",
+  "difficulty": 2
+}

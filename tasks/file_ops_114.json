@@ -1,0 +1,33 @@
+{
+  "id": "file_ops_114",
+  "domain": "file_ops",
+  "prompt": "Navigate the directory tree to find 'target.txt'. Return its content.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/sibl/qjyo/kyqh/xgjw/target.txt": "2832",
+      "/xgjw/sibl/kyqh/wzgsxm.txt": "986",
+      "/kyqh/kbpimc.txt": "456",
+      "/sibl/qjyo/qsxkez.txt": "565",
+      "/kyqh/sibl/wzwqln.txt": "411",
+      "/sibl/dtugwc.txt": "507",
+      "/sibl/xgjw/hpdwav.txt": "982",
+      "/qjyo/qjyo/tuoqeu.txt": "723",
+      "/sibl/qjyo/sibl/ewdape.txt": "597",
+      "/xgjw/qjyo/lpkced.txt": "817",
+      "/kyqh/sibl/sibl/eaqcxh.txt": "548",
+      "/qjyo/sibl/jbod/bblkkm.txt": "147"
+    }
+  },
+  "ground_truth": "2832",
+  "difficulty": 3
+}

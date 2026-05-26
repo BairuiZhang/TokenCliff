@@ -1,0 +1,12 @@
+{
+  "id": "multistep_137",
+  "domain": "multistep",
+  "prompt": "Start with xjcz = 13. Then: subtract item 'sgky' (43); subtract item 'bzws' (88); subtract item 'pxyr' (77); multiply by item 'eqpx' (16). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "-3120",
+  "difficulty": 3
+}

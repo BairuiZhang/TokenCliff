@@ -1,0 +1,12 @@
+{
+  "id": "multistep_155",
+  "domain": "multistep",
+  "prompt": "Start with ewpt = 99. Then: multiply by item 'fssf' (16); multiply by item 'wcxu' (31); multiply by item 'tytd' (31); multiply by item 'nhbk' (46); subtract item 'urrx' (100); multiply by item 'bgxd' (44). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "3080976976",
+  "difficulty": 5
+}

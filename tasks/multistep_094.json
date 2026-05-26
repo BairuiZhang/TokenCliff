@@ -1,0 +1,35 @@
+{
+  "id": "multistep_094",
+  "domain": "multistep",
+  "prompt": "Read all files in /reports. Find the values for: metric_dyj, metric_pfz, metric_bys. Return the maximum value.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/reports/nqphy.txt": "This quarterly report covers the period ending Q2 2026. Performance indicators show mixed results across divisions. The metric_dyj measurement recorded a value of 160 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/ldieq.txt": "This quarterly report covers the period ending Q1 2026. Performance indicators show mixed results across divisions. The metric_pfz measurement recorded a value of 556 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/bshak.txt": "This quarterly report covers the period ending Q2 2026. Performance indicators show mixed results across divisions. The metric_bys measurement recorded a value of 202 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/slypf.txt": "This quarterly report covers the period ending Q3 2026. Performance indicators show mixed results across divisions. The metric_zxc measurement recorded a value of 150 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/mwaxq.txt": "This quarterly report covers the period ending Q1 2026. Performance indicators show mixed results across divisions. The metric_dol measurement recorded a value of 664 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/dnhhj.txt": "This quarterly report covers the period ending Q1 2026. Performance indicators show mixed results across divisions. The metric_tgj measurement recorded a value of 698 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/fynwh.txt": "This quarterly report covers the period ending Q1 2026. Performance indicators show mixed results across divisions. The metric_bsj measurement recorded a value of 713 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/cudgf.txt": "This quarterly report covers the period ending Q1 2026. Performance indicators show mixed results across divisions. The metric_trd measurement recorded a value of 607 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/prkqk.txt": "This quarterly report covers the period ending Q1 2026. Performance indicators show mixed results across divisions. The metric_bwg measurement recorded a value of 812 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/finyh.txt": "This quarterly report covers the period ending Q3 2026. Performance indicators show mixed results across divisions. The metric_fio measurement recorded a value of 301 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/nngke.txt": "This quarterly report covers the period ending Q3 2026. Performance indicators show mixed results across divisions. The metric_kjw measurement recorded a value of 788 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/vgdcu.txt": "This quarterly report covers the period ending Q3 2026. Performance indicators show mixed results across divisions. The metric_wgr measurement recorded a value of 347 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/lcnzg.txt": "This quarterly report covers the period ending Q2 2026. Performance indicators show mixed results across divisions. The metric_qbz measurement recorded a value of 13 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/drjtb.txt": "This quarterly report covers the period ending Q2 2026. Performance indicators show mixed results across divisions. The metric_jgh measurement recorded a value of 687 this period. Further analysis is needed to determine long-term trends."
+    }
+  },
+  "ground_truth": "556",
+  "difficulty": 4
+}

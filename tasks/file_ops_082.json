@@ -1,0 +1,25 @@
+{
+  "id": "file_ops_082",
+  "domain": "file_ops",
+  "prompt": "Count the total number of data rows (excluding headers) across all CSV files in /data. Return just the number.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/data/part_0.csv": "col_0,col_1,col_2\n1,34,84\n33,4,36\n47,64,84\n28,6,22\n24,16,95",
+      "/data/part_1.csv": "col_0,col_1,col_2\n51,6,60\n97,75,5\n60,22,23\n71,66,56\n93,48,32\n87,23,79\n9,27,50\n13,79,20\n61,79,28\n32,19,62\n66,41,96\n23,5,74\n13,70,3\n87,99,53\n65,79,36\n77,52,75\n17,93,7\n52,97,74\n71,22,44\n62,95,59\n58,100,5\n4,79,66\n55,62,31\n32,81,8",
+      "/data/part_2.csv": "col_0,col_1,col_2\n37,46,66\n48,83,81\n45,83,86\n51,47,18\n89,2,2\n50,64,85\n97,89,85\n62,9,8\n57,50,94\n45,14,84\n44,5,54\n20,21,91",
+      "/data/part_3.csv": "col_0,col_1,col_2\n75,33,60\n100,8,24\n91,81,46\n63,66,59\n70,35,47\n35,80,94\n6,38,83\n9,98,98\n90,54,92\n4,10,49\n36,74,17\n61,95,14\n12,1,28\n76,48,99\n79,63,11\n85,40,100\n88,74,34\n92,15,77\n23,49,36\n89,43,66\n24,61,38\n13,80,86\n64,29,73\n7,16,11\n46,73,76\n48,23,87"
+    }
+  },
+  "ground_truth": "67",
+  "difficulty": 3
+}

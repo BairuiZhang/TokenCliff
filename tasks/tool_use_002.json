@@ -1,0 +1,41 @@
+{
+  "id": "tool_use_002",
+  "domain": "tool_use",
+  "prompt": "Get the temperature in Tokyo using weather API, then get its population using city_info API. Return temperature divided by population (in millions), rounded to 2 decimal places.",
+  "tools": [
+    {
+      "name": "weather",
+      "desc": "Get temperature"
+    },
+    {
+      "name": "city_info",
+      "desc": "Get city info"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "weather": {
+        "responses": {
+          "{\"city\": \"Tokyo\"}": {
+            "temp": 9
+          }
+        },
+        "default_response": {
+          "error": "not found"
+        }
+      },
+      "city_info": {
+        "responses": {
+          "{\"city\": \"Tokyo\"}": {
+            "population": 8991934
+          }
+        },
+        "default_response": {
+          "error": "unknown"
+        }
+      }
+    }
+  },
+  "ground_truth": "1.0",
+  "difficulty": 2
+}

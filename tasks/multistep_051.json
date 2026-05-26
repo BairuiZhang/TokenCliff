@@ -1,0 +1,36 @@
+{
+  "id": "multistep_051",
+  "domain": "multistep",
+  "prompt": "Read all files in /reports. Find the values for these metrics: metric_oah, metric_atm, metric_gfe, metric_poa. Return their sum.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/reports/ntphs.txt": "This quarterly report covers the period ending Q3 2026. Performance indicators show mixed results across divisions. The metric_oah measurement recorded a value of 148 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/koqvr.txt": "This quarterly report covers the period ending Q2 2026. Performance indicators show mixed results across divisions. The metric_atm measurement recorded a value of 665 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/mdnll.txt": "This quarterly report covers the period ending Q1 2026. Performance indicators show mixed results across divisions. The metric_gfe measurement recorded a value of 66 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/imwpd.txt": "This quarterly report covers the period ending Q1 2026. Performance indicators show mixed results across divisions. The metric_poa measurement recorded a value of 409 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/gctsy.txt": "This quarterly report covers the period ending Q3 2026. Performance indicators show mixed results across divisions. The metric_qif measurement recorded a value of 72 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/cdkmb.txt": "This quarterly report covers the period ending Q1 2026. Performance indicators show mixed results across divisions. The metric_lke measurement recorded a value of 451 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/rndxd.txt": "This quarterly report covers the period ending Q4 2026. Performance indicators show mixed results across divisions. The metric_rfi measurement recorded a value of 31 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/mcudk.txt": "This quarterly report covers the period ending Q4 2026. Performance indicators show mixed results across divisions. The metric_ank measurement recorded a value of 569 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/nynur.txt": "This quarterly report covers the period ending Q4 2026. Performance indicators show mixed results across divisions. The metric_hgh measurement recorded a value of 219 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/hufqq.txt": "This quarterly report covers the period ending Q3 2026. Performance indicators show mixed results across divisions. The metric_img measurement recorded a value of 661 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/kwhsd.txt": "This quarterly report covers the period ending Q3 2026. Performance indicators show mixed results across divisions. The metric_evi measurement recorded a value of 349 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/jumjr.txt": "This quarterly report covers the period ending Q4 2026. Performance indicators show mixed results across divisions. The metric_nlb measurement recorded a value of 640 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/aqxfo.txt": "This quarterly report covers the period ending Q2 2026. Performance indicators show mixed results across divisions. The metric_utr measurement recorded a value of 558 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/koemy.txt": "This quarterly report covers the period ending Q1 2026. Performance indicators show mixed results across divisions. The metric_qpt measurement recorded a value of 320 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/mhqfg.txt": "This quarterly report covers the period ending Q4 2026. Performance indicators show mixed results across divisions. The metric_adt measurement recorded a value of 351 this period. Further analysis is needed to determine long-term trends."
+    }
+  },
+  "ground_truth": "1288",
+  "difficulty": 4
+}

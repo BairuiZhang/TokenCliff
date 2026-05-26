@@ -1,0 +1,12 @@
+{
+  "id": "multistep_116",
+  "domain": "multistep",
+  "prompt": "Start with atpa = 72. Then: subtract item 'tohi' (27); subtract item 'ogqg' (53); multiply by item 'xuex' (44); multiply by item 'bzxn' (84); multiply by item 'uvgg' (98). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "-2897664",
+  "difficulty": 4
+}

@@ -1,0 +1,33 @@
+{
+  "id": "file_ops_040",
+  "domain": "file_ops",
+  "prompt": "Search all files in /docs for the keyword 'qtqebs'. Return the filename containing it.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    },
+    {
+      "name": "find",
+      "desc": "Find files"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/docs/qeferb.txt": "Document 0 about nvmyzmxb. No relevant matches here.",
+      "/docs/nylcye.txt": "Document 1 about oubbrzln. No relevant matches here.",
+      "/docs/iqvwtp.txt": "Document 2 about hfuswahn. No relevant matches here.",
+      "/docs/mbansn.txt": "Document 3 about jsxklxom. No relevant matches here.",
+      "/docs/soswbo.txt": "Report section 4. Contains keyword qtqebs in paragraph.",
+      "/docs/fzppqo.txt": "Document 5 about ggnfrohq. No relevant matches here.",
+      "/docs/oznwoh.txt": "Document 6 about btibnplz. No relevant matches here.",
+      "/docs/wzgogd.txt": "Document 7 about mstxmmbb. No relevant matches here."
+    }
+  },
+  "ground_truth": "soswbo.txt",
+  "difficulty": 2
+}

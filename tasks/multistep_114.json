@@ -1,0 +1,12 @@
+{
+  "id": "multistep_114",
+  "domain": "multistep",
+  "prompt": "Start with xmla = 26. Then: multiply by item 'iusa' (12); subtract item 'nxpb' (96); add item 'ceoj' (79); multiply by item 'yhhz' (28); multiply by item 'wpqq' (34). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "280840",
+  "difficulty": 4
+}

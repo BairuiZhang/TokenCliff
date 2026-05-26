@@ -1,0 +1,12 @@
+{
+  "id": "multistep_154",
+  "domain": "multistep",
+  "prompt": "Start with amks = 45. Then: multiply by item 'qptg' (38); multiply by item 'mrgj' (95); multiply by item 'bper' (83); multiply by item 'dnej' (54). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "728100900",
+  "difficulty": 3
+}

@@ -1,0 +1,12 @@
+{
+  "id": "planning_105",
+  "domain": "planning",
+  "prompt": "Graph edges (node-node: weight): {\"B-C\": 3, \"C-B\": 3, \"A-D\": 4, \"D-A\": 4, \"D-C\": 2, \"C-D\": 2, \"B-D\": 3, \"D-B\": 3, \"C-A\": 4, \"A-C\": 4}. Shortest path from A to D? Return the total weight.",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "4",
+  "difficulty": 5
+}

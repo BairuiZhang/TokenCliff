@@ -1,0 +1,119 @@
+{
+  "id": "data_transform_123",
+  "domain": "data_transform",
+  "prompt": "Find the top 5 items by score. Return the sum of their scores.",
+  "tools": [
+    {
+      "name": "query",
+      "desc": "Query table"
+    }
+  ],
+  "environment": {
+    "tables": {
+      "items": [
+        {
+          "name": "xhssxj",
+          "score": 32,
+          "category": "X"
+        },
+        {
+          "name": "ouzidk",
+          "score": 31,
+          "category": "X"
+        },
+        {
+          "name": "tiijbw",
+          "score": 11,
+          "category": "X"
+        },
+        {
+          "name": "zjbsqg",
+          "score": 2,
+          "category": "Y"
+        },
+        {
+          "name": "yiuydh",
+          "score": 25,
+          "category": "Y"
+        },
+        {
+          "name": "vpzrjp",
+          "score": 27,
+          "category": "X"
+        },
+        {
+          "name": "lppmzn",
+          "score": 45,
+          "category": "X"
+        },
+        {
+          "name": "pipkeg",
+          "score": 20,
+          "category": "Z"
+        },
+        {
+          "name": "mrnfvt",
+          "score": 88,
+          "category": "X"
+        },
+        {
+          "name": "lobjng",
+          "score": 4,
+          "category": "Z"
+        },
+        {
+          "name": "qxpzup",
+          "score": 16,
+          "category": "Y"
+        },
+        {
+          "name": "nnpnim",
+          "score": 42,
+          "category": "Z"
+        },
+        {
+          "name": "hitjkk",
+          "score": 56,
+          "category": "X"
+        },
+        {
+          "name": "ygpdzm",
+          "score": 50,
+          "category": "Z"
+        },
+        {
+          "name": "oyuomh",
+          "score": 85,
+          "category": "X"
+        },
+        {
+          "name": "mcvpjj",
+          "score": 21,
+          "category": "Z"
+        },
+        {
+          "name": "nglmhc",
+          "score": 31,
+          "category": "Z"
+        },
+        {
+          "name": "nghjsi",
+          "score": 64,
+          "category": "Y"
+        },
+        {
+          "name": "kenqrf",
+          "score": 45,
+          "category": "Z"
+        },
+        {
+          "name": "eabtwd",
+          "score": 13,
+          "category": "X"
+        }
+      ]
+    }
+  },
+  "ground_truth": "343",
+  "difficulty": 3
+}

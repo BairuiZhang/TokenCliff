@@ -1,0 +1,41 @@
+{
+  "id": "tool_use_118",
+  "domain": "tool_use",
+  "prompt": "Use calculator API to subtract 34 and 19, then apply a 20% discount. Return the final value rounded to 2 decimals.",
+  "tools": [
+    {
+      "name": "calculator",
+      "desc": "Perform arithmetic"
+    },
+    {
+      "name": "discount",
+      "desc": "Apply discount"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "calculator": {
+        "responses": {
+          "{\"a\": 34, \"b\": 19, \"op\": \"subtract\"}": {
+            "result": 15
+          }
+        },
+        "default_response": {
+          "error": "invalid"
+        }
+      },
+      "discount": {
+        "responses": {
+          "{\"amount\": 15, \"percent\": 20}": {
+            "final": 12.0
+          }
+        },
+        "default_response": {
+          "error": "invalid"
+        }
+      }
+    }
+  },
+  "ground_truth": "12.0",
+  "difficulty": 3
+}

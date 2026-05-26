@@ -1,0 +1,12 @@
+{
+  "id": "planning_087",
+  "domain": "planning",
+  "prompt": "Graph edges (node-node: weight): {\"C-D\": 1, \"D-C\": 1, \"E-A\": 6, \"A-E\": 6, \"B-E\": 6, \"E-B\": 6, \"A-D\": 3, \"D-A\": 3, \"B-C\": 9, \"C-B\": 9, \"C-A\": 6, \"A-C\": 6, \"B-A\": 2, \"A-B\": 2, \"C-E\": 3, \"E-C\": 3}. Shortest path from A to E? Return the total weight.",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "6",
+  "difficulty": 5
+}

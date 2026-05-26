@@ -1,0 +1,99 @@
+{
+  "id": "tool_use_042",
+  "domain": "tool_use",
+  "prompt": "Use the inventory API to list all items. Find the cheapest item regardless of stock. Return its name.",
+  "tools": [
+    {
+      "name": "inventory",
+      "desc": "List items with price and stock"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "inventory": {
+        "responses": {
+          "": {
+            "items": [
+              {
+                "name": "ohqiw",
+                "price": 292,
+                "in_stock": false
+              },
+              {
+                "name": "ihkoj",
+                "price": 150,
+                "in_stock": false
+              },
+              {
+                "name": "sueva",
+                "price": 133,
+                "in_stock": true
+              },
+              {
+                "name": "ixbpf",
+                "price": 120,
+                "in_stock": false
+              },
+              {
+                "name": "xvubk",
+                "price": 202,
+                "in_stock": true
+              },
+              {
+                "name": "nxtnn",
+                "price": 80,
+                "in_stock": false
+              },
+              {
+                "name": "azdbd",
+                "price": 253,
+                "in_stock": true
+              }
+            ]
+          }
+        },
+        "default_response": {
+          "items": [
+            {
+              "name": "ohqiw",
+              "price": 292,
+              "in_stock": false
+            },
+            {
+              "name": "ihkoj",
+              "price": 150,
+              "in_stock": false
+            },
+            {
+              "name": "sueva",
+              "price": 133,
+              "in_stock": true
+            },
+            {
+              "name": "ixbpf",
+              "price": 120,
+              "in_stock": false
+            },
+            {
+              "name": "xvubk",
+              "price": 202,
+              "in_stock": true
+            },
+            {
+              "name": "nxtnn",
+              "price": 80,
+              "in_stock": false
+            },
+            {
+              "name": "azdbd",
+              "price": 253,
+              "in_stock": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ground_truth": "nxtnn",
+  "difficulty": 2
+}

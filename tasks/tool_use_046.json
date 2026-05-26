@@ -1,0 +1,99 @@
+{
+  "id": "tool_use_046",
+  "domain": "tool_use",
+  "prompt": "Use the inventory API to list all items. Find the cheapest item that is in stock. Return its name.",
+  "tools": [
+    {
+      "name": "inventory",
+      "desc": "List items with price and stock"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "inventory": {
+        "responses": {
+          "": {
+            "items": [
+              {
+                "name": "vnovh",
+                "price": 313,
+                "in_stock": true
+              },
+              {
+                "name": "itdcs",
+                "price": 327,
+                "in_stock": true
+              },
+              {
+                "name": "mudlb",
+                "price": 221,
+                "in_stock": false
+              },
+              {
+                "name": "iehyn",
+                "price": 427,
+                "in_stock": false
+              },
+              {
+                "name": "hclso",
+                "price": 38,
+                "in_stock": false
+              },
+              {
+                "name": "kwsob",
+                "price": 309,
+                "in_stock": false
+              },
+              {
+                "name": "nhbtx",
+                "price": 436,
+                "in_stock": true
+              }
+            ]
+          }
+        },
+        "default_response": {
+          "items": [
+            {
+              "name": "vnovh",
+              "price": 313,
+              "in_stock": true
+            },
+            {
+              "name": "itdcs",
+              "price": 327,
+              "in_stock": true
+            },
+            {
+              "name": "mudlb",
+              "price": 221,
+              "in_stock": false
+            },
+            {
+              "name": "iehyn",
+              "price": 427,
+              "in_stock": false
+            },
+            {
+              "name": "hclso",
+              "price": 38,
+              "in_stock": false
+            },
+            {
+              "name": "kwsob",
+              "price": 309,
+              "in_stock": false
+            },
+            {
+              "name": "nhbtx",
+              "price": 436,
+              "in_stock": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ground_truth": "vnovh",
+  "difficulty": 2
+}

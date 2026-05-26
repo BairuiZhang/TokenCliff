@@ -1,0 +1,41 @@
+{
+  "id": "tool_use_018",
+  "domain": "tool_use",
+  "prompt": "Get the temperature in Seoul using weather API, then get its population using city_info API. Return temperature divided by population (in millions), rounded to 2 decimal places.",
+  "tools": [
+    {
+      "name": "weather",
+      "desc": "Get temperature"
+    },
+    {
+      "name": "city_info",
+      "desc": "Get city info"
+    }
+  ],
+  "environment": {
+    "endpoints": {
+      "weather": {
+        "responses": {
+          "{\"city\": \"Seoul\"}": {
+            "temp": 29
+          }
+        },
+        "default_response": {
+          "error": "not found"
+        }
+      },
+      "city_info": {
+        "responses": {
+          "{\"city\": \"Seoul\"}": {
+            "population": 7423349
+          }
+        },
+        "default_response": {
+          "error": "unknown"
+        }
+      }
+    }
+  },
+  "ground_truth": "3.91",
+  "difficulty": 2
+}

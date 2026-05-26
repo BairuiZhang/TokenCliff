@@ -1,0 +1,35 @@
+{
+  "id": "multistep_057",
+  "domain": "multistep",
+  "prompt": "Read all files in /reports. Find the values for these metrics: metric_nos, metric_ujf, metric_vfe, metric_fkj. Return their sum.",
+  "tools": [
+    {
+      "name": "ls",
+      "desc": "List directory"
+    },
+    {
+      "name": "read",
+      "desc": "Read file"
+    }
+  ],
+  "environment": {
+    "files": {
+      "/reports/uznci.txt": "This quarterly report covers the period ending Q3 2026. Performance indicators show mixed results across divisions. The metric_nos measurement recorded a value of 71 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/ahluz.txt": "This quarterly report covers the period ending Q2 2026. Performance indicators show mixed results across divisions. The metric_ujf measurement recorded a value of 34 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/khoej.txt": "This quarterly report covers the period ending Q3 2026. Performance indicators show mixed results across divisions. The metric_vfe measurement recorded a value of 608 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/tnnfi.txt": "This quarterly report covers the period ending Q4 2026. Performance indicators show mixed results across divisions. The metric_xru measurement recorded a value of 228 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/euwxq.txt": "This quarterly report covers the period ending Q1 2026. Performance indicators show mixed results across divisions. The metric_fkj measurement recorded a value of 80 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/dpqqg.txt": "This quarterly report covers the period ending Q1 2026. Performance indicators show mixed results across divisions. The metric_dqf measurement recorded a value of 856 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/plssw.txt": "This quarterly report covers the period ending Q3 2026. Performance indicators show mixed results across divisions. The metric_fmf measurement recorded a value of 225 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/ngdwm.txt": "This quarterly report covers the period ending Q4 2026. Performance indicators show mixed results across divisions. The metric_bti measurement recorded a value of 207 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/jcoao.txt": "This quarterly report covers the period ending Q3 2026. Performance indicators show mixed results across divisions. The metric_bgy measurement recorded a value of 793 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/ptxbp.txt": "This quarterly report covers the period ending Q1 2026. Performance indicators show mixed results across divisions. The metric_xmy measurement recorded a value of 336 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/qqedu.txt": "This quarterly report covers the period ending Q4 2026. Performance indicators show mixed results across divisions. The metric_kfe measurement recorded a value of 48 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/lhily.txt": "This quarterly report covers the period ending Q1 2026. Performance indicators show mixed results across divisions. The metric_mdz measurement recorded a value of 257 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/pvygh.txt": "This quarterly report covers the period ending Q2 2026. Performance indicators show mixed results across divisions. The metric_unr measurement recorded a value of 481 this period. Further analysis is needed to determine long-term trends.",
+      "/reports/uvqtx.txt": "This quarterly report covers the period ending Q1 2026. Performance indicators show mixed results across divisions. The metric_pxu measurement recorded a value of 764 this period. Further analysis is needed to determine long-term trends."
+    }
+  },
+  "ground_truth": "793",
+  "difficulty": 4
+}

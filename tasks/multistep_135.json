@@ -1,0 +1,12 @@
+{
+  "id": "multistep_135",
+  "domain": "multistep",
+  "prompt": "Start with kzwb = 63. Then: subtract item 'tyzp' (77); multiply by item 'jbcp' (100); subtract item 'nyih' (95); add item 'ltha' (12). What is the final result?",
+  "tools": [],
+  "environment": {
+    "events": [],
+    "constraints": []
+  },
+  "ground_truth": "-1483",
+  "difficulty": 3
+}

@@ -1,0 +1,109 @@
+{
+  "id": "data_transform_009",
+  "domain": "data_transform",
+  "prompt": "How many employees are in the 'hr' department? Return just the number.",
+  "tools": [
+    {
+      "name": "query",
+      "desc": "Query table with where/select/agg/group_by"
+    }
+  ],
+  "environment": {
+    "tables": {
+      "employees": [
+        {
+          "name": "psgwaket",
+          "dept": "finance",
+          "salary": 128123,
+          "city": "Paris"
+        },
+        {
+          "name": "oulfdiuc",
+          "dept": "marketing",
+          "salary": 60166,
+          "city": "Tokyo"
+        },
+        {
+          "name": "mrjcjaln",
+          "dept": "engineering",
+          "salary": 136281,
+          "city": "Tokyo"
+        },
+        {
+          "name": "hcgqetyp",
+          "dept": "legal",
+          "salary": 133222,
+          "city": "NYC"
+        },
+        {
+          "name": "esrcbpzm",
+          "dept": "legal",
+          "salary": 150228,
+          "city": "Tokyo"
+        },
+        {
+          "name": "hwhotdpt",
+          "dept": "marketing",
+          "salary": 136891,
+          "city": "Tokyo"
+        },
+        {
+          "name": "marzhwhq",
+          "dept": "marketing",
+          "salary": 199108,
+          "city": "Berlin"
+        },
+        {
+          "name": "luqjdtsw",
+          "dept": "legal",
+          "salary": 181978,
+          "city": "NYC"
+        },
+        {
+          "name": "ekovglvq",
+          "dept": "engineering",
+          "salary": 51351,
+          "city": "NYC"
+        },
+        {
+          "name": "zzngtxtg",
+          "dept": "sales",
+          "salary": 134699,
+          "city": "London"
+        },
+        {
+          "name": "odvenkfu",
+          "dept": "finance",
+          "salary": 186941,
+          "city": "Berlin"
+        },
+        {
+          "name": "iwmcxkbt",
+          "dept": "engineering",
+          "salary": 81480,
+          "city": "NYC"
+        },
+        {
+          "name": "skameqae",
+          "dept": "engineering",
+          "salary": 63884,
+          "city": "Tokyo"
+        },
+        {
+          "name": "lxaxmfdm",
+          "dept": "hr",
+          "salary": 194278,
+          "city": "London"
+        },
+        {
+          "name": "hpllqofm",
+          "dept": "marketing",
+          "salary": 83669,
+          "city": "Sydney"
+        }
+      ]
+    }
+  },
+  "ground_truth": "1",
+  "difficulty": 1
+}
