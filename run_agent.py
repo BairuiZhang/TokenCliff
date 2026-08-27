@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""BudgetBench Agent Loop Experiment Runner.
+"""TokenCliff agent-loop experiment runner.
 
 Usage:
     python run_agent.py                          # Run all default models
@@ -9,7 +9,7 @@ Usage:
 
 Runs in background:
     nohup python run_agent.py gpt-4o claude-haiku-4.5 &
-    tail -f budgetbench/results/agent_run_log.txt
+    tail -f results/agent_run_log.txt
 """
 import os, sys, time, json, argparse
 from pathlib import Path
@@ -21,14 +21,13 @@ from budgetbench import load_tasks, BUDGET_LEVELS, compute_elasticity, compute_c
 from budgetbench.agent_loop import run_agent_loop
 from budgetbench.runner import MODEL_CONFIGS
 
-RESULTS_DIR = Path(__file__).parent / "budgetbench" / "results"
+RESULTS_DIR = Path(__file__).parent / "results"
 LOG = RESULTS_DIR / "agent_run_log.txt"
 
 DEFAULT_MODELS = [
-    "qwen2.5-7b", "qwen2.5-72b", "qwen3-8b-base", "qwen3-32b-base",
-    "gpt-4o-mini", "gpt-4o",
-    "claude-haiku-4.5", "claude-sonnet-4.5",
-    "gemini-2.5-flash", "deepseek-v3",
+    "gemini-3.1-flash-lite", "gpt-4o-mini", "qwen2.5-72b",
+    "claude-haiku-4.5", "qwen2.5-7b", "qwen3.6-flash",
+    "qwen3.5-35b", "qwen3.6-plus", "qwen3.5-397b", "deepseek-v3",
 ]
 
 def log(msg):

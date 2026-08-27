@@ -1,54 +1,88 @@
-# TokenCliff: Anonymous Review Package
+# TokenCliff
 
-This repository contains the final code and data used for the paper.
+**Benchmarking performance-budget trade-offs in multi-turn reasoning for LLM agents.**
 
-## Layout
+TokenCliff evaluates how multi-turn LLM agents perform under controlled episode-level output-token budgets. The release contains 660 deterministic tasks, five budget levels, non-LLM verifiers, the evaluation code, and the final results for 10 models (33,000 main-evaluation episodes).
+
+## Benchmark
+
+The task suite contains four capability-oriented domains and one longer-chain Multi-Step split:
+
+| Split | Tasks | Description |
+| --- | ---: | --- |
+| File Operations | 125 | Virtual filesystem navigation and aggregation |
+| Data Transformation | 125 | Filtering, aggregation, and joins |
+| Tool Use | 125 | Sequential and conditional API calls |
+| Planning | 125 | Scheduling, optimization, and dependency reasoning |
+| Multi-Step | 160 | Larger tables, multi-file extraction, and chained computations |
+
+Each task is evaluated at five total output-token budgets: B1=200, B2=500, B3=1,500, B4=4,000, and B5=8,192. At every turn, the evaluator sets the API `max_tokens` request ceiling to `min(remaining_episode_budget, 500)` and accumulates API-reported completion-token usage. Episodes terminate on submission, budget exhaustion, or the 20-turn limit.
+
+## Metrics
+
+Let `s(m, b_k)` be model `m`'s mean success at budget `b_k`, and let `s*` be its peak success across the five budgets.
+
+- **Budget elasticity (`epsilon`)** is the peak-normalized trapezoidal area under the success curve on the log-budget axis. It measures relative performance retention, not absolute capability.
+- **Absolute log-budget AUC (`A_log`)** equals `s* * epsilon` and preserves absolute budget-averaged capability.
+- **Cliff Index** is the largest success gain between adjacent increasing budget levels, equivalently the largest drop when the budget is reduced.
+
+## Repository Layout
 
 ```text
-Final_Review/
-├── README.md
-├── verify_results.py
-├── code/
-│   ├── __init__.py
-│   ├── .env.example
-│   ├── agent_loop.py
-│   ├── envs/__init__.py
-│   ├── generate_multistep.py
-│   ├── generate_tasks.py
-│   ├── run_agent.py
-│   └── runner.py
-├── results/
-│   ├── agent_*.json
-│   ├── block1_*.json
-│   ├── agent_multistep_*.json
-│   ├── bap_*.json
-│   ├── all_metrics_final.json
-│   ├── confidence_intervals.json
-│   ├── per_domain_analysis.json
-│   ├── error_analysis.json
-│   ├── token_efficiency.json
-│   ├── task_statistics.json
-│   ├── main_experiments.json
-│   ├── singleshot_experiments.json
-│   ├── multistep_experiments.json
-│   ├── bap_experiments.json
-│   └── analysis_metrics.json
-└── tasks/
-    └── *.json
+.
+├── budgetbench/              # Evaluation package and deterministic environments
+├── tasks/                    # 660 canonical task JSON files
+├── results/                  # Final raw and derived experiment results
+├── run_agent.py              # Agent-loop runner
+├── verify_results.py         # Recompute the main paper table from raw results
+├── requirements.txt
+└── .env.example
 ```
 
-The package includes 660 deterministic tasks and the final raw results for the paper's main benchmark, single-shot comparison, hard multi-step stress test, and budget-aware prompting subset.
+## Installation
 
-## Verification
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+cp .env.example .env
+```
 
-From `Final_Review/`:
+Add the API credentials for the providers you intend to evaluate to `.env`. Never commit `.env`.
+
+## Verify Released Results
+
+The following command recomputes per-budget success, elasticity, absolute log-budget AUC, and Cliff Index directly from the released raw main-experiment files:
 
 ```bash
 python verify_results.py --results-dir ./results
 ```
 
-## Notes
+## Run the Benchmark
 
-- The `results/` directory now contains only the final release artifacts.
-- `analysis_metrics.json` bundles the final summary files for convenience.
-- `code/.env.example` shows the expected API key format.
+```bash
+# List configured models
+python run_agent.py --list
+
+# Smoke test on a small task subset
+python run_agent.py qwen2.5-7b --tasks 5
+
+# Run selected models on all 660 tasks and five budgets
+python run_agent.py qwen2.5-7b gpt-4o-mini
+```
+
+Existing `results/agent_<model>.json` files are skipped to support resuming interrupted runs. Move or rename an existing result file before intentionally rerunning that model.
+
+## Scope
+
+TokenCliff measures robustness under observable episode-level output-token constraints. It is not a complete deployment-cost benchmark: input-token growth, latency, tool costs, provider pricing, and unreported provider-side computation are outside the controlled variable.
+
+## Citation
+
+```bibtex
+@inproceedings{zhang2026tokencliff,
+  title     = {TokenCliff: Benchmarking Performance-Budget Trade-offs in Multi-Turn Reasoning for LLM Agents},
+  author    = {Zhang, Bairui and Liu, Weixuan and Xue, Defan and Zhang, Yongqi},
+  year      = {2026}
+}
+```

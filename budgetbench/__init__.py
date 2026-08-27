@@ -1,11 +1,11 @@
-"""BudgetBench: Resource-Constrained Agent Evaluation under Explicit Token Budgets."""
-import json, os, time, random
+"""TokenCliff: evaluation under explicit episode-level output-token budgets."""
+import json, math, os, time, random
 from pathlib import Path
 from dataclasses import dataclass, field, asdict
 from typing import Optional
 import tiktoken
 
-ROOT = Path(__file__).parent
+ROOT = Path(__file__).resolve().parent.parent
 TASKS_DIR = ROOT / "tasks"
 RESULTS_DIR = ROOT / "results"
 
@@ -34,7 +34,7 @@ class EvalResult:
     timestamp: str = ""
 
 def load_tasks() -> list[Task]:
-    """Load all 100 tasks from JSON files."""
+    """Load the 660 canonical benchmark tasks from JSON files."""
     tasks = []
     for f in sorted(TASKS_DIR.glob("*.json")):
         data = json.loads(f.read_text())
@@ -96,22 +96,36 @@ def score_task(task: Task, response: str) -> int:
     return 0
 
 def compute_elasticity(results: list[EvalResult]) -> float:
-    """Compute budget elasticity ε(m) for a model's results.
-    ε = AUC(performance-budget curve) / AUC(perfect curve)
-      = mean(success_rate across all budget levels)
-    Normalized to [0,1]. Does NOT depend on other models' performance.
-    """
+    """Compute peak-normalized log-budget trapezoidal AUC (paper Eq. 1)."""
     budget_order = ["B1", "B2", "B3", "B4", "B5"]
-    perf = {}
+    perf: dict[str, float] = {}
     for bl in budget_order:
         bl_results = [r for r in results if r.budget_level == bl]
-        if bl_results:
-            perf[bl] = sum(r.success for r in bl_results) / len(bl_results)
-        else:
-            perf[bl] = 0.0
-    # AUC normalized by perfect score (1.0 at all levels)
-    values = [perf.get(bl, 0.0) for bl in budget_order]
-    return sum(values) / len(values)
+        perf[bl] = sum(r.success for r in bl_results) / len(bl_results) if bl_results else 0.0
+
+    values = [perf[bl] for bl in budget_order]
+    peak = max(values)
+    if peak == 0:
+        return 0.0
+
+    budgets = [BUDGET_LEVELS[bl] for bl in budget_order]
+    weighted_auc = sum(
+        (values[k] + values[k + 1]) / 2
+        * (math.log(budgets[k + 1]) - math.log(budgets[k]))
+        for k in range(len(values) - 1)
+    )
+    log_range = math.log(budgets[-1]) - math.log(budgets[0])
+    return weighted_auc / log_range / peak
+
+
+def compute_absolute_log_auc(results: list[EvalResult]) -> float:
+    """Compute unnormalized log-budget AUC, A_log = peak * epsilon."""
+    budget_order = ["B1", "B2", "B3", "B4", "B5"]
+    rates = []
+    for bl in budget_order:
+        bl_results = [r for r in results if r.budget_level == bl]
+        rates.append(sum(r.success for r in bl_results) / len(bl_results) if bl_results else 0.0)
+    return max(rates, default=0.0) * compute_elasticity(results)
 
 def compute_cliff_index(results: list[EvalResult]) -> tuple[float, str]:
     """Find largest single-step performance drop between adjacent budget levels."""
@@ -128,7 +142,7 @@ def compute_cliff_index(results: list[EvalResult]) -> tuple[float, str]:
         drop = higher - lower  # positive means performance drops when budget decreases
         if drop > max_drop:
             max_drop = drop
-            drop_at = f"{budget_order[i+1]}→{budget_order[i]}"
+            drop_at = f"{budget_order[i]}→{budget_order[i+1]}"
     return max_drop, drop_at
 
 

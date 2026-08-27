@@ -32,6 +32,10 @@ def compute_log_trapezoidal_epsilon(rates, budget_tokens=BUDGET_TOKENS):
     )
     return total / (np.log(budget_tokens[-1]) - np.log(budget_tokens[0])) / peak
 
+def compute_absolute_log_auc(rates, budget_tokens=BUDGET_TOKENS):
+    """Compute unnormalized log-budget AUC, A_log = peak * epsilon."""
+    return max(rates) * compute_log_trapezoidal_epsilon(rates, budget_tokens)
+
 def compute_cliff(rates):
     """Compute Cliff Index (Equation 2 in paper)."""
     gains = [rates[k+1] - rates[k] for k in range(len(rates) - 1)]
@@ -48,7 +52,7 @@ def main(results_dir):
     # Table 4: Main Results
     print("TABLE 4: Main Results (10 models × 660 tasks × 5 budget levels)")
     print("-" * 70)
-    print(f"{'Model':<25} {'B1':<7} {'B2':<7} {'B3':<7} {'B4':<7} {'B5':<7} {'ε':<7} {'Cliff':<6}")
+    print(f"{'Model':<25} {'B1':<7} {'B2':<7} {'B3':<7} {'B4':<7} {'B5':<7} {'ε':<7} {'A_log':<7} {'Cliff':<6}")
     print("-" * 70)
     
     all_results = {}
@@ -67,10 +71,11 @@ def main(results_dir):
         
         rates = [np.mean(by_level[bl]) for bl in BUDGETS]
         eps = compute_log_trapezoidal_epsilon(rates)
+        absolute_auc = compute_absolute_log_auc(rates)
         cliff = compute_cliff(rates)
         
-        all_results[model] = {'rates': rates, 'eps': eps, 'cliff': cliff}
-        print(f"{model:<25} {rates[0]:<7.3f} {rates[1]:<7.3f} {rates[2]:<7.3f} {rates[3]:<7.3f} {rates[4]:<7.3f} {eps:<7.3f} {cliff:<6.3f}")
+        all_results[model] = {'rates': rates, 'eps': eps, 'absolute_auc': absolute_auc, 'cliff': cliff}
+        print(f"{model:<25} {rates[0]:<7.3f} {rates[1]:<7.3f} {rates[2]:<7.3f} {rates[3]:<7.3f} {rates[4]:<7.3f} {eps:<7.3f} {absolute_auc:<7.3f} {cliff:<6.3f}")
     
     print()
     print(f"Total episodes: {sum(len(json.load(open(results_dir / f'agent_{m}.json'))) for m in MODELS if (results_dir / f'agent_{m}.json').exists())}")

@@ -26,7 +26,7 @@ MODEL_CONFIGS = {
     "qwen3.5-397b": ("dashscope", "qwen3.5-397b-a17b", False),
     # Via OFOX (GPT, Claude, Gemini, DeepSeek)
     "gpt-4o": ("ofox", "openai/gpt-4o", False),
-    "gpt-4o-mini": ("xiaoai", "gpt-4o-mini", False),
+    "gpt-4o-mini": ("ofox", "openai/gpt-4o-mini", False),
     "gpt-4.1-mini": ("ofox", "openai/gpt-4.1-mini", False),
     "gpt-4.1": ("ofox", "openai/gpt-4.1", False),
     "claude-haiku-4.5": ("ofox", "anthropic/claude-haiku-4.5", False),
