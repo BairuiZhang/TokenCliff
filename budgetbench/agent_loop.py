@@ -7,6 +7,38 @@ from budgetbench.runner import get_client, MODEL_CONFIGS
 MAX_TURNS = 20
 
 
+def _calendar_args(args_str: str) -> dict:
+    """Parse the JSON-style arguments used by calendar tool calls."""
+    try:
+        return json.loads(args_str) if args_str.startswith("{") else {}
+    except (json.JSONDecodeError, TypeError):
+        return {}
+
+
+def _hour(value, default: int) -> int:
+    """Normalize hour-like values such as 9, '09:00', or '9'."""
+    if value is None:
+        return default
+    if isinstance(value, (int, float)):
+        return int(value)
+    match = re.search(r"\d+", str(value))
+    return int(match.group()) if match else default
+
+
+def _duration_hours(value, default: int = 1) -> int:
+    """Normalize durations expressed in hours, minutes, or natural text."""
+    if value is None:
+        return default
+    match = re.search(r"\d+", str(value))
+    if not match:
+        return default
+    duration = int(match.group())
+    text = str(value).lower()
+    if "min" in text or duration > 18:
+        duration = max(1, duration // 60)
+    return duration
+
+
 def execute_action(action: str, task: Task) -> str:
     """Execute an agent action against the task's virtual environment. Returns observation."""
     action = action.strip()
@@ -76,6 +108,47 @@ def execute_action(action: str, task: Task) -> str:
         if rows:
             return json.dumps({"columns": list(rows[0].keys()), "row_count": len(rows)})
         return "TABLE_NOT_FOUND"
+
+    # === Planning / Calendar ===
+    elif tool_name == "get_events":
+        args = _calendar_args(args_str)
+        date = args.get("date")
+        events = env.get("events", [])
+        if date:
+            events = [event for event in events if event.get("date") == date]
+        return json.dumps(events, ensure_ascii=False)
+
+    elif tool_name == "check_conflict":
+        args = _calendar_args(args_str)
+        date = args.get("date")
+        start = _hour(args.get("start", args.get("start_time", args.get("start_hour"))), 9)
+        end = _hour(args.get("end", args.get("end_time", args.get("end_hour"))), start + 1)
+        conflict = any(
+            (not date or event.get("date") == date)
+            and not (end <= event["start"] or start >= event["end"])
+            for event in env.get("events", [])
+        )
+        return json.dumps({"conflict": conflict})
+
+    elif tool_name == "find_slot":
+        args = _calendar_args(args_str)
+        date = args.get("date")
+        duration = _duration_hours(args.get("duration", args.get("duration_hours")))
+        range_start = _hour(args.get("start", args.get("start_time", args.get("start_hour"))), 9)
+        range_end = _hour(args.get("end", args.get("end_time", args.get("end_hour"))), 18)
+        events = [
+            event for event in env.get("events", [])
+            if not date or event.get("date") == date
+        ]
+        slots = []
+        for start in range(range_start, range_end - duration + 1):
+            end = start + duration
+            if not any(not (end <= event["start"] or start >= event["end"]) for event in events):
+                slots.append({"start": start, "end": end})
+        return json.dumps({
+            "available_slots": slots,
+            "earliest_start": slots[0]["start"] if slots else None,
+        })
 
     # === API / Tool Use ===
     elif tool_name == "call":
@@ -223,6 +296,8 @@ def run_agent_loop(task: Task, model_name: str, budget_level: str, bap: bool = F
                     tool_call = output[use_start + 4:idx].strip()  # "tool_name(...)"
                     action = "USE: " + tool_call
                     observation = execute_action(action, task)
+                    trajectory[-1]["action"] = action
+                    trajectory[-1]["observation"] = observation
                     messages.append({"role": "assistant", "content": output})
                     messages.append({"role": "user", "content": f"Observation: {observation}\n\nBudget remaining: ~{budget - total_tokens_used} tokens. Continue."})
                 else:

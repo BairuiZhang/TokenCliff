@@ -1,372 +1,372 @@
 {
-  "gpt-4o-mini": {
-    "B1": {
-      "mean_utilization": 0.898,
-      "mean_tokens_success": 156.4,
-      "mean_tokens_fail": 194.4,
-      "n_success": 257,
-      "n_fail": 403
-    },
-    "B2": {
-      "mean_utilization": 0.605,
-      "mean_tokens_success": 255.1,
-      "mean_tokens_fail": 380.3,
-      "n_success": 410,
-      "n_fail": 250
-    },
-    "B3": {
-      "mean_utilization": 0.254,
-      "mean_tokens_success": 363.5,
-      "mean_tokens_fail": 423.5,
-      "n_success": 468,
-      "n_fail": 192
-    },
-    "B4": {
-      "mean_utilization": 0.1,
-      "mean_tokens_success": 376.0,
-      "mean_tokens_fail": 462.7,
-      "n_success": 472,
-      "n_fail": 188
-    },
-    "B5": {
-      "mean_utilization": 0.045,
-      "mean_tokens_success": 382.8,
-      "mean_tokens_fail": 544.9,
-      "n_success": 466,
-      "n_fail": 194
-    }
-  },
-  "qwen2.5-72b": {
-    "B1": {
-      "mean_utilization": 0.777,
-      "mean_tokens_success": 128.8,
-      "mean_tokens_fail": 168.2,
-      "n_success": 213,
-      "n_fail": 447
-    },
-    "B2": {
-      "mean_utilization": 0.528,
-      "mean_tokens_success": 238.3,
-      "mean_tokens_fail": 291.5,
-      "n_success": 339,
-      "n_fail": 321
-    },
-    "B3": {
-      "mean_utilization": 0.241,
-      "mean_tokens_success": 312.1,
-      "mean_tokens_fail": 431.8,
-      "n_success": 389,
-      "n_fail": 271
-    },
-    "B4": {
-      "mean_utilization": 0.093,
-      "mean_tokens_success": 333.9,
-      "mean_tokens_fail": 427.3,
-      "n_success": 391,
-      "n_fail": 269
-    },
-    "B5": {
-      "mean_utilization": 0.043,
-      "mean_tokens_success": 377.4,
-      "mean_tokens_fail": 465.5,
-      "n_success": 385,
-      "n_fail": 275
-    }
-  },
-  "qwen3.6-flash": {
-    "B1": {
-      "mean_utilization": 0.929,
-      "mean_tokens_success": 167.8,
-      "mean_tokens_fail": 196.0,
-      "n_success": 238,
-      "n_fail": 422
-    },
-    "B2": {
-      "mean_utilization": 0.74,
-      "mean_tokens_success": 286.2,
-      "mean_tokens_fail": 469.1,
-      "n_success": 358,
-      "n_fail": 302
-    },
-    "B3": {
-      "mean_utilization": 0.446,
-      "mean_tokens_success": 538.4,
-      "mean_tokens_fail": 1026.6,
-      "n_success": 483,
-      "n_fail": 177
-    },
-    "B4": {
-      "mean_utilization": 0.203,
-      "mean_tokens_success": 622.6,
-      "mean_tokens_fail": 1271.7,
-      "n_success": 469,
-      "n_fail": 191
-    },
-    "B5": {
-      "mean_utilization": 0.109,
-      "mean_tokens_success": 706.4,
-      "mean_tokens_fail": 1403.5,
-      "n_success": 486,
-      "n_fail": 174
-    }
-  },
   "qwen3.6-plus": {
     "B1": {
-      "mean_utilization": 0.923,
-      "mean_tokens_success": 160.2,
+      "mean_utilization": 0.908,
+      "mean_tokens_success": 156.8,
       "mean_tokens_fail": 199.8,
-      "n_success": 253,
-      "n_fail": 407
+      "n_success": 281,
+      "n_fail": 379
     },
     "B2": {
-      "mean_utilization": 0.747,
-      "mean_tokens_success": 305.2,
-      "mean_tokens_fail": 497.5,
-      "n_success": 425,
-      "n_fail": 235
+      "mean_utilization": 0.716,
+      "mean_tokens_success": 292.5,
+      "mean_tokens_fail": 497.2,
+      "n_success": 449,
+      "n_fail": 211
     },
     "B3": {
-      "mean_utilization": 0.441,
-      "mean_tokens_success": 578.1,
-      "mean_tokens_fail": 1332.1,
-      "n_success": 587,
-      "n_fail": 73
+      "mean_utilization": 0.406,
+      "mean_tokens_success": 543.9,
+      "mean_tokens_fail": 1315.3,
+      "n_success": 604,
+      "n_fail": 56
     },
     "B4": {
-      "mean_utilization": 0.196,
-      "mean_tokens_success": 737.9,
-      "mean_tokens_fail": 1546.4,
-      "n_success": 621,
-      "n_fail": 39
+      "mean_utilization": 0.179,
+      "mean_tokens_success": 687.5,
+      "mean_tokens_fail": 1458.5,
+      "n_success": 634,
+      "n_fail": 26
     },
     "B5": {
-      "mean_utilization": 0.1,
-      "mean_tokens_success": 767.2,
-      "mean_tokens_fail": 1631.9,
-      "n_success": 618,
-      "n_fail": 42
+      "mean_utilization": 0.093,
+      "mean_tokens_success": 724.8,
+      "mean_tokens_fail": 1542.8,
+      "n_success": 632,
+      "n_fail": 28
     }
   },
   "qwen3.5-397b": {
     "B1": {
-      "mean_utilization": 0.949,
-      "mean_tokens_success": 170.7,
+      "mean_utilization": 0.933,
+      "mean_tokens_success": 165.5,
       "mean_tokens_fail": 200.0,
-      "n_success": 230,
-      "n_fail": 430
+      "n_success": 258,
+      "n_fail": 402
     },
     "B2": {
-      "mean_utilization": 0.748,
-      "mean_tokens_success": 313.8,
-      "mean_tokens_fail": 496.1,
-      "n_success": 442,
-      "n_fail": 218
+      "mean_utilization": 0.716,
+      "mean_tokens_success": 302.2,
+      "mean_tokens_fail": 495.5,
+      "n_success": 469,
+      "n_fail": 191
     },
     "B3": {
-      "mean_utilization": 0.409,
-      "mean_tokens_success": 536.2,
-      "mean_tokens_fail": 1212.7,
-      "n_success": 584,
-      "n_fail": 76
+      "mean_utilization": 0.383,
+      "mean_tokens_success": 503.5,
+      "mean_tokens_fail": 1252.4,
+      "n_success": 598,
+      "n_fail": 62
     },
     "B4": {
-      "mean_utilization": 0.189,
-      "mean_tokens_success": 720.2,
-      "mean_tokens_fail": 1454.0,
-      "n_success": 628,
-      "n_fail": 32
+      "mean_utilization": 0.174,
+      "mean_tokens_success": 685.0,
+      "mean_tokens_fail": 1106.4,
+      "n_success": 642,
+      "n_fail": 18
     },
     "B5": {
-      "mean_utilization": 0.077,
-      "mean_tokens_success": 710.9,
-      "mean_tokens_fail": 987.0,
-      "n_success": 624,
-      "n_fail": 36
+      "mean_utilization": 0.074,
+      "mean_tokens_success": 675.8,
+      "mean_tokens_fail": 1250.4,
+      "n_success": 636,
+      "n_fail": 24
     }
   },
-  "qwen3.5-35b": {
+  "qwen2.5-72b": {
     "B1": {
-      "mean_utilization": 0.91,
-      "mean_tokens_success": 157.5,
-      "mean_tokens_fail": 195.8,
-      "n_success": 238,
-      "n_fail": 422
+      "mean_utilization": 0.746,
+      "mean_tokens_success": 116.0,
+      "mean_tokens_fail": 167.2,
+      "n_success": 233,
+      "n_fail": 427
     },
     "B2": {
-      "mean_utilization": 0.714,
-      "mean_tokens_success": 254.8,
-      "mean_tokens_fail": 472.2,
-      "n_success": 349,
-      "n_fail": 311
+      "mean_utilization": 0.512,
+      "mean_tokens_success": 224.6,
+      "mean_tokens_fail": 291.6,
+      "n_success": 351,
+      "n_fail": 309
     },
     "B3": {
-      "mean_utilization": 0.502,
-      "mean_tokens_success": 518.2,
-      "mean_tokens_fail": 1239.7,
-      "n_success": 445,
-      "n_fail": 215
+      "mean_utilization": 0.238,
+      "mean_tokens_success": 301.8,
+      "mean_tokens_fail": 442.0,
+      "n_success": 399,
+      "n_fail": 261
     },
     "B4": {
-      "mean_utilization": 0.275,
-      "mean_tokens_success": 710.4,
-      "mean_tokens_fail": 2164.1,
+      "mean_utilization": 0.091,
+      "mean_tokens_success": 320.3,
+      "mean_tokens_fail": 431.2,
+      "n_success": 402,
+      "n_fail": 258
+    },
+    "B5": {
+      "mean_utilization": 0.043,
+      "mean_tokens_success": 370.7,
+      "mean_tokens_fail": 468.0,
+      "n_success": 394,
+      "n_fail": 266
+    }
+  },
+  "qwen3.6-flash": {
+    "B1": {
+      "mean_utilization": 0.926,
+      "mean_tokens_success": 166.4,
+      "mean_tokens_fail": 196.5,
+      "n_success": 247,
+      "n_fail": 413
+    },
+    "B2": {
+      "mean_utilization": 0.717,
+      "mean_tokens_success": 273.2,
+      "mean_tokens_fail": 469.9,
+      "n_success": 373,
+      "n_fail": 287
+    },
+    "B3": {
+      "mean_utilization": 0.431,
+      "mean_tokens_success": 516.3,
+      "mean_tokens_fail": 1042.8,
+      "n_success": 497,
+      "n_fail": 163
+    },
+    "B4": {
+      "mean_utilization": 0.195,
+      "mean_tokens_success": 593.9,
+      "mean_tokens_fail": 1291.4,
       "n_success": 484,
       "n_fail": 176
     },
     "B5": {
-      "mean_utilization": 0.123,
-      "mean_tokens_success": 766.9,
-      "mean_tokens_fail": 2409.5,
-      "n_success": 488,
-      "n_fail": 172
+      "mean_utilization": 0.107,
+      "mean_tokens_success": 683.3,
+      "mean_tokens_fail": 1481.8,
+      "n_success": 500,
+      "n_fail": 160
     }
   },
   "gemini-3.1-flash-lite": {
     "B1": {
-      "mean_utilization": 0.854,
-      "mean_tokens_success": 148.3,
-      "mean_tokens_fail": 195.7,
-      "n_success": 348,
-      "n_fail": 312
+      "mean_utilization": 0.851,
+      "mean_tokens_success": 151.3,
+      "mean_tokens_fail": 194.8,
+      "n_success": 374,
+      "n_fail": 286
     },
     "B2": {
-      "mean_utilization": 0.535,
-      "mean_tokens_success": 233.7,
-      "mean_tokens_fail": 410.6,
-      "n_success": 534,
-      "n_fail": 126
+      "mean_utilization": 0.527,
+      "mean_tokens_success": 231.3,
+      "mean_tokens_fail": 419.5,
+      "n_success": 547,
+      "n_fail": 113
     },
     "B3": {
-      "mean_utilization": 0.227,
-      "mean_tokens_success": 339.7,
-      "mean_tokens_fail": 353.6,
-      "n_success": 607,
-      "n_fail": 53
+      "mean_utilization": 0.225,
+      "mean_tokens_success": 335.1,
+      "mean_tokens_fail": 370.5,
+      "n_success": 618,
+      "n_fail": 42
     },
     "B4": {
-      "mean_utilization": 0.09,
-      "mean_tokens_success": 360.8,
-      "mean_tokens_fail": 361.0,
-      "n_success": 605,
-      "n_fail": 55
+      "mean_utilization": 0.088,
+      "mean_tokens_success": 353.7,
+      "mean_tokens_fail": 302.0,
+      "n_success": 615,
+      "n_fail": 45
     },
     "B5": {
       "mean_utilization": 0.047,
-      "mean_tokens_success": 394.9,
-      "mean_tokens_fail": 311.7,
-      "n_success": 601,
-      "n_fail": 59
+      "mean_tokens_success": 391.7,
+      "mean_tokens_fail": 257.5,
+      "n_success": 615,
+      "n_fail": 45
     }
   },
   "claude-haiku-4.5": {
     "B1": {
-      "mean_utilization": 0.928,
-      "mean_tokens_success": 167.6,
-      "mean_tokens_fail": 199.6,
-      "n_success": 288,
-      "n_fail": 372
+      "mean_utilization": 0.912,
+      "mean_tokens_success": 164.1,
+      "mean_tokens_fail": 199.1,
+      "n_success": 315,
+      "n_fail": 345
     },
     "B2": {
-      "mean_utilization": 0.65,
-      "mean_tokens_success": 279.6,
-      "mean_tokens_fail": 433.9,
-      "n_success": 467,
-      "n_fail": 193
+      "mean_utilization": 0.626,
+      "mean_tokens_success": 268.1,
+      "mean_tokens_fail": 430.4,
+      "n_success": 478,
+      "n_fail": 182
     },
     "B3": {
-      "mean_utilization": 0.287,
-      "mean_tokens_success": 379.7,
-      "mean_tokens_fail": 660.5,
-      "n_success": 541,
-      "n_fail": 119
+      "mean_utilization": 0.268,
+      "mean_tokens_success": 355.9,
+      "mean_tokens_fail": 642.6,
+      "n_success": 553,
+      "n_fail": 107
     },
     "B4": {
-      "mean_utilization": 0.121,
-      "mean_tokens_success": 392.8,
-      "mean_tokens_fail": 896.6,
-      "n_success": 538,
-      "n_fail": 122
+      "mean_utilization": 0.115,
+      "mean_tokens_success": 372.7,
+      "mean_tokens_fail": 907.9,
+      "n_success": 550,
+      "n_fail": 110
     },
     "B5": {
-      "mean_utilization": 0.055,
-      "mean_tokens_success": 399.1,
-      "mean_tokens_fail": 669.1,
-      "n_success": 543,
-      "n_fail": 117
+      "mean_utilization": 0.052,
+      "mean_tokens_success": 389.4,
+      "mean_tokens_fail": 642.9,
+      "n_success": 561,
+      "n_fail": 99
+    }
+  },
+  "gpt-4o-mini": {
+    "B1": {
+      "mean_utilization": 0.898,
+      "mean_tokens_success": 156.2,
+      "mean_tokens_fail": 194.4,
+      "n_success": 256,
+      "n_fail": 404
+    },
+    "B2": {
+      "mean_utilization": 0.603,
+      "mean_tokens_success": 256.9,
+      "mean_tokens_fail": 379.5,
+      "n_success": 420,
+      "n_fail": 240
+    },
+    "B3": {
+      "mean_utilization": 0.253,
+      "mean_tokens_success": 362.5,
+      "mean_tokens_fail": 422.1,
+      "n_success": 477,
+      "n_fail": 183
+    },
+    "B4": {
+      "mean_utilization": 0.101,
+      "mean_tokens_success": 378.3,
+      "mean_tokens_fail": 468.8,
+      "n_success": 485,
+      "n_fail": 175
+    },
+    "B5": {
+      "mean_utilization": 0.046,
+      "mean_tokens_success": 383.6,
+      "mean_tokens_fail": 559.5,
+      "n_success": 480,
+      "n_fail": 180
     }
   },
   "qwen2.5-7b": {
     "B1": {
-      "mean_utilization": 0.785,
-      "mean_tokens_success": 125.5,
-      "mean_tokens_fail": 168.2,
-      "n_success": 172,
-      "n_fail": 488
+      "mean_utilization": 0.78,
+      "mean_tokens_success": 123.9,
+      "mean_tokens_fail": 167.9,
+      "n_success": 179,
+      "n_fail": 481
     },
     "B2": {
-      "mean_utilization": 0.466,
-      "mean_tokens_success": 182.8,
-      "mean_tokens_fail": 258.1,
-      "n_success": 221,
-      "n_fail": 439
+      "mean_utilization": 0.459,
+      "mean_tokens_success": 174.5,
+      "mean_tokens_fail": 258.9,
+      "n_success": 232,
+      "n_fail": 428
     },
     "B3": {
-      "mean_utilization": 0.174,
-      "mean_tokens_success": 220.7,
-      "mean_tokens_fail": 281.4,
-      "n_success": 225,
-      "n_fail": 435
+      "mean_utilization": 0.17,
+      "mean_tokens_success": 207.0,
+      "mean_tokens_fail": 282.0,
+      "n_success": 237,
+      "n_fail": 423
     },
     "B4": {
-      "mean_utilization": 0.066,
-      "mean_tokens_success": 229.1,
-      "mean_tokens_fail": 287.1,
-      "n_success": 254,
-      "n_fail": 406
+      "mean_utilization": 0.065,
+      "mean_tokens_success": 215.0,
+      "mean_tokens_fail": 288.4,
+      "n_success": 267,
+      "n_fail": 393
     },
     "B5": {
-      "mean_utilization": 0.031,
-      "mean_tokens_success": 229.4,
-      "mean_tokens_fail": 297.4,
-      "n_success": 230,
-      "n_fail": 430
+      "mean_utilization": 0.03,
+      "mean_tokens_success": 211.2,
+      "mean_tokens_fail": 299.3,
+      "n_success": 243,
+      "n_fail": 417
     }
   },
   "deepseek-v3": {
     "B1": {
       "mean_utilization": 0.945,
-      "mean_tokens_success": 165.8,
-      "mean_tokens_fail": 198.0,
-      "n_success": 185,
-      "n_fail": 475
+      "mean_tokens_success": 168.0,
+      "mean_tokens_fail": 197.9,
+      "n_success": 198,
+      "n_fail": 462
     },
     "B2": {
-      "mean_utilization": 0.798,
-      "mean_tokens_success": 324.6,
-      "mean_tokens_fail": 481.5,
-      "n_success": 347,
-      "n_fail": 313
+      "mean_utilization": 0.791,
+      "mean_tokens_success": 329.3,
+      "mean_tokens_fail": 480.3,
+      "n_success": 370,
+      "n_fail": 290
     },
     "B3": {
-      "mean_utilization": 0.471,
-      "mean_tokens_success": 629.4,
-      "mean_tokens_fail": 1117.9,
-      "n_success": 556,
-      "n_fail": 104
+      "mean_utilization": 0.461,
+      "mean_tokens_success": 615.8,
+      "mean_tokens_fail": 1154.5,
+      "n_success": 568,
+      "n_fail": 92
     },
     "B4": {
-      "mean_utilization": 0.228,
-      "mean_tokens_success": 827.5,
-      "mean_tokens_fail": 1576.6,
-      "n_success": 587,
-      "n_fail": 73
+      "mean_utilization": 0.222,
+      "mean_tokens_success": 806.0,
+      "mean_tokens_fail": 1788.2,
+      "n_success": 606,
+      "n_fail": 54
+    },
+    "B5": {
+      "mean_utilization": 0.12,
+      "mean_tokens_success": 875.6,
+      "mean_tokens_fail": 2180.1,
+      "n_success": 605,
+      "n_fail": 55
+    }
+  },
+  "qwen3.5-35b": {
+    "B1": {
+      "mean_utilization": 0.909,
+      "mean_tokens_success": 158.4,
+      "mean_tokens_fail": 195.7,
+      "n_success": 247,
+      "n_fail": 413
+    },
+    "B2": {
+      "mean_utilization": 0.698,
+      "mean_tokens_success": 255.4,
+      "mean_tokens_fail": 469.9,
+      "n_success": 372,
+      "n_fail": 288
+    },
+    "B3": {
+      "mean_utilization": 0.487,
+      "mean_tokens_success": 499.8,
+      "mean_tokens_fail": 1255.0,
+      "n_success": 459,
+      "n_fail": 201
+    },
+    "B4": {
+      "mean_utilization": 0.266,
+      "mean_tokens_success": 681.1,
+      "mean_tokens_fail": 2215.4,
+      "n_success": 496,
+      "n_fail": 164
     },
     "B5": {
       "mean_utilization": 0.122,
-      "mean_tokens_success": 896.1,
-      "mean_tokens_fail": 1846.7,
-      "n_success": 587,
-      "n_fail": 73
+      "mean_tokens_success": 733.7,
+      "mean_tokens_fail": 2542.8,
+      "n_success": 500,
+      "n_fail": 160
     }
   }
 }

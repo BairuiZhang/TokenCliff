@@ -4,21 +4,26 @@
   "model_budget_cells": 50,
   "utilization_definition": "tokens_used / budget_tokens",
   "control": "model-by-budget cell means",
-  "partial_point_biserial_r": -0.37555096366124696,
+  "partial_point_biserial_r": -0.3857871530940859,
   "task_cluster_bootstrap": {
     "samples": 2000,
     "seed": 20260829,
     "ci_95": [
-      -0.4010312669291159,
-      -0.34893501514429864
+      -0.4123797997619912,
+      -0.35840317758970647
     ]
   },
-  "cells_where_success_uses_less": 49,
+  "cells_where_success_uses_less": 48,
   "counterexample_cells": [
     {
+      "cell": "gemini-3.1-flash-lite|B4",
+      "success_mean": 0.08842886178861789,
+      "failure_mean": 0.07549444444444445
+    },
+    {
       "cell": "gemini-3.1-flash-lite|B5",
-      "success_mean": 0.048202540037437604,
-      "failure_mean": 0.03805490267478814
+      "success_mean": 0.04781722402184959,
+      "failure_mean": 0.03143717447916667
     }
   ]
 }

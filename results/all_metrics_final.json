@@ -2,15 +2,16 @@
   "gemini-3.1-flash-lite": {
     "display": "Gemini 3.1 Flash Lite",
     "rates": {
-      "B1": 0.527,
-      "B2": 0.809,
-      "B3": 0.92,
-      "B4": 0.917,
-      "B5": 0.911
+      "B1": 0.567,
+      "B2": 0.829,
+      "B3": 0.936,
+      "B4": 0.932,
+      "B5": 0.932
     },
-    "epsilon": 0.913,
-    "peak": 0.92,
-    "cliff": 0.282,
+    "epsilon": 0.919,
+    "absolute_log_auc": 0.86,
+    "peak": 0.936,
+    "cliff": 0.262,
     "cliff_loc": "B1->B2",
     "n_tasks": 660,
     "n_results": 3300
@@ -18,15 +19,16 @@
   "gpt-4o-mini": {
     "display": "GPT-4o-mini",
     "rates": {
-      "B1": 0.389,
-      "B2": 0.621,
-      "B3": 0.709,
-      "B4": 0.715,
-      "B5": 0.706
+      "B1": 0.388,
+      "B2": 0.636,
+      "B3": 0.723,
+      "B4": 0.735,
+      "B5": 0.727
     },
-    "epsilon": 0.905,
-    "peak": 0.715,
-    "cliff": 0.232,
+    "epsilon": 0.9,
+    "absolute_log_auc": 0.661,
+    "peak": 0.735,
+    "cliff": 0.248,
     "cliff_loc": "B1->B2",
     "n_tasks": 660,
     "n_results": 3300
@@ -34,15 +36,16 @@
   "qwen2.5-72b": {
     "display": "Qwen2.5-72B",
     "rates": {
-      "B1": 0.323,
-      "B2": 0.514,
-      "B3": 0.589,
-      "B4": 0.592,
-      "B5": 0.583
+      "B1": 0.353,
+      "B2": 0.532,
+      "B3": 0.605,
+      "B4": 0.609,
+      "B5": 0.597
     },
-    "epsilon": 0.905,
-    "peak": 0.592,
-    "cliff": 0.191,
+    "epsilon": 0.91,
+    "absolute_log_auc": 0.554,
+    "peak": 0.609,
+    "cliff": 0.179,
     "cliff_loc": "B1->B2",
     "n_tasks": 660,
     "n_results": 3300
@@ -50,15 +53,16 @@
   "claude-haiku-4.5": {
     "display": "Claude Haiku 4.5",
     "rates": {
-      "B1": 0.436,
-      "B2": 0.708,
-      "B3": 0.82,
-      "B4": 0.815,
-      "B5": 0.823
+      "B1": 0.477,
+      "B2": 0.724,
+      "B3": 0.838,
+      "B4": 0.833,
+      "B5": 0.85
     },
-    "epsilon": 0.901,
-    "peak": 0.823,
-    "cliff": 0.271,
+    "epsilon": 0.897,
+    "absolute_log_auc": 0.763,
+    "peak": 0.85,
+    "cliff": 0.247,
     "cliff_loc": "B1->B2",
     "n_tasks": 660,
     "n_results": 3300
@@ -66,15 +70,16 @@
   "qwen2.5-7b": {
     "display": "Qwen2.5-7B",
     "rates": {
-      "B1": 0.261,
-      "B2": 0.335,
-      "B3": 0.341,
-      "B4": 0.385,
-      "B5": 0.348
+      "B1": 0.271,
+      "B2": 0.352,
+      "B3": 0.359,
+      "B4": 0.405,
+      "B5": 0.368
     },
     "epsilon": 0.884,
-    "peak": 0.385,
-    "cliff": 0.074,
+    "absolute_log_auc": 0.357,
+    "peak": 0.405,
+    "cliff": 0.08,
     "cliff_loc": "B1->B2",
     "n_tasks": 660,
     "n_results": 3300
@@ -82,31 +87,33 @@
   "qwen3.6-flash": {
     "display": "Qwen3.6-Flash",
     "rates": {
-      "B1": 0.361,
-      "B2": 0.542,
-      "B3": 0.732,
-      "B4": 0.711,
-      "B5": 0.736
+      "B1": 0.374,
+      "B2": 0.565,
+      "B3": 0.753,
+      "B4": 0.733,
+      "B5": 0.758
     },
-    "epsilon": 0.856,
-    "peak": 0.736,
-    "cliff": 0.189,
-    "cliff_loc": "B2->B3",
+    "epsilon": 0.86,
+    "absolute_log_auc": 0.651,
+    "peak": 0.758,
+    "cliff": 0.191,
+    "cliff_loc": "B1->B2",
     "n_tasks": 660,
     "n_results": 3300
   },
   "qwen3.5-35b": {
     "display": "Qwen3.5-35B",
     "rates": {
-      "B1": 0.361,
-      "B2": 0.529,
-      "B3": 0.674,
-      "B4": 0.733,
-      "B5": 0.739
+      "B1": 0.374,
+      "B2": 0.564,
+      "B3": 0.695,
+      "B4": 0.752,
+      "B5": 0.758
     },
-    "epsilon": 0.833,
-    "peak": 0.739,
-    "cliff": 0.168,
+    "epsilon": 0.843,
+    "absolute_log_auc": 0.639,
+    "peak": 0.758,
+    "cliff": 0.189,
     "cliff_loc": "B1->B2",
     "n_tasks": 660,
     "n_results": 3300
@@ -114,15 +121,16 @@
   "qwen3.6-plus": {
     "display": "Qwen3.6-Plus",
     "rates": {
-      "B1": 0.383,
-      "B2": 0.644,
-      "B3": 0.889,
-      "B4": 0.941,
-      "B5": 0.936
+      "B1": 0.426,
+      "B2": 0.68,
+      "B3": 0.915,
+      "B4": 0.961,
+      "B5": 0.958
     },
-    "epsilon": 0.825,
-    "peak": 0.941,
-    "cliff": 0.261,
+    "epsilon": 0.839,
+    "absolute_log_auc": 0.806,
+    "peak": 0.961,
+    "cliff": 0.255,
     "cliff_loc": "B1->B2",
     "n_tasks": 660,
     "n_results": 3300
@@ -130,15 +138,16 @@
   "qwen3.5-397b": {
     "display": "Qwen3.5-397B",
     "rates": {
-      "B1": 0.348,
-      "B2": 0.67,
-      "B3": 0.885,
-      "B4": 0.952,
-      "B5": 0.945
+      "B1": 0.391,
+      "B2": 0.711,
+      "B3": 0.906,
+      "B4": 0.973,
+      "B5": 0.964
     },
-    "epsilon": 0.821,
-    "peak": 0.952,
-    "cliff": 0.321,
+    "epsilon": 0.833,
+    "absolute_log_auc": 0.81,
+    "peak": 0.973,
+    "cliff": 0.32,
     "cliff_loc": "B1->B2",
     "n_tasks": 660,
     "n_results": 3300
@@ -146,15 +155,16 @@
   "deepseek-v3": {
     "display": "DeepSeek-V3",
     "rates": {
-      "B1": 0.28,
-      "B2": 0.526,
-      "B3": 0.842,
-      "B4": 0.889,
-      "B5": 0.889
+      "B1": 0.3,
+      "B2": 0.561,
+      "B3": 0.861,
+      "B4": 0.918,
+      "B5": 0.917
     },
-    "epsilon": 0.79,
-    "peak": 0.889,
-    "cliff": 0.317,
+    "epsilon": 0.794,
+    "absolute_log_auc": 0.729,
+    "peak": 0.918,
+    "cliff": 0.3,
     "cliff_loc": "B2->B3",
     "n_tasks": 660,
     "n_results": 3300

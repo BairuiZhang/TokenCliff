@@ -62,6 +62,8 @@ python analyze_failure_outcomes.py --results ./results/main_experiments.json
 python analyze_token_utilization.py --results ./results/main_experiments.json
 ```
 
+The camera-ready result release replaces `planning_001`--`planning_030` after fixing calendar-tool dispatch in the evaluator. Provider metadata is retained in each replacement row; the released Qwen2.5 correction trajectories use the equivalent OpenRouter endpoints and reproduce the aggregate outcomes of our DashScope rerun.
+
 ## Run the Benchmark
 
 ```bash

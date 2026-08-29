@@ -1,172 +1,172 @@
 {
   "gpt-4o-mini": {
-    "total_failures": 1227,
+    "total_failures": 1182,
     "counts": {
-      "BudgLim": 473,
+      "BudgLim": 477,
       "TurnLim": 11,
-      "WrongA": 634,
+      "WrongA": 585,
       "EarlySub": 108,
       "Other": 1
     },
     "percentages": {
-      "BudgLim": 38.5,
+      "BudgLim": 40.4,
       "TurnLim": 0.9,
-      "WrongA": 51.7,
-      "EarlySub": 8.8,
+      "WrongA": 49.5,
+      "EarlySub": 9.1,
       "Other": 0.1
     }
   },
   "qwen2.5-72b": {
-    "total_failures": 1583,
+    "total_failures": 1521,
     "counts": {
-      "BudgLim": 413,
+      "BudgLim": 397,
       "TurnLim": 63,
-      "WrongA": 950,
+      "WrongA": 904,
       "EarlySub": 156,
       "Other": 1
     },
     "percentages": {
       "BudgLim": 26.1,
-      "TurnLim": 4.0,
-      "WrongA": 60.0,
-      "EarlySub": 9.9,
+      "TurnLim": 4.1,
+      "WrongA": 59.4,
+      "EarlySub": 10.3,
       "Other": 0.1
     }
   },
   "qwen3.6-flash": {
-    "total_failures": 1266,
+    "total_failures": 1199,
     "counts": {
-      "BudgLim": 665,
-      "TurnLim": 251,
-      "WrongA": 303,
-      "EarlySub": 39,
-      "Other": 8
+      "BudgLim": 653,
+      "TurnLim": 243,
+      "WrongA": 260,
+      "EarlySub": 36,
+      "Other": 7
     },
     "percentages": {
-      "BudgLim": 52.5,
-      "TurnLim": 19.8,
-      "WrongA": 23.9,
-      "EarlySub": 3.1,
+      "BudgLim": 54.5,
+      "TurnLim": 20.3,
+      "WrongA": 21.7,
+      "EarlySub": 3.0,
       "Other": 0.6
     }
   },
   "qwen3.6-plus": {
-    "total_failures": 796,
+    "total_failures": 700,
     "counts": {
-      "BudgLim": 674,
+      "BudgLim": 624,
       "TurnLim": 42,
-      "WrongA": 60,
+      "WrongA": 32,
       "EarlySub": 0,
-      "Other": 20
+      "Other": 2
     },
     "percentages": {
-      "BudgLim": 84.7,
-      "TurnLim": 5.3,
-      "WrongA": 7.5,
+      "BudgLim": 89.1,
+      "TurnLim": 6.0,
+      "WrongA": 4.6,
       "EarlySub": 0.0,
-      "Other": 2.5
+      "Other": 0.3
     }
   },
   "qwen3.5-397b": {
-    "total_failures": 792,
+    "total_failures": 697,
     "counts": {
-      "BudgLim": 674,
+      "BudgLim": 619,
       "TurnLim": 20,
-      "WrongA": 93,
+      "WrongA": 55,
       "EarlySub": 0,
-      "Other": 5
+      "Other": 3
     },
     "percentages": {
-      "BudgLim": 85.1,
-      "TurnLim": 2.5,
-      "WrongA": 11.7,
+      "BudgLim": 88.8,
+      "TurnLim": 2.9,
+      "WrongA": 7.9,
       "EarlySub": 0.0,
-      "Other": 0.6
-    }
-  },
-  "qwen3.5-35b": {
-    "total_failures": 1296,
-    "counts": {
-      "BudgLim": 851,
-      "TurnLim": 123,
-      "WrongA": 293,
-      "EarlySub": 24,
-      "Other": 5
-    },
-    "percentages": {
-      "BudgLim": 65.7,
-      "TurnLim": 9.5,
-      "WrongA": 22.6,
-      "EarlySub": 1.9,
       "Other": 0.4
     }
   },
-  "gemini-3.1-flash-lite": {
-    "total_failures": 605,
+  "qwen3.5-35b": {
+    "total_failures": 1226,
     "counts": {
-      "BudgLim": 347,
-      "TurnLim": 13,
-      "WrongA": 211,
-      "EarlySub": 8,
-      "Other": 26
+      "BudgLim": 819,
+      "TurnLim": 122,
+      "WrongA": 257,
+      "EarlySub": 24,
+      "Other": 4
     },
     "percentages": {
-      "BudgLim": 57.4,
-      "TurnLim": 2.1,
-      "WrongA": 34.9,
-      "EarlySub": 1.3,
-      "Other": 4.3
+      "BudgLim": 66.8,
+      "TurnLim": 10.0,
+      "WrongA": 21.0,
+      "EarlySub": 2.0,
+      "Other": 0.3
     }
   },
-  "claude-haiku-4.5": {
-    "total_failures": 923,
+  "gemini-3.1-flash-lite": {
+    "total_failures": 531,
     "counts": {
-      "BudgLim": 456,
-      "TurnLim": 97,
-      "WrongA": 301,
-      "EarlySub": 37,
+      "BudgLim": 322,
+      "TurnLim": 13,
+      "WrongA": 156,
+      "EarlySub": 8,
       "Other": 32
     },
     "percentages": {
-      "BudgLim": 49.4,
-      "TurnLim": 10.5,
-      "WrongA": 32.6,
-      "EarlySub": 4.0,
-      "Other": 3.5
+      "BudgLim": 60.6,
+      "TurnLim": 2.4,
+      "WrongA": 29.4,
+      "EarlySub": 1.5,
+      "Other": 6.0
+    }
+  },
+  "claude-haiku-4.5": {
+    "total_failures": 843,
+    "counts": {
+      "BudgLim": 429,
+      "TurnLim": 87,
+      "WrongA": 257,
+      "EarlySub": 37,
+      "Other": 33
+    },
+    "percentages": {
+      "BudgLim": 50.9,
+      "TurnLim": 10.3,
+      "WrongA": 30.5,
+      "EarlySub": 4.4,
+      "Other": 3.9
     }
   },
   "qwen2.5-7b": {
-    "total_failures": 2198,
+    "total_failures": 2142,
     "counts": {
-      "BudgLim": 295,
+      "BudgLim": 296,
       "TurnLim": 64,
-      "WrongA": 1534,
+      "WrongA": 1477,
       "EarlySub": 299,
       "Other": 6
     },
     "percentages": {
-      "BudgLim": 13.4,
-      "TurnLim": 2.9,
-      "WrongA": 69.8,
-      "EarlySub": 13.6,
+      "BudgLim": 13.8,
+      "TurnLim": 3.0,
+      "WrongA": 69.0,
+      "EarlySub": 14.0,
       "Other": 0.3
     }
   },
   "deepseek-v3": {
-    "total_failures": 1038,
+    "total_failures": 953,
     "counts": {
-      "BudgLim": 812,
+      "BudgLim": 781,
       "TurnLim": 29,
-      "WrongA": 184,
+      "WrongA": 131,
       "EarlySub": 3,
-      "Other": 10
+      "Other": 9
     },
     "percentages": {
-      "BudgLim": 78.2,
-      "TurnLim": 2.8,
-      "WrongA": 17.7,
+      "BudgLim": 82.0,
+      "TurnLim": 3.0,
+      "WrongA": 13.7,
       "EarlySub": 0.3,
-      "Other": 1.0
+      "Other": 0.9
     }
   }
 }

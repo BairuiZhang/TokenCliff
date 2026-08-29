@@ -49,8 +49,8 @@ def main(results_dir):
     print("=" * 70)
     print()
     
-    # Table 4: Main Results
-    print("TABLE 4: Main Results (10 models × 660 tasks × 5 budget levels)")
+    # Table 2: Main Results
+    print("TABLE 2: Main Results (10 models × 660 tasks × 5 budget levels)")
     print("-" * 70)
     print(f"{'Model':<25} {'B1':<7} {'B2':<7} {'B3':<7} {'B4':<7} {'B5':<7} {'ε':<7} {'A_log':<7} {'Cliff':<6}")
     print("-" * 70)
