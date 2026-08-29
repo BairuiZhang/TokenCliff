@@ -1,6 +1,6 @@
 # TokenCliff
 
-**Benchmarking performance-budget trade-offs in multi-turn reasoning for LLM agents.**
+**Benchmarking output-token budget sensitivity in multi-turn LLM agents.**
 
 TokenCliff evaluates how multi-turn LLM agents perform under controlled episode-level output-token budgets. The release contains 660 deterministic tasks, five budget levels, non-LLM verifiers, the evaluation code, and the final results for 10 models (33,000 main-evaluation episodes).
 
@@ -35,6 +35,8 @@ Let `s(m, b_k)` be model `m`'s mean success at budget `b_k`, and let `s*` be its
 ├── results/                  # Final raw and derived experiment results
 ├── run_agent.py              # Agent-loop runner
 ├── verify_results.py         # Recompute the main paper table from raw results
+├── analyze_failure_outcomes.py # Recompute the failure-outcome table
+├── analyze_token_utilization.py # Test utilization-success association
 ├── requirements.txt
 └── .env.example
 ```
@@ -56,6 +58,8 @@ The following command recomputes per-budget success, elasticity, absolute log-bu
 
 ```bash
 python verify_results.py --results-dir ./results
+python analyze_failure_outcomes.py --results ./results/main_experiments.json
+python analyze_token_utilization.py --results ./results/main_experiments.json
 ```
 
 ## Run the Benchmark
@@ -81,7 +85,7 @@ TokenCliff measures robustness under observable episode-level output-token const
 
 ```bibtex
 @inproceedings{zhang2026tokencliff,
-  title     = {TokenCliff: Benchmarking Performance-Budget Trade-offs in Multi-Turn Reasoning for LLM Agents},
+  title     = {TokenCliff: Benchmarking Output-Token Budget Sensitivity in Multi-Turn LLM Agents},
   author    = {Zhang, Bairui and Liu, Weixuan and Xue, Defan and Zhang, Yongqi},
   year      = {2026}
 }
