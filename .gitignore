@@ -9,6 +9,7 @@ __pycache__/
 code/.env
 *.log
 *.out
+results/
 .prism/
 .vscode/
 .idea/

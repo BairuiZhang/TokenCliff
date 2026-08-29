@@ -2,7 +2,7 @@
 
 **Benchmarking output-token budget sensitivity in multi-turn LLM agents.**
 
-TokenCliff evaluates how multi-turn LLM agents perform under controlled episode-level output-token budgets. The release contains 660 deterministic tasks, five budget levels, non-LLM verifiers, the evaluation code, and the final results for 10 models (33,000 main-evaluation episodes).
+TokenCliff evaluates how multi-turn LLM agents perform under controlled episode-level output-token budgets. The release contains 660 deterministic tasks, five budget levels, non-LLM verifiers, and the evaluation and analysis code.
 
 ## Benchmark
 
@@ -32,7 +32,7 @@ Let `s(m, b_k)` be model `m`'s mean success at budget `b_k`, and let `s*` be its
 .
 ├── budgetbench/              # Evaluation package and deterministic environments
 ├── tasks/                    # 660 canonical task JSON files
-├── results/                  # Final raw and derived experiment results
+├── results/                  # Locally generated outputs (not version-controlled)
 ├── run_agent.py              # Agent-loop runner
 ├── verify_results.py         # Recompute the main paper table from raw results
 ├── analyze_failure_outcomes.py # Recompute the failure-outcome table
@@ -52,17 +52,15 @@ cp .env.example .env
 
 Add the API credentials for the providers you intend to evaluate to `.env`. Never commit `.env`.
 
-## Verify Released Results
+## Analyze Local Results
 
-The following command recomputes per-budget success, elasticity, absolute log-budget AUC, and Cliff Index directly from the released raw main-experiment files:
+After running the benchmark, the following commands recompute per-budget success, elasticity, absolute log-budget AUC, Cliff Index, and supporting analyses from local result files:
 
 ```bash
 python verify_results.py --results-dir ./results
 python analyze_failure_outcomes.py --results ./results/main_experiments.json
 python analyze_token_utilization.py --results ./results/main_experiments.json
 ```
-
-The camera-ready result release replaces `planning_001`--`planning_030` after fixing calendar-tool dispatch in the evaluator. Provider metadata is retained in each replacement row; the released Qwen2.5 correction trajectories use the equivalent OpenRouter endpoints and reproduce the aggregate outcomes of our DashScope rerun.
 
 ## Run the Benchmark
 
